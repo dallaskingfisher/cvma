@@ -3,16 +3,16 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import {useState } from 'react';
 import classes from './main-header.module.css';
-import { signOut } from 'next-auth/client';
+import { useSession,signOut } from 'next-auth/client';
 
 function MainHeader() {
-
+  const [ session, loading] = useSession();
   const [menuOpen, setMenuOpen ] = useState(false);
   const router = useRouter();
 
   function logoutHandler(){
     signOut();
-    router.replace('/login')
+    
   }
 
   function menuHandler(event) {
@@ -31,17 +31,26 @@ function MainHeader() {
   <li className={classes.linkItems}>
     <a href="http://cvma18.cvma182.org" className={classes.aItems}>State</a>
   </li>
-  <li className={classes.linkItems}>
-    <Link href="/login"><a className={classes.aItems}>Login</a></Link>
-  </li>
+  {!session && !loading && (
+     <li className={classes.linkItems}>
+     <Link href="/login"><a className={classes.aItems}>Login</a></Link>
+   </li>
+  )}
+  {session && (
   <li className={classes.linkItems}>
     <Link href="/members" ><a className={classes.aItems}>Members</a></Link> 
     </li>
-    <li className={classes.linkItems}>
+    )}
+    {session && (
+      <li className={classes.linkItems}>
       <Link href="/events/"><a className={classes.aItems}>Events</a></Link>
       </li>
-    <li className={classes.linkItems}>
-      <span><a className={classes.aItems} onClick={logoutHandler}>Logout</a></span></li>
+    )}
+      {session && (
+        <li className={classes.linkItems}>
+        <span><a className={classes.aItems} onClick={logoutHandler}>Logout</a></span></li>
+      )}
+    
   </span>
 
  
