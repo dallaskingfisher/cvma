@@ -1,14 +1,23 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-
+import { getSession } from 'next-auth/client';
 import { getAllEvents } from '../../helpers/api-util';
 import EventList from '../../components/events/event-list';
 import EventsSearch from '../../components/events/events-search';
 
+
 function AllEventsPage(props) {
   const router = useRouter();
   const { events } = props;
+
+  useEffect(() => {
+    getSession().then((session) => {
+      if(!session){
+        router.replace('/login')
+      }
+    })
+  },[router])
 
   function findEventsHandler(year, month) {
     const fullPath = `/events/${year}/${month}`;

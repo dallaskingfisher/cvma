@@ -1,6 +1,7 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import Head from 'next/head';
-
+import { useRouter } from 'next/router';
+import { getSession } from 'next-auth/client';
 import { getEventById, getFeaturedEvents } from '../../helpers/api-util';
 import EventSummary from '../../components/event-detail/event-summary';
 import EventLogistics from '../../components/event-detail/event-logistics';
@@ -9,7 +10,16 @@ import ErrorAlert from '../../components/ui/error-alert';
 import Comments from '../../components/input/comments';
 
 function EventDetailPage(props) {
+  const router = useRouter();
   const event = props.selectedEvent;
+  
+  useEffect(() => {
+    getSession().then((session) => {
+      if(!session){
+        router.replace('/login')
+      }
+    })
+  },[router])
 
   if (!event) {
     return (
@@ -45,8 +55,9 @@ function EventDetailPage(props) {
 
 export async function getStaticProps(context) {
   const eventId = context.params.eventId;
-
+  
   const event = await getEventById(eventId);
+  
 
   return {
     props: {

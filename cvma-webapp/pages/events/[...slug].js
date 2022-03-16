@@ -1,7 +1,8 @@
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import useSWR from 'swr';
+import { getSession } from 'next-auth/client';
+
 
 import { getFilteredEvents } from '../../helpers/api-util';
 import EventList from '../../components/events/event-list';
@@ -10,40 +11,16 @@ import Button from '../../components/ui/button';
 import ErrorAlert from '../../components/ui/error-alert';
 
 function FilteredEventsPage(props) {
-  const [loadedEvents, setLoadedEvents] = useState();
- /* const router = useRouter();
-
-  const filterData = router.query.slug;
-
-  const { data, error } = useSWR(
-    'https://fir-4e699-default-rtdb.firebaseio.com/events.json'
-  );
-
+ 
+  const router = useRouter();
+ 
   useEffect(() => {
-    if (data) {
-      const events = [];
-
-      for (const key in data) {
-        events.push({
-          id: key,
-          ...data[key],
-        });
+    getSession().then((session) => {
+      if(!session){
+        router.replace('/login')
       }
-
-      setLoadedEvents(events);
-    }
-  }, [data]);
-
-  if (!loadedEvents) {
-    return <p className='center'>Loading...</p>;
-  }
-
-  const filteredYear = filterData[0];
-  const filteredMonth = filterData[1];
-
-  const numYear = +filteredYear;
-  const numMonth = +filteredMonth;
-*/
+    })
+  },[router])
 
 const date = new Date(props.date.year, props.date.month - 1); 
 
@@ -68,14 +45,8 @@ if (props.hasError) {
     );
   }
 
- /* const filteredEvents = loadedEvents.filter((event) => {
-    const eventDate = new Date(event.date);
-    return (
-      eventDate.getFullYear() === numYear &&
-      eventDate.getMonth() === numMonth - 1
-    );
-  });
-*/
+
+  
   if (!props.events || props.events.length === 0) {
     return (
       <Fragment>
