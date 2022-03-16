@@ -34,7 +34,7 @@ function PasswordReset() {
 
   async function passwordUpdateHandler(event) {
     event.preventDefault();
-
+    setHasError('');
     const memberNumberVariable = memberNumberRef.current.value;
     const passwd = passwdRef.current.value;
     const passwdVerify = passwdVerifyRef.current.value;
@@ -44,14 +44,17 @@ function PasswordReset() {
     const memberNumber = memberNumberVariable.toUpperCase();
     const email = emailVariable.toLowerCase();
     const address = addressVariable.toLowerCase();
-
+    //================================================================
+    console.log(memberNumber, email, address);
+    //================================================================
     if (
       memberNumber.includes("FM") ||
       memberNumber.includes("AUX") ||
       memberNumber.includes("S") ||
       memberNumber.includes("SAUX")
     ) {
-      setHasError("Please use the member number prefix FM, AUX, S, SAUX");
+    } else {
+      setHasError("Member number must include FM, AUX, S, SAUX");
     }
 
     if (!email.includes("@")) {
@@ -67,15 +70,17 @@ function PasswordReset() {
       setHasError("Password Must Be at Least 8 Characters Logn");
     }
 
-    const response = await resetPasswd(
+ const response = await resetPasswd(
       memberNumber,
       email,
       address,
       passwd,
       passwdVerify
     );
-
-    setHasError(response);
+    if(response){
+      setHasError(response);
+    } 
+   
   }
 
   return (

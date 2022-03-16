@@ -9,15 +9,16 @@ async function handler(req, res) {
     const passwdVerify = req.body.passwdVerify;
     const address = req.body.address
 
-    if (
+  if (
       memberNumber.includes("FM") ||
       memberNumber.includes("AUX") ||
       memberNumber.includes("S") ||
       memberNumber.includes("SAUX")
-    ) {
+    ) {} else 
+    {
       res.status(422).json({message: "Please use the member number prefix FM, AUX, S, SAUX"})
     }
-
+  
     if (!email.includes("@")) {
       res.status(422).json({message: 'Must be a valid email'})
     }
@@ -39,7 +40,13 @@ async function handler(req, res) {
 
     //do member validation on the email and the address 
     // to verify that they are users.
+    if (user === null){
+      res.status(404).json({message: 'Member does not exist'});
+    }
 
+    if(user.password === null){
+      res.status(422).json({message: 'Password not set. Please register'})
+    }
     if(email.toLowerCase() !== user.email.toLowerCase()){
         res.status(422).json({message: 'Email must match Account'})
     }
@@ -52,7 +59,7 @@ async function handler(req, res) {
 
     await database.updateOne({memberId: memberNumber}, {$set: {password: hashedPassword}})
 
-
+    res.status(201).json({message: 'Password updated'})
   }
 }
 
