@@ -41,7 +41,7 @@ function MainHeader() {
       <Link href="/events/"><a className={classes.aItems}>Events</a></Link>
       </li>
     <li className={classes.linkItems}>
-      <span><a className={classes.aItems} onLogout={logoutHandler}>Logout</a></span></li>
+      <span><a className={classes.aItems} onClick={logoutHandler}>Logout</a></span></li>
   </span>
 
  

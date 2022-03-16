@@ -2,8 +2,12 @@ import Layout from '../components/layout/layout';
 import Head from 'next/head';
 import '../styles/globals.css';
 
+import { Fragment } from 'react';
+
 function MyApp({ Component, pageProps }) {
   return (
+    <Fragment>
+   
     <Layout>
       <Head>
         <title>CVMA 18 - 2</title>
@@ -12,6 +16,8 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Component {...pageProps} />
     </Layout>
+
+    </Fragment>
   );
 }
 
