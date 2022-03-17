@@ -8,6 +8,7 @@ function EventUpdate(){
     const addressTwoRef = useRef();
     const dateRef = useRef();
     const featureRef = useRef();
+    const imageRef = useRef();
     const [saved, setSaved] = useState()
     let savedMessage;
     
@@ -18,13 +19,14 @@ function EventUpdate(){
         const addressOne = addressOneRef.current.value;
         const addressTwo = addressTwoRef.current.value;
         const date = dateRef.current.value;
+        const image = imageRef.current.value;
         const feature = featureRef.current.value;
 
 
         
         const response = await fetch('/api/events', {
          method: 'POST',
-         body: JSON.stringfy({title, description, addressOne, addressTwo, date, feature}),
+         body: JSON.stringfy({title, description, addressOne, addressTwo, date, feature, image}),
          headers: { "Content-Type": "application/JSON" }
         }
         )
@@ -56,6 +58,14 @@ function EventUpdate(){
                 <input type="text" id="addressOne" require ref={addressOneRef} placeholder="Street Address"/>
                 <label htmlFor="addressTwo">Address 2</label>
                 <input type="text" id="addressTwo" require ref={addressTwoRef} placeholder="City State  Zip" />
+                </div>
+                <div className={classes.control}>
+                <label htmlFor="eventType">Event Type</label>
+                    <select className={classes.select} id="eventType" name="eventType" ref={imageRef}>
+                        <option value="/images/Skully.png">Chapter events</option>
+                        <option value="/images/events/fullPatch.jpeg">State/Regional/National Events</option>
+                        <option value="/images/events/pokerRun.png">Poker Runs</option>
+                    </select>
                 </div>
                 <div className={classes.control}>
                 <label htmlFor="date">Date</label>
