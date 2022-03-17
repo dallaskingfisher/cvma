@@ -45,23 +45,23 @@ function EventUpdate(){
             <form onSubmit={submitHandler}>
                 <div className={classes.control}>
                     <label htmlFor="title">Title</label>
-                    <input type="text" id="title" require ref={titleRef} />
+                    <input type="text" id="title" required ref={titleRef} />
                 </div>
                 <div className={classes.control}>
                     <label htmlFor="description">Event Description</label>
-                    <textarea id="description" require ref={descrptionRef} rows="10" cols="40">
+                    <textarea id="description" required ref={descrptionRef} rows="10" cols="40">
 
                     </textarea>
                 </div>
                 <div className={classes.control}>
                 <label htmlFor="addressOne">Address 1</label>
-                <input type="text" id="addressOne" require ref={addressOneRef} placeholder="Street Address"/>
+                <input type="text" id="addressOne" required ref={addressOneRef} placeholder="Street Address"/>
                 <label htmlFor="addressTwo">Address 2</label>
-                <input type="text" id="addressTwo" require ref={addressTwoRef} placeholder="City State  Zip" />
+                <input type="text" id="addressTwo" required ref={addressTwoRef} placeholder="City State  Zip" />
                 </div>
                 <div className={classes.control}>
                 <label htmlFor="eventType">Event Type</label>
-                    <select className={classes.select} id="eventType" name="eventType" ref={imageRef}>
+                    <select className={classes.select} id="eventType" name="eventType" ref={imageRef} required>
                         <option value="/images/Skully.png">Chapter events</option>
                         <option value="/images/events/fullPatch.jpeg">State/Regional/National Events</option>
                         <option value="/images/events/pokerRun.png">Poker Runs</option>
@@ -69,7 +69,7 @@ function EventUpdate(){
                 </div>
                 <div className={classes.control}>
                 <label htmlFor="date">Date</label>
-                <input type="date" require ref={dateRef} />
+                <input type="date" required ref={dateRef} />
                 <label htmlFor="feature">Public Event</label>
                 <input type="checkbox" id="feature" name="feature" value="true" ref={featureRef} />
                 
