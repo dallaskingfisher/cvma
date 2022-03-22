@@ -36,6 +36,9 @@
     text-align: left;
     padding: 0.25rem;
   }
+  .control input::placeholder{
+    color: black;
+  }
   .control textarea {
     font: inherit;
     background-color: rgba(183, 176, 176, 0.807);

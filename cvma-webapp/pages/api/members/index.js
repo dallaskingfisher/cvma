@@ -5,7 +5,7 @@ async function handler(req, res){
 
 
  if(req.method === 'POST')   {
- const memberId = req.body.memberId;
+ const memberId = req.body.name;
  const client = await connectDatabase();
  const collection = client.db().collection('members');
  const member = await collection.findOne({ memberId: memberId})
