@@ -6,15 +6,15 @@ import classes from './event-item.module.css';
 import Image from 'next/image';
 
 function EventItem(props) {
-  const { title, image, date, location, id } = props;
-
+  const { title, image, date, address, _id } = props;
+  console.log(props)
   const humanReadableDate = new Date(date).toLocaleDateString('en-US', {
     day: 'numeric',
     month: 'long',
     year: 'numeric'
   });
-  const formattedAddress = location.replace(',', '\n');
-  const exploreLink = `/events/${id}`;
+  const formattedAddress = address.replace('-', '\n');
+  const exploreLink = `/events/${_id}`;
 
   return (
     <li className={classes.item}>

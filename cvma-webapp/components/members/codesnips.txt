@@ -1,0 +1,19 @@
+if(req.method === 'GET'){
+    const client = await connectDatabase();
+    const collection = client.db().collection('members');
+    const data = await collection.find({}).toArray();
+    
+    res.status(200).json({ data})
+}
+
+
+useEffect(() => {
+        
+        fetch('/api/members',{
+                method: 'POST' ,
+                body: JSON.stringify({memberId}),
+                headers: {'Content-Type': 'application/json'}
+            }).then(response => response.json()).then(data => setMemberInfo(data))
+          
+         
+    },[])

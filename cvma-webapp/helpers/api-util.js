@@ -1,4 +1,3 @@
-import fs from 'fs';
 import { hash, compare } from 'bcryptjs';
 
 export async function hashPasswd(password) {
@@ -23,17 +22,17 @@ export function extractData(filePath){
 
 
 export async function getAllEvents() {
-  const response = await fetch('https://fir-4e699-default-rtdb.firebaseio.com/events.json');
-  const data = await response.json();
+  const response = await fetch('http://localhost:3000/api/events');
+  const events = await response.json();
 
-  const events = [];
+  // const events = [];
 
-  for (const key in data) {
-    events.push({
-      id: key,
-      ...data[key]
-    });
-  }
+  // for (const key in data) {
+  //   events.push({
+  //     id: key,
+  //     ...data[key]
+  //   });
+  //}
 
   return events;
 }
