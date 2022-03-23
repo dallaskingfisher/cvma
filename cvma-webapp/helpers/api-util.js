@@ -14,11 +14,11 @@ export async function verifyPasswd (passwd, hashedPasswd) {
 
 //----------------------------------------------------------------
 // Update all function to use mongo cvma database once done with authentication.
-export function extractData(filePath){
-   const fileData = fs.readFileSync(filePath);
-   const data = JSON.parse(fileData);
-   return data;
-}
+// export function extractData(filePath){
+//    const fileData = fs.readFileSync(filePath);
+//    const data = JSON.parse(fileData);
+//    return data;
+// }
 
 
 export async function getAllEvents() {
@@ -39,12 +39,19 @@ export async function getAllEvents() {
 
 export async function getFeaturedEvents() {
   const allEvents = await getAllEvents();
-  return allEvents.filter((event) => event.isFeatured);
+  const event = allEvents.data.filter(event => event.id === event.id)
+
+  return event;
 }
 
 export async function getEventById(id) {
+  const eventId = id;
+  console.log(eventId)
   const allEvents = await getAllEvents();
-  return allEvents.find((event) => event.id === id);
+  console.log(allEvents)
+ const result = allEvents.data.find(event => event.id === event.eventId)
+ console.log(result)
+ return result;
 }
 
 export async function getFilteredEvents(dateFilter) {
@@ -59,3 +66,4 @@ export async function getFilteredEvents(dateFilter) {
 
   return filteredEvents;
 }
+

@@ -4,25 +4,24 @@ import MemberUpdate from "../../components/members/memberUpdate";
 import {useState, useEffect } from 'react';
 function Members(props) {
     const { name, email } = props.session.user
-    const [memberInfo, setMemberInfo ] = useState();
    
-    useEffect(() => {
-      fetch("/api/members", {
-        method: "POST",
-        body: JSON.stringify({ name }),
-        headers: { "Content-Type": "application/json" },
-      })
-        .then((response) => response.json())
-        .then((data) => setMemberInfo(data));
-    }, []);
-  //  console.log(memberInfo)
+   console.log(props.session.user)
+   console.log(props.members)
+   const members = props.members
+   const member = members.data.find(element => element.memberId === props.session.user.name)
+
+   
+    
+  
+
+
   return (
     <section>
       <div>
         <h1>Members Area</h1>
       </div>
       <div>Member Info
-          <MemberUpdate  user={memberInfo}/>
+          <MemberUpdate  user={member} />
       </div>
       <div>Doucuments</div>
       <div>
@@ -35,8 +34,7 @@ function Members(props) {
 
 export async function getServerSideProps(context) {
   const session = await getSession({ req: context.req });
-  const memberId = session.user.name;
-
+  const members = await fetch("http://localhost:3000/api/members/memberUpdate").then(response => response.json())
   if (!session) {
     return {
       redirect: {
@@ -48,7 +46,8 @@ export async function getServerSideProps(context) {
  
  
 
-  return { props:{session}};
+  return { props:{session,members: members } 
+};
 }
 
 export default Members;

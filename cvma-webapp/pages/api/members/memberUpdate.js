@@ -1,6 +1,15 @@
 import { connectDatabase } from "../../../helpers/db-util";
 
+
+
 async function handler(req, res) {
+
+  const client = await connectDatabase();
+    const collection = client.db().collection('members');
+    const data = await collection.find({}).toArray();
+    
+    res.status(200).json({ data})
+
   if (req.method === "POST") {
     const memberId = req.body.memberId;
     const roadName = req.body.roadNameUpdate;

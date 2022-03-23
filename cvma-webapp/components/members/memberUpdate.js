@@ -1,49 +1,24 @@
 import classes from "./memberUpdate.module.css";
-import { useEffect, useState, useRef } from "react";
+import { useRef } from "react";
 
 function MemberUpdate(props) {
-  //   const [memberInfo, setMemberInfo] = useState();
+ 
 
-  //   useEffect(() => {
-  //     fetch("/api/members", {
-  //       method: "POST",
-  //       body: JSON.stringify({ memberId }),
-  //       headers: { "Content-Type": "application/json" },
-  //     })
-  //       .then((response) => response.json())
-  //       .then((data) => setMemberInfo(data));
-  //   }, []);
-  let firstName;
-  let lastName;
-  let cellPhone;
-  let homePhone;
-  let address;
-  let city;
-  let state;
-  let zip;
-  let roadName;
-  let iceName;
-  let iceNumber;
-  let email;
-  let memberId;
-
-  if (!props.user) {
-    const Loading = <p>Loading ...</p>;
-  } else {
-    firstName = props.user.member.firstName;
-    lastName = props.user.member.lastName;
-    cellPhone = props.user.member.cellPhone;
-    homePhone = props.user.member.homePhone;
-    address = props.user.member.address;
-    city = props.user.member.city;
-    state = props.user.member.state;
-    zip = props.user.member.zip;
-    roadName = props.user.member.roadName;
-    iceName = props.user.member.iceName;
-    iceNumber = props.user.member.iceNumber;
-    email = props.user.member.email;
-    memberId = props.user.member.memberId;
-  }
+ 
+    const firstName = props.user.firstName;
+    const lastName = props.user.lastName;
+    const cellPhone = props.user.cellPhone;
+    const homePhone = props.user.homePhone;
+    const address = props.user.address;
+    const city = props.user.city;
+   const  state = props.user.state;
+    const zip = props.user.zip;
+    const roadName = props.user.roadName;
+    const iceName = props.user.iceName;
+    const iceNumber = props.user.iceNumber;
+    const email = props.user.email;
+    const memberId = props.user.memberId;
+  
 
   const roadNameUpdateRef = useRef();
   const cellPhoneUpdateRef = useRef();

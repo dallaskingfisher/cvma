@@ -54,7 +54,7 @@ function EventDetailPage(props) {
 }
 
 export async function getStaticProps(context) {
-  const eventId = context.params.eventId;
+  const eventId = context.params.eventid;
   
   const event = await getEventById(eventId);
   
@@ -69,7 +69,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   const events = await getFeaturedEvents();
-
+ console.log(events)
   const paths = events.map(event => ({ params: { eventId: event.id } }));
 
   return {

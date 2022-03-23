@@ -35,20 +35,9 @@ export default NextAuth({
         // if so will store an object.
         //================================================================
         return {
-          memberId: user.memberId,
-          role: user.role,
-          firstName: user.firstName,
-          lastName: user.lastName,
-          roadName: user.roadName,
-          address: user.address,
-          city: user.city,
-          state: user.state,
-          zip: user.zip,
-          email: user.email,
-          cellPhone: user.cellPhone,
-          homePhone: user.homePhone,
-          iceName: user.iceName,
-          iceNumber: user.iceNumber
+          name: user.memberId,
+          email: user.email
+          
         };
       },
     }),
