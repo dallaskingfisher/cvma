@@ -17,9 +17,7 @@
 .image {
   width: 10rem;
   height: 10rem;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 5px solid rgb(255,204,1);
+  overflow: hidden; 
 }
 
 .image img {

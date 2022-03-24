@@ -18,7 +18,7 @@ function AllEventsPage(props) {
       }
     })
   },[router])
-
+  console.log(props.events)
   function findEventsHandler(year, month) {
     const fullPath = `/events/${year}/${month}`;
 
@@ -32,7 +32,7 @@ function AllEventsPage(props) {
         <meta name='description' content='Combat Veterans Motorcycle Association 18 - 2 events'/>
       </Head>
       <EventsSearch onSearch={findEventsHandler} />
-      <EventList items={events} />
+      <EventList items={events.data} />
     </Fragment>
   );
 }

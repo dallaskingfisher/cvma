@@ -46,11 +46,11 @@ export async function getFeaturedEvents() {
 
 export async function getEventById(id) {
   const eventId = id;
-  console.log(eventId)
+ 
   const allEvents = await getAllEvents();
-  console.log(allEvents)
+
  const result = allEvents.data.find(event => event.id === event.eventId)
- console.log(result)
+
  return result;
 }
 
@@ -59,7 +59,7 @@ export async function getFilteredEvents(dateFilter) {
 
   const allEvents = await getAllEvents();
 
-  let filteredEvents = allEvents.filter((event) => {
+  let filteredEvents = allEvents.data.filter((event) => {
     const eventDate = new Date(event.date);
     return eventDate.getFullYear() === year && eventDate.getMonth() === month - 1;
   });

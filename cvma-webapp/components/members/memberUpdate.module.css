@@ -37,7 +37,7 @@
     padding: 0.25rem;
   }
   .control input::placeholder{
-    color: black;
+    color: rgb(255,204,1);
   }
   .control textarea {
     font: inherit;

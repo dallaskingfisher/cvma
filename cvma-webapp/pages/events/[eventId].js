@@ -41,7 +41,7 @@ function EventDetailPage(props) {
       <EventSummary title={event.title} />
       <EventLogistics
         date={event.date}
-        address={event.location}
+        address={event.address}
         image={event.image}
         imageAlt={event.title}
       />
@@ -69,8 +69,8 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   const events = await getFeaturedEvents();
- console.log(events)
-  const paths = events.map(event => ({ params: { eventId: event.id } }));
+
+  const paths = events.map(event => ({ params: { eventId: event._id } }));
 
   return {
     paths: paths,
