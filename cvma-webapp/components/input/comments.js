@@ -5,7 +5,7 @@ import NewComment from "./new-comment";
 import classes from "./comments.module.css";
 
 function Comments(props) {
-  const { eventId } = props;
+  const { eventId, firstName, lastName } = props;
 
   const [showComments, setShowComments] = useState(false);
   const [comments, setComments] = useState([]);
@@ -25,7 +25,7 @@ function Comments(props) {
 
   function addCommentHandler(commentData) {
     // send data to API
-
+    console.log(eventId, firstName, lastName)
     fetch(`/api/comments/${eventId}`, {
       method: "POST",
       body: JSON.stringify(commentData),
