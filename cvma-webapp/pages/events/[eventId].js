@@ -12,7 +12,7 @@ import Comments from '../../components/input/comments';
 function EventDetailPage(props) {
   const router = useRouter();
   const event = props.selectedEvent;
-  
+  console.log(event._id)
   useEffect(() => {
     getSession().then((session) => {
       if(!session){
@@ -48,7 +48,7 @@ function EventDetailPage(props) {
       <EventContent>
         <p>{event.description}</p>
       </EventContent>
-      <Comments eventId={event.id} />
+      <Comments eventId={event._id} firstName={event.firstName} lastName={event.lastName}/>
     </Fragment>
   );
 }
