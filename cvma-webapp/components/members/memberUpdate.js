@@ -43,7 +43,22 @@ function MemberUpdate(props) {
     const iceNameUpdate = iceNameUpdateRef.current.value;
     const iceNumberUpdate = iceNumberUpdateRef.current.value;
     const emailUpdate = emailUpdateRef.current.value;
-    console.log(addressUpdate);
+    //================================================================
+    // write if condition for empty varialbes
+    //================================================================
+
+    if(roadNameUpdate === undefined) {
+      roadNameUpdate = roadName;
+    }
+    if(cellPhoneUpdate === undefined) {
+      cellPhoneUpdate = cellPhone;
+    }
+    if(homePhoneUpdate === undefined) {
+      homePhoneUpdate = homePhone;
+    }
+    if(addressUpdate === undefined) {
+      addressUpdate = address;
+    }
     const response = await fetch("/api/members/memberUpdate", {
       method: "POST",
       body: JSON.stringify({

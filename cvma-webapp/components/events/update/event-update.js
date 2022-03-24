@@ -24,9 +24,9 @@ function EventUpdate(){
 
 
         
-        const response = await fetch('/api/events', {
+        const response = await fetch('/api/events/eventsupdate', {
          method: 'POST',
-         body: JSON.stringfy({title, description, addressOne, addressTwo, date, feature, image}),
+         body: JSON.stringify({title, description, addressOne, addressTwo, date, feature, image}),
          headers: { "Content-Type": "application/JSON" }
         }
         )
@@ -42,6 +42,7 @@ function EventUpdate(){
         <section className={classes.background}>
             <h1>Add New Event</h1>
             {savedMessage}
+
             <form onSubmit={submitHandler}>
                 <div className={classes.control}>
                     <label htmlFor="title">Title</label>
@@ -62,16 +63,16 @@ function EventUpdate(){
                 <div className={classes.control}>
                 <label htmlFor="eventType">Event Type</label>
                     <select className={classes.select} id="eventType" name="eventType" ref={imageRef} required>
-                        <option value="/images/Skully.png">Chapter events</option>
-                        <option value="/images/events/fullPatch.jpeg">State/Regional/National Events</option>
-                        <option value="/images/events/pokerRun.png">Poker Runs</option>
+                        <option value="images/Skully.png">Chapter events</option>
+                        <option value="images/events/fullPatch.jpeg">State/Regional/National Events</option>
+                        <option value="images/events/pokerRun.png">Poker Runs</option>
                     </select>
                 </div>
                 <div className={classes.control}>
                 <label htmlFor="date">Date</label>
                 <input type="date" required ref={dateRef} />
                 <label htmlFor="feature">Public Event</label>
-                <input type="checkbox" id="feature" name="feature" value="true" ref={featureRef} />
+                <input type="checkbox" id="feature" name="feature" value="false" ref={featureRef} />
                 
                 </div>
                 <div className={classes.control}>
