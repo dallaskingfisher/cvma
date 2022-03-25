@@ -25,15 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/events": [
+    "/members": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/events.js"
-    ],
-    "/events/[eventId]": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/events/[eventId].js"
+      "static/chunks/pages/members.js"
     ]
   },
   "ampFirstPages": []

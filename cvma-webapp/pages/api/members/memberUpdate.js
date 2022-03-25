@@ -4,11 +4,6 @@ import { connectDatabase } from "../../../helpers/db-util";
 
 async function handler(req, res) {
 
-  const client = await connectDatabase();
-    const collection = client.db().collection('members');
-    const data = await collection.find({}).toArray();
-    
-    res.status(200).json({ data})
 
   if (req.method === "POST") {
     const memberId = req.body.memberId;
@@ -25,7 +20,7 @@ async function handler(req, res) {
 
     const client = await connectDatabase();
     const collection = client.db().collection("members");
-    const updateUser = await collection.updateOne(
+    await collection.updateOne(
       { memberId: memberId },
       {
         $set: {
@@ -42,7 +37,15 @@ async function handler(req, res) {
         },
       }
     );
-    res.status(200).json({message: updateUser});
+    res.status(200).json({message: "Info Updated"});
   }
+  if(req.method === "GET"){
+    const client = await connectDatabase();
+    const collection = client.db().collection('members');
+    const data = await collection.find({}).toArray();
+    
+    res.status(200).json({ data})
+  }
+  
 }
 export default handler;

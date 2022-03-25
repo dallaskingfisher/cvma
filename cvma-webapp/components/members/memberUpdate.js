@@ -1,9 +1,9 @@
 import classes from "./memberUpdate.module.css";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 function MemberUpdate(props) {
  
-
+    const [message, setMessage] = useState();
  
     const firstName = props.user.firstName;
     const lastName = props.user.lastName;
@@ -33,32 +33,51 @@ function MemberUpdate(props) {
 
   async function updateMemberHandler(event) {
     event.preventDefault();
-    const roadNameUpdate = roadNameUpdateRef.current.value;
-    const cellPhoneUpdate = cellPhoneUpdateRef.current.value;
-    const homePhoneUpdate = homePhoneUpdateRef.current.value;
-    const addressUpdate = addressUpdateRef.current.value;
-    const cityUpdate = cityUpdateRef.current.value;
-    const stateUpdate = stateUpdateRef.current.value;
-    const zipUpdate = zipUpdateRef.current.value;
-    const iceNameUpdate = iceNameUpdateRef.current.value;
-    const iceNumberUpdate = iceNumberUpdateRef.current.value;
-    const emailUpdate = emailUpdateRef.current.value;
+    let roadNameUpdate = roadNameUpdateRef.current.value;
+    let cellPhoneUpdate = cellPhoneUpdateRef.current.value;
+    let homePhoneUpdate = homePhoneUpdateRef.current.value;
+    let addressUpdate = addressUpdateRef.current.value;
+    let cityUpdate = cityUpdateRef.current.value;
+    let stateUpdate = stateUpdateRef.current.value;
+    let zipUpdate = zipUpdateRef.current.value;
+    let iceNameUpdate = iceNameUpdateRef.current.value;
+    let iceNumberUpdate = iceNumberUpdateRef.current.value;
+    let emailUpdate = emailUpdateRef.current.value;
     //================================================================
     // write if condition for empty varialbes
     //================================================================
-
-    if(roadNameUpdate === undefined) {
+    
+    if(!roadNameUpdate) {
       roadNameUpdate = roadName;
     }
-    if(cellPhoneUpdate === undefined) {
+    if(!cellPhoneUpdate) {
       cellPhoneUpdate = cellPhone;
     }
-    if(homePhoneUpdate === undefined) {
+    if(!homePhoneUpdate) {
       homePhoneUpdate = homePhone;
     }
-    if(addressUpdate === undefined) {
+    if(!addressUpdate ) {
       addressUpdate = address;
     }
+    if(!cityUpdate ) {
+      cityUpdate = city;
+    }
+    if(!stateUpdate ) {
+      stateUpdate = state;
+    }
+    if(!zipUpdate ) {
+      zipUpdate = zip;
+    }
+    if(!emailUpdate ) {
+      emailUpdate = email;
+    }
+    if(!iceNameUpdate ) {
+      iceNameUpdate = iceName;
+    }
+    if(!iceNumberUpdate ) {
+      iceNumberUpdate = iceNumber;
+    }
+
     const response = await fetch("/api/members/memberUpdate", {
       method: "POST",
       body: JSON.stringify({
@@ -76,13 +95,16 @@ function MemberUpdate(props) {
       }),
       headers: { "Content-Type": "application/json" },
     });
-    const message = await response.json();
-    console.log(message);
+    const data = await response.json();
+    const responseMessage = <p className={classes.error}>{data.message}</p>
+    setMessage(responseMessage)
+
   }
   return (
     <section className={classes.background}>
       <h1>Member Information</h1>
       <div>
+        {message ? message : ''}
         <div>
           {memberId} {firstName} {lastName}
         </div>
