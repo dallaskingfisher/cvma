@@ -1,6 +1,8 @@
 import { getSession } from "next-auth/client";
 import EventUpdate from "../../components/events/update/event-update";
 import MemberUpdate from "../../components/members/memberUpdate";
+import MemberNew from "../../components/members/memberNew";
+import classes from "../../styles/member.module.css";
 
 function Members(props) {
   return (
@@ -8,13 +10,20 @@ function Members(props) {
       <div>
         <h1>Members Area</h1>
       </div>
-      <div>Member Info
+     <div className={classes.adminouterbox}>
+     <div className={classes.memberUpdate}>
           <MemberUpdate  user={props.member} />
       </div>
+     </div>
       <div>Doucuments</div>
-      <div>
-        admin pannel
+      <div className={classes.adminouterbox}>
+       
+        <div>
         <EventUpdate />
+        </div>
+        <div className={classes.memberNew}>
+          <MemberNew />
+          </div>
       </div>
     </section>
   );

@@ -1,0 +1,11 @@
+.adminouterbox {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+.memberNew {
+    width: 25rem;
+}
+.memberUpdate {
+    width: 50rem;
+}
