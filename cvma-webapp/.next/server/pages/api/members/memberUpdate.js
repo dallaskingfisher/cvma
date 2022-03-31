@@ -1,45 +1,104 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/api/members/memberUpdate";
-exports.ids = ["pages/api/members/memberUpdate"];
+exports.id = 553;
+exports.ids = [553];
 exports.modules = {
 
-/***/ "mongodb":
-/*!**************************!*\
-  !*** external "mongodb" ***!
-  \**************************/
+/***/ 8013:
 /***/ ((module) => {
 
 module.exports = require("mongodb");
 
 /***/ }),
 
-/***/ "(api)/./helpers/db-util.js":
-/*!****************************!*\
-  !*** ./helpers/db-util.js ***!
-  \****************************/
+/***/ 1993:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"connectDatabase\": () => (/* binding */ connectDatabase),\n/* harmony export */   \"insertDocument\": () => (/* binding */ insertDocument),\n/* harmony export */   \"findComments\": () => (/* binding */ findComments)\n/* harmony export */ });\n/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mongodb */ \"mongodb\");\n/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongodb__WEBPACK_IMPORTED_MODULE_0__);\n\nconst password = 'bunbuns2022';\nconst database = 'cvma';\nasync function connectDatabase() {\n    const client = await mongodb__WEBPACK_IMPORTED_MODULE_0__.MongoClient.connect('mongodb+srv://dallasking:bunbuns2022@test.3r6zb.mongodb.net/cvma?retryWrites=true&w=majority');\n    return client;\n}\nasync function insertDocument(client, collection, document) {\n    const db = client.db();\n    const result = await db.collection(collection).insertOne(document);\n    client.close();\n    return result;\n}\nasync function findComments(client, collection, sort, filter) {\n    const db = client.db();\n    const document = await db.collection(collection).find(filter).sort(sort).toArray();\n    return document;\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9oZWxwZXJzL2RiLXV0aWwuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7QUFBcUM7QUFFckMsS0FBSyxDQUFDQyxRQUFRLEdBQUcsQ0FBYTtBQUM5QixLQUFLLENBQUNDLFFBQVEsR0FBRyxDQUFNO0FBRWhCLGVBQWVDLGVBQWUsR0FBRyxDQUFDO0lBQ3ZDLEtBQUssQ0FBQ0MsTUFBTSxHQUFHLEtBQUssQ0FBQ0osd0RBQW1CLENBQ3RDLENBQThGO0lBRWhHLE1BQU0sQ0FBQ0ksTUFBTTtBQUNmLENBQUM7QUFFTSxlQUFlRSxjQUFjLENBQUNGLE1BQU0sRUFBRUcsVUFBVSxFQUFFQyxRQUFRLEVBQUUsQ0FBQztJQUNsRSxLQUFLLENBQUNDLEVBQUUsR0FBR0wsTUFBTSxDQUFDSyxFQUFFO0lBQ3BCLEtBQUssQ0FBQ0MsTUFBTSxHQUFHLEtBQUssQ0FBQ0QsRUFBRSxDQUFDRixVQUFVLENBQUNBLFVBQVUsRUFBRUksU0FBUyxDQUFDSCxRQUFRO0lBQ2pFSixNQUFNLENBQUNRLEtBQUs7SUFDWixNQUFNLENBQUNGLE1BQU07QUFDZixDQUFDO0FBRU0sZUFBZUcsWUFBWSxDQUFDVCxNQUFNLEVBQUVHLFVBQVUsRUFBRU8sSUFBSSxFQUFFQyxNQUFNLEVBQUUsQ0FBQztJQUNwRSxLQUFLLENBQUNOLEVBQUUsR0FBR0wsTUFBTSxDQUFDSyxFQUFFO0lBQ3BCLEtBQUssQ0FBQ0QsUUFBUSxHQUFHLEtBQUssQ0FBQ0MsRUFBRSxDQUN0QkYsVUFBVSxDQUFDQSxVQUFVLEVBQ3JCUyxJQUFJLENBQUNELE1BQU0sRUFDWEQsSUFBSSxDQUFDQSxJQUFJLEVBQ1RHLE9BQU87SUFFVixNQUFNLENBQUNULFFBQVE7QUFDakIsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL25leHRqcy1yb3V0aW5nLWNvdXJzZS8uL2hlbHBlcnMvZGItdXRpbC5qcz9mNTc3Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IE1vbmdvQ2xpZW50IH0gZnJvbSBcIm1vbmdvZGJcIjtcblxuY29uc3QgcGFzc3dvcmQgPSAnYnVuYnVuczIwMjInO1xuY29uc3QgZGF0YWJhc2UgPSAnY3ZtYSdcblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGNvbm5lY3REYXRhYmFzZSgpIHtcbiAgY29uc3QgY2xpZW50ID0gYXdhaXQgTW9uZ29DbGllbnQuY29ubmVjdChcbiAgICAnbW9uZ29kYitzcnY6Ly9kYWxsYXNraW5nOmJ1bmJ1bnMyMDIyQHRlc3QuM3I2emIubW9uZ29kYi5uZXQvY3ZtYT9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHknXG4gICk7XG4gIHJldHVybiBjbGllbnQ7XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBpbnNlcnREb2N1bWVudChjbGllbnQsIGNvbGxlY3Rpb24sIGRvY3VtZW50KSB7XG4gIGNvbnN0IGRiID0gY2xpZW50LmRiKCk7XG4gIGNvbnN0IHJlc3VsdCA9IGF3YWl0IGRiLmNvbGxlY3Rpb24oY29sbGVjdGlvbikuaW5zZXJ0T25lKGRvY3VtZW50KTtcbiAgY2xpZW50LmNsb3NlKCk7XG4gIHJldHVybiByZXN1bHQ7XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBmaW5kQ29tbWVudHMoY2xpZW50LCBjb2xsZWN0aW9uLCBzb3J0LCBmaWx0ZXIpIHtcbiAgY29uc3QgZGIgPSBjbGllbnQuZGIoKTtcbiAgY29uc3QgZG9jdW1lbnQgPSBhd2FpdCBkYlxuICAgIC5jb2xsZWN0aW9uKGNvbGxlY3Rpb24pXG4gICAgLmZpbmQoZmlsdGVyKVxuICAgIC5zb3J0KHNvcnQpXG4gICAgLnRvQXJyYXkoKTtcbiAgXG4gIHJldHVybiBkb2N1bWVudDtcbn1cbiJdLCJuYW1lcyI6WyJNb25nb0NsaWVudCIsInBhc3N3b3JkIiwiZGF0YWJhc2UiLCJjb25uZWN0RGF0YWJhc2UiLCJjbGllbnQiLCJjb25uZWN0IiwiaW5zZXJ0RG9jdW1lbnQiLCJjb2xsZWN0aW9uIiwiZG9jdW1lbnQiLCJkYiIsInJlc3VsdCIsImluc2VydE9uZSIsImNsb3NlIiwiZmluZENvbW1lbnRzIiwic29ydCIsImZpbHRlciIsImZpbmQiLCJ0b0FycmF5Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./helpers/db-util.js\n");
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "TR": () => (/* binding */ connectDatabase),
+/* harmony export */   "qi": () => (/* binding */ insertDocument),
+/* harmony export */   "i4": () => (/* binding */ findComments)
+/* harmony export */ });
+/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8013);
+/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongodb__WEBPACK_IMPORTED_MODULE_0__);
+
+const password = 'bunbuns2022';
+const database = 'cvma';
+async function connectDatabase() {
+    const client = await mongodb__WEBPACK_IMPORTED_MODULE_0__.MongoClient.connect('mongodb+srv://dallasking:bunbuns2022@test.3r6zb.mongodb.net/cvma?retryWrites=true&w=majority');
+    return client;
+}
+async function insertDocument(client, collection, document) {
+    const db = client.db();
+    const result = await db.collection(collection).insertOne(document);
+    client.close();
+    return result;
+}
+async function findComments(client, collection, sort, filter) {
+    const db = client.db();
+    const document = await db.collection(collection).find(filter).sort(sort).toArray();
+    return document;
+}
+
 
 /***/ }),
 
-/***/ "(api)/./pages/api/members/memberUpdate.js":
-/*!*******************************************!*\
-  !*** ./pages/api/members/memberUpdate.js ***!
-  \*******************************************/
+/***/ 1543:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _helpers_db_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../helpers/db-util */ \"(api)/./helpers/db-util.js\");\n\nasync function handler(req, res) {\n    if (req.method === \"POST\") {\n        const memberId = req.body.memberId;\n        const roadName = req.body.roadNameUpdate;\n        const cellPhone = req.body.cellPhoneUpdate;\n        const homePhone = req.body.homePhoneUpdate;\n        const address = req.body.addressUpdate;\n        const city = req.body.cityUpdate;\n        const state = req.body.stateUpdate;\n        const zip = req.body.zipUpdate;\n        const iceName = req.body.iceNameUpdate;\n        const iceNumber = req.body.iceNumberUpdate;\n        const email = req.body.emailUpdate;\n        const client = await (0,_helpers_db_util__WEBPACK_IMPORTED_MODULE_0__.connectDatabase)();\n        const collection = client.db().collection(\"members\");\n        await collection.updateOne({\n            memberId: memberId\n        }, {\n            $set: {\n                roadName: roadName,\n                address: address,\n                city: city,\n                state: state,\n                zip: zip,\n                iceName: iceName,\n                iceNumber: iceNumber,\n                cellPhone: cellPhone,\n                homePhone: homePhone,\n                email: email\n            }\n        });\n        res.status(200).json({\n            message: \"Info Updated\"\n        });\n    }\n    if (req.method === \"GET\") {\n        const client = await (0,_helpers_db_util__WEBPACK_IMPORTED_MODULE_0__.connectDatabase)();\n        const collection = client.db().collection('members');\n        const data = await collection.find({}).toArray();\n        res.status(200).json({\n            data\n        });\n    }\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (handler);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wYWdlcy9hcGkvbWVtYmVycy9tZW1iZXJVcGRhdGUuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBMEQ7ZUFJM0NDLE9BQU8sQ0FBQ0MsR0FBRyxFQUFFQyxHQUFHLEVBQUUsQ0FBQztJQUdoQyxFQUFFLEVBQUVELEdBQUcsQ0FBQ0UsTUFBTSxLQUFLLENBQU0sT0FBRSxDQUFDO1FBQzFCLEtBQUssQ0FBQ0MsUUFBUSxHQUFHSCxHQUFHLENBQUNJLElBQUksQ0FBQ0QsUUFBUTtRQUNsQyxLQUFLLENBQUNFLFFBQVEsR0FBR0wsR0FBRyxDQUFDSSxJQUFJLENBQUNFLGNBQWM7UUFDeEMsS0FBSyxDQUFDQyxTQUFTLEdBQUdQLEdBQUcsQ0FBQ0ksSUFBSSxDQUFDSSxlQUFlO1FBQzFDLEtBQUssQ0FBQ0MsU0FBUyxHQUFHVCxHQUFHLENBQUNJLElBQUksQ0FBQ00sZUFBZTtRQUMxQyxLQUFLLENBQUNDLE9BQU8sR0FBR1gsR0FBRyxDQUFDSSxJQUFJLENBQUNRLGFBQWE7UUFDdEMsS0FBSyxDQUFDQyxJQUFJLEdBQUdiLEdBQUcsQ0FBQ0ksSUFBSSxDQUFDVSxVQUFVO1FBQ2hDLEtBQUssQ0FBQ0MsS0FBSyxHQUFHZixHQUFHLENBQUNJLElBQUksQ0FBQ1ksV0FBVztRQUNsQyxLQUFLLENBQUNDLEdBQUcsR0FBR2pCLEdBQUcsQ0FBQ0ksSUFBSSxDQUFDYyxTQUFTO1FBQzlCLEtBQUssQ0FBQ0MsT0FBTyxHQUFHbkIsR0FBRyxDQUFDSSxJQUFJLENBQUNnQixhQUFhO1FBQ3RDLEtBQUssQ0FBQ0MsU0FBUyxHQUFHckIsR0FBRyxDQUFDSSxJQUFJLENBQUNrQixlQUFlO1FBQzFDLEtBQUssQ0FBQ0MsS0FBSyxHQUFHdkIsR0FBRyxDQUFDSSxJQUFJLENBQUNvQixXQUFXO1FBRWxDLEtBQUssQ0FBQ0MsTUFBTSxHQUFHLEtBQUssQ0FBQzNCLGlFQUFlO1FBQ3BDLEtBQUssQ0FBQzRCLFVBQVUsR0FBR0QsTUFBTSxDQUFDRSxFQUFFLEdBQUdELFVBQVUsQ0FBQyxDQUFTO1FBQ25ELEtBQUssQ0FBQ0EsVUFBVSxDQUFDRSxTQUFTLENBQ3hCLENBQUM7WUFBQ3pCLFFBQVEsRUFBRUEsUUFBUTtRQUFDLENBQUMsRUFDdEIsQ0FBQztZQUNDMEIsSUFBSSxFQUFFLENBQUM7Z0JBQ0x4QixRQUFRLEVBQUVBLFFBQVE7Z0JBQ2xCTSxPQUFPLEVBQUVBLE9BQU87Z0JBQ2hCRSxJQUFJLEVBQUVBLElBQUk7Z0JBQ1ZFLEtBQUssRUFBRUEsS0FBSztnQkFDWkUsR0FBRyxFQUFFQSxHQUFHO2dCQUNSRSxPQUFPLEVBQUVBLE9BQU87Z0JBQ2hCRSxTQUFTLEVBQUVBLFNBQVM7Z0JBQ3BCZCxTQUFTLEVBQUVBLFNBQVM7Z0JBQ3BCRSxTQUFTLEVBQUVBLFNBQVM7Z0JBQ3BCYyxLQUFLLEVBQUVBLEtBQUs7WUFDZCxDQUFDO1FBQ0gsQ0FBQztRQUVIdEIsR0FBRyxDQUFDNkIsTUFBTSxDQUFDLEdBQUcsRUFBRUMsSUFBSSxDQUFDLENBQUNDO1lBQUFBLE9BQU8sRUFBRSxDQUFjO1FBQUEsQ0FBQztJQUNoRCxDQUFDO0lBQ0QsRUFBRSxFQUFDaEMsR0FBRyxDQUFDRSxNQUFNLEtBQUssQ0FBSyxNQUFDLENBQUM7UUFDdkIsS0FBSyxDQUFDdUIsTUFBTSxHQUFHLEtBQUssQ0FBQzNCLGlFQUFlO1FBQ3BDLEtBQUssQ0FBQzRCLFVBQVUsR0FBR0QsTUFBTSxDQUFDRSxFQUFFLEdBQUdELFVBQVUsQ0FBQyxDQUFTO1FBQ25ELEtBQUssQ0FBQ08sSUFBSSxHQUFHLEtBQUssQ0FBQ1AsVUFBVSxDQUFDUSxJQUFJLENBQUMsQ0FBQyxDQUFDLEVBQUVDLE9BQU87UUFFOUNsQyxHQUFHLENBQUM2QixNQUFNLENBQUMsR0FBRyxFQUFFQyxJQUFJLENBQUMsQ0FBQztZQUFDRSxJQUFJO1FBQUEsQ0FBQztJQUM5QixDQUFDO0FBRUgsQ0FBQztBQUNELGlFQUFlbEMsT0FBTyxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbmV4dGpzLXJvdXRpbmctY291cnNlLy4vcGFnZXMvYXBpL21lbWJlcnMvbWVtYmVyVXBkYXRlLmpzPzc5MTUiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgY29ubmVjdERhdGFiYXNlIH0gZnJvbSBcIi4uLy4uLy4uL2hlbHBlcnMvZGItdXRpbFwiO1xuXG5cblxuYXN5bmMgZnVuY3Rpb24gaGFuZGxlcihyZXEsIHJlcykge1xuXG5cbiAgaWYgKHJlcS5tZXRob2QgPT09IFwiUE9TVFwiKSB7XG4gICAgY29uc3QgbWVtYmVySWQgPSByZXEuYm9keS5tZW1iZXJJZDtcbiAgICBjb25zdCByb2FkTmFtZSA9IHJlcS5ib2R5LnJvYWROYW1lVXBkYXRlO1xuICAgIGNvbnN0IGNlbGxQaG9uZSA9IHJlcS5ib2R5LmNlbGxQaG9uZVVwZGF0ZTtcbiAgICBjb25zdCBob21lUGhvbmUgPSByZXEuYm9keS5ob21lUGhvbmVVcGRhdGU7XG4gICAgY29uc3QgYWRkcmVzcyA9IHJlcS5ib2R5LmFkZHJlc3NVcGRhdGU7XG4gICAgY29uc3QgY2l0eSA9IHJlcS5ib2R5LmNpdHlVcGRhdGU7XG4gICAgY29uc3Qgc3RhdGUgPSByZXEuYm9keS5zdGF0ZVVwZGF0ZTtcbiAgICBjb25zdCB6aXAgPSByZXEuYm9keS56aXBVcGRhdGU7XG4gICAgY29uc3QgaWNlTmFtZSA9IHJlcS5ib2R5LmljZU5hbWVVcGRhdGU7XG4gICAgY29uc3QgaWNlTnVtYmVyID0gcmVxLmJvZHkuaWNlTnVtYmVyVXBkYXRlO1xuICAgIGNvbnN0IGVtYWlsID0gcmVxLmJvZHkuZW1haWxVcGRhdGU7XG5cbiAgICBjb25zdCBjbGllbnQgPSBhd2FpdCBjb25uZWN0RGF0YWJhc2UoKTtcbiAgICBjb25zdCBjb2xsZWN0aW9uID0gY2xpZW50LmRiKCkuY29sbGVjdGlvbihcIm1lbWJlcnNcIik7XG4gICAgYXdhaXQgY29sbGVjdGlvbi51cGRhdGVPbmUoXG4gICAgICB7IG1lbWJlcklkOiBtZW1iZXJJZCB9LFxuICAgICAge1xuICAgICAgICAkc2V0OiB7XG4gICAgICAgICAgcm9hZE5hbWU6IHJvYWROYW1lLFxuICAgICAgICAgIGFkZHJlc3M6IGFkZHJlc3MsXG4gICAgICAgICAgY2l0eTogY2l0eSxcbiAgICAgICAgICBzdGF0ZTogc3RhdGUsXG4gICAgICAgICAgemlwOiB6aXAsXG4gICAgICAgICAgaWNlTmFtZTogaWNlTmFtZSxcbiAgICAgICAgICBpY2VOdW1iZXI6IGljZU51bWJlcixcbiAgICAgICAgICBjZWxsUGhvbmU6IGNlbGxQaG9uZSxcbiAgICAgICAgICBob21lUGhvbmU6IGhvbWVQaG9uZSxcbiAgICAgICAgICBlbWFpbDogZW1haWxcbiAgICAgICAgfSxcbiAgICAgIH1cbiAgICApO1xuICAgIHJlcy5zdGF0dXMoMjAwKS5qc29uKHttZXNzYWdlOiBcIkluZm8gVXBkYXRlZFwifSk7XG4gIH1cbiAgaWYocmVxLm1ldGhvZCA9PT0gXCJHRVRcIil7XG4gICAgY29uc3QgY2xpZW50ID0gYXdhaXQgY29ubmVjdERhdGFiYXNlKCk7XG4gICAgY29uc3QgY29sbGVjdGlvbiA9IGNsaWVudC5kYigpLmNvbGxlY3Rpb24oJ21lbWJlcnMnKTtcbiAgICBjb25zdCBkYXRhID0gYXdhaXQgY29sbGVjdGlvbi5maW5kKHt9KS50b0FycmF5KCk7XG4gICAgXG4gICAgcmVzLnN0YXR1cygyMDApLmpzb24oeyBkYXRhfSlcbiAgfVxuICBcbn1cbmV4cG9ydCBkZWZhdWx0IGhhbmRsZXI7Il0sIm5hbWVzIjpbImNvbm5lY3REYXRhYmFzZSIsImhhbmRsZXIiLCJyZXEiLCJyZXMiLCJtZXRob2QiLCJtZW1iZXJJZCIsImJvZHkiLCJyb2FkTmFtZSIsInJvYWROYW1lVXBkYXRlIiwiY2VsbFBob25lIiwiY2VsbFBob25lVXBkYXRlIiwiaG9tZVBob25lIiwiaG9tZVBob25lVXBkYXRlIiwiYWRkcmVzcyIsImFkZHJlc3NVcGRhdGUiLCJjaXR5IiwiY2l0eVVwZGF0ZSIsInN0YXRlIiwic3RhdGVVcGRhdGUiLCJ6aXAiLCJ6aXBVcGRhdGUiLCJpY2VOYW1lIiwiaWNlTmFtZVVwZGF0ZSIsImljZU51bWJlciIsImljZU51bWJlclVwZGF0ZSIsImVtYWlsIiwiZW1haWxVcGRhdGUiLCJjbGllbnQiLCJjb2xsZWN0aW9uIiwiZGIiLCJ1cGRhdGVPbmUiLCIkc2V0Iiwic3RhdHVzIiwianNvbiIsIm1lc3NhZ2UiLCJkYXRhIiwiZmluZCIsInRvQXJyYXkiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(api)/./pages/api/members/memberUpdate.js\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _helpers_db_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1993);
+
+async function handler(req, res) {
+    if (req.method === "POST") {
+        const memberId = req.body.memberId;
+        const roadName = req.body.roadNameUpdate;
+        const cellPhone = req.body.cellPhoneUpdate;
+        const homePhone = req.body.homePhoneUpdate;
+        const address = req.body.addressUpdate;
+        const city = req.body.cityUpdate;
+        const state = req.body.stateUpdate;
+        const zip = req.body.zipUpdate;
+        const iceName = req.body.iceNameUpdate;
+        const iceNumber = req.body.iceNumberUpdate;
+        const email = req.body.emailUpdate;
+        const client = await (0,_helpers_db_util__WEBPACK_IMPORTED_MODULE_0__/* .connectDatabase */ .TR)();
+        const collection = client.db().collection("members");
+        await collection.updateOne({
+            memberId: memberId
+        }, {
+            $set: {
+                roadName: roadName,
+                address: address,
+                city: city,
+                state: state,
+                zip: zip,
+                iceName: iceName,
+                iceNumber: iceNumber,
+                cellPhone: cellPhone,
+                homePhone: homePhone,
+                email: email
+            }
+        });
+        res.status(200).json({
+            message: "Info Updated"
+        });
+    }
+    if (req.method === "GET") {
+        const client = await (0,_helpers_db_util__WEBPACK_IMPORTED_MODULE_0__/* .connectDatabase */ .TR)();
+        const collection = client.db().collection('members');
+        const data = await collection.find({}).toArray();
+        res.status(200).json({
+            data
+        });
+    }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (handler);
+
 
 /***/ })
 
@@ -50,7 +109,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 var __webpack_require__ = require("../../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("(api)/./pages/api/members/memberUpdate.js"));
+var __webpack_exports__ = (__webpack_exec__(1543));
 module.exports = __webpack_exports__;
 
 })();

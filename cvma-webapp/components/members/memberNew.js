@@ -15,6 +15,9 @@ function MemberNew() {
   const iceNameUpdateRef = useRef();
   const iceNumberUpdateRef = useRef();
   const emailUpdateRef = useRef();
+  const firstNameRef = useRef();
+  const lastNameRef = useRef();
+  const roleRef = useRef();
 
   async function newMemberHandler(event) {
     event.preventDefault();
@@ -30,7 +33,7 @@ function MemberNew() {
     const iceNumberUpdate = iceNumberUpdateRef.current.value;
     const emailUpdate = emailUpdateRef.current.value;
 
-    const response = await fetch("/api/members/memberUpdate", {
+    const response = await fetch("/api/members/memberNew", {
       method: "POST",
       body: JSON.stringify({
         memberId,
@@ -44,6 +47,9 @@ function MemberNew() {
         stateUpdate,
         zipUpdate,
         emailUpdate,
+        lastName,
+        fisrtName,
+        role
       }),
       headers: { "Content-Type": "application/json" },
     });
@@ -69,6 +75,10 @@ function MemberNew() {
               id="memberNumber"
               ref={memberIdRef}
             />
+            <label htmlFor="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" ref={firstNameRef} />
+            <label htmlFor="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" ref={lastNameRef} />
             <label htmlFor="roadName">Road Name:</label>
             <input
               type="text"
@@ -123,6 +133,11 @@ function MemberNew() {
               id="iceNumber"
               ref={iceNumberUpdateRef}
             />
+            <label htmlFor="role">Role:</label>
+            <select name="role" id="role" ref={roleUpdateRef}>
+                <option value="admin">Administrator</option>
+                <option value="member">Member</option>
+              </select>
           </div>
           <button type="submit" className={classes.button}>
             Update!
