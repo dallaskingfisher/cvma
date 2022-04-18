@@ -561,7 +561,25 @@ function MemberNew() {
                                         id: "iceNumber",
                                         ref: iceNumberUpdateRef
                                     }),
-                                    "             Role select option"
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "role",
+                                        children: "Role:"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("select", {
+                                        name: "role",
+                                        id: "role",
+                                        ref: roleUpdateRef,
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                                value: "admin",
+                                                children: "Administrator"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                                value: "member",
+                                                children: "Member"
+                                            })
+                                        ]
+                                    })
                                 ]
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("button", {

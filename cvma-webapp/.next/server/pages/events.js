@@ -217,7 +217,8 @@ function AllEventsPage(props) {
     }));
 }
 async function getStaticProps() {
-    const events = await (0,api_util/* getAllEvents */.IP)();
+    const response = await fetch('/api/events');
+    const events = await response.json();
     return {
         props: {
             events

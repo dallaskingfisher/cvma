@@ -32,6 +32,9 @@ function MemberNew() {
     const iceNameUpdate = iceNameUpdateRef.current.value;
     const iceNumberUpdate = iceNumberUpdateRef.current.value;
     const emailUpdate = emailUpdateRef.current.value;
+    const lastNameUpdate = lastNameRef.current.value;
+    const firstNameUpdate = firstNameRef.current.value;
+    const role = roleRef.current.value;
 
     const response = await fetch("/api/members/memberNew", {
       method: "POST",
@@ -47,8 +50,8 @@ function MemberNew() {
         stateUpdate,
         zipUpdate,
         emailUpdate,
-        lastName,
-        fisrtName,
+        lastNameUpdate,
+        fisrtNameUpdate,
         role
       }),
       headers: { "Content-Type": "application/json" },
