@@ -1,22 +1,8 @@
 {
   "/_app": "pages/_app.js",
-  "/api/auth/[...nextauth]": "pages/api/auth/[...nextauth].js",
-  "/api/comments/[commentid]": "pages/api/comments/[commentid].js",
-  "/api/events/eventsupdate": "pages/api/events/eventsupdate.js",
-  "/api/events": "pages/api/events.js",
-  "/api/login/registerUser": "pages/api/login/registerUser.js",
-  "/api/login/reset": "pages/api/login/reset.js",
-  "/api/members": "pages/api/members.js",
-  "/api/members/memberNew": "pages/api/members/memberNew.js",
-  "/api/members/memberUpdate": "pages/api/members/memberUpdate.js",
-  "/build": "pages/build.js",
-  "/events/[...slug]": "pages/events/[...slug].js",
-  "/events/[eventId]": "pages/events/[eventId].js",
-  "/events": "pages/events.js",
-  "/": "pages/index.js",
-  "/login": "pages/login.js",
-  "/login/passwd-reset": "pages/login/passwd-reset.js",
-  "/members": "pages/members.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js"
+  "/_document": "pages/_document.js",
+  "/events/[eventId]": "pages/events/[eventId].js",
+  "/api/auth/[...nextauth]": "pages/api/auth/[...nextauth].js",
+  "/api/comments/[commentid]": "pages/api/comments/[commentid].js"
 }

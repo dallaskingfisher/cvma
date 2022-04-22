@@ -32,7 +32,7 @@ function AllEventsPage(props) {
         <meta name='description' content='Combat Veterans Motorcycle Association 18 - 2 events'/>
       </Head>
       <EventsSearch onSearch={findEventsHandler} />
-      <EventList items={events.data} />
+      <EventList items={events.events}  />
     </Fragment>
   );
 }
