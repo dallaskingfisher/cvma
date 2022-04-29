@@ -1,30 +1,33 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills-5cd94c89d3acac5f.js"
+    "static/chunks/polyfills.js"
   ],
-  "devFiles": [],
-  "ampDevFiles": [],
+  "devFiles": [
+    "static/chunks/react-refresh.js"
+  ],
+  "ampDevFiles": [
+    "static/chunks/webpack.js",
+    "static/chunks/amp.js"
+  ],
   "lowPriorityFiles": [
+<<<<<<< HEAD
     "static/wjUT98nEZsh0nOJjxbPzv/_buildManifest.js",
     "static/wjUT98nEZsh0nOJjxbPzv/_ssgManifest.js",
     "static/wjUT98nEZsh0nOJjxbPzv/_middlewareManifest.js"
+=======
+    "static/development/_buildManifest.js",
+    "static/development/_ssgManifest.js",
+    "static/development/_middlewareManifest.js"
+>>>>>>> 90561ef67f60d5916796ba6fa3f4b319f9afd940
   ],
   "pages": {
-    "/": [
-      "static/chunks/webpack-cb7634a8b6194820.js",
-      "static/chunks/framework-e70c6273bfe3f237.js",
-      "static/chunks/main-a054bbf31fb90f6a.js",
-      "static/css/06a79a66e289826d.css",
-      "static/chunks/pages/index-ea6a4c31d2aaa148.js"
-    ],
     "/_app": [
-      "static/chunks/webpack-cb7634a8b6194820.js",
-      "static/chunks/framework-e70c6273bfe3f237.js",
-      "static/chunks/main-a054bbf31fb90f6a.js",
-      "static/css/b8168e041ed4fd90.css",
-      "static/chunks/pages/_app-5d2588a7f6178c28.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/_app.js"
     ],
     "/_error": [
+<<<<<<< HEAD
       "static/chunks/webpack-cb7634a8b6194820.js",
       "static/chunks/framework-e70c6273bfe3f237.js",
       "static/chunks/main-a054bbf31fb90f6a.js",
@@ -82,6 +85,16 @@
       "static/chunks/main-a054bbf31fb90f6a.js",
       "static/css/eeadc465af66df49.css",
       "static/chunks/pages/members-f3eed3fc6f012598.js"
+=======
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/_error.js"
+    ],
+    "/events/[eventId]": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/events/[eventId].js"
+>>>>>>> 90561ef67f60d5916796ba6fa3f4b319f9afd940
     ]
   },
   "ampFirstPages": []

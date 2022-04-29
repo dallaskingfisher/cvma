@@ -12,6 +12,7 @@ import Comments from '../../components/input/comments';
 function EventDetailPage(props) {
   const router = useRouter();
   const event = props.selectedEvent;
+  console.log(event)
   useEffect(() => {
     getSession().then((session) => {
       if(!session){
@@ -38,7 +39,7 @@ function EventDetailPage(props) {
         />
       </Head>
       <EventSummary title={event.title} />
-      <EventLogistics
+      <EventLogistics 
         date={event.date}
         address={event.address}
         image={event.image}
@@ -53,23 +54,24 @@ function EventDetailPage(props) {
 }
 
 export async function getStaticProps(context) {
-  const eventId = context.params.eventid;
+  const eventId = context.params.eventId;
   
   const event = await getEventById(eventId);
-  
+  console.log(event)
 
   return {
     props: {
-      selectedEvent: event
+      selectedEvent: event.events
     },
     revalidate: 30
   };
 }
 
 export async function getStaticPaths() {
-  const events = await getFeaturedEvents();
+  const eventsFeatured = await fetch('http://localhost:3010/api/events/featured')
+  const events = await eventsFeatured.json()
 
-  const paths = events.map(event => ({ params: { eventId: event._id } }));
+  const paths = events.events.map(event => ({ params: { eventId: event._id } }));
 
   return {
     paths: paths,

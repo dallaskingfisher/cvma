@@ -22,7 +22,7 @@ export async function verifyPasswd (passwd, hashedPasswd) {
 
 
 export async function getAllEvents() {
-  const response = await fetch('http://localhost:3000/api/events');
+  const response = await fetch('http://localhost:3010/api/events');
   const events = await response.json();
 
   // const events = [];
@@ -38,26 +38,21 @@ export async function getAllEvents() {
 }
 
 export async function getFeaturedEvents() {
-  const allEvents = await getAllEvents();
-  const event = allEvents.data.filter(event => event.id === event.id)
-
-  return event;
+  const allEvents = await fetch('http://localhost:3010/api/events/featured')
+  const featuredEvents = await allEvents.json();
+  return featuredEvents;
 }
 
 export async function getEventById(id) {
   const eventId = id;
- 
-  const allEvents = await getAllEvents();
-
- const result = allEvents.data.find(event => event.id === event.eventId)
-
+ const event = await fetch(`http://localhost:3010/api/events/${eventId}`);
+ const result = await event.json()
  return result;
 }
 
 export async function getFilteredEvents(dateFilter) {
   const { year, month } = dateFilter;
-
-  const allEvents = await getAllEvents();
+  const allEvents = await fetch('http://localhost:3010/api/events');
 
   let filteredEvents = allEvents.data.filter((event) => {
     const eventDate = new Date(event.date);
