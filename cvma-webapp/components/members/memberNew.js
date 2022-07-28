@@ -51,7 +51,7 @@ function MemberNew() {
         zipUpdate,
         emailUpdate,
         lastNameUpdate,
-        fisrtNameUpdate,
+        firstNameUpdate,
         role
       }),
       headers: { "Content-Type": "application/json" },
@@ -137,7 +137,7 @@ function MemberNew() {
               ref={iceNumberUpdateRef}
             />
             <label htmlFor="role">Role:</label>
-            <select name="role" id="role" ref={roleUpdateRef}>
+            <select name="role" id="role" ref={roleRef}>
                 <option value="admin">Administrator</option>
                 <option value="member">Member</option>
               </select>
