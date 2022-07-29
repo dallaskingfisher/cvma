@@ -1,5 +1,5 @@
 import { getSession } from "next-auth/client";
-import EventUpdate from "../../components/events/update/event-update";
+import UploadFiles from '../../components/upload/upload'
 import MemberUpdate from "../../components/members/memberUpdate";
 import MemberNew from "../../components/members/memberNew";
 import classes from "../../styles/member.module.css";
@@ -15,11 +15,11 @@ function Members(props) {
           <MemberUpdate  user={props.member} />
       </div>
      </div>
-      <div>Doucuments</div>
+      
       <div className={classes.adminouterbox}>
-       
+        <UploadFiles />
         <div>
-        <EventUpdate />
+      
         </div>
         <div className={classes.memberNew}>
           <MemberNew />

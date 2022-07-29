@@ -2,7 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/events/[eventId]": "pages/events/[eventId].js",
+  "/members": "pages/members.js",
   "/api/auth/[...nextauth]": "pages/api/auth/[...nextauth].js",
-  "/api/comments/[commentid]": "pages/api/comments/[commentid].js"
+  "/api/members/memberUpdate": "pages/api/members/memberUpdate.js",
+  "/api/s3-upload": "pages/api/s3-upload.js"
 }
