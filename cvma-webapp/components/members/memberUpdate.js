@@ -1,9 +1,16 @@
 import classes from "./memberUpdate.module.css";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 function MemberUpdate(props) {
  
     const [message, setMessage] = useState();
+    const [messageOn, setMessageOn ] = useState(false);
+
+    useEffect(() => {
+      setMessageOn(false);
+      const timer = setTimeout(() => setMessage(null), 10000);
+      return () => clearTimeout(timer);
+    }, [messageOn])
  
     const firstName = props.user.firstName;
     const lastName = props.user.lastName;
@@ -30,7 +37,10 @@ function MemberUpdate(props) {
   const iceNameUpdateRef = useRef();
   const iceNumberUpdateRef = useRef();
   const emailUpdateRef = useRef();
-
+  const clearFields = () => {
+  const formField = document.getElementById('memberUpdateForm');
+  formField.reset();
+  }
   async function updateMemberHandler(event) {
     event.preventDefault();
     let roadNameUpdate = roadNameUpdateRef.current.value;
@@ -96,8 +106,10 @@ function MemberUpdate(props) {
       headers: { "Content-Type": "application/json" },
     });
     const data = await response.json();
+    clearFields();
     const responseMessage = <p className={classes.error}>{data.message}</p>
     setMessage(responseMessage)
+    setMessageOn(true);
 
   }
   return (
@@ -108,7 +120,7 @@ function MemberUpdate(props) {
         <div>
           {memberId} {firstName} {lastName}
         </div>
-        <form onSubmit={updateMemberHandler}>
+        <form onSubmit={updateMemberHandler} id="memberUpdateForm">
           <div className={classes.control}>
             <label htmlFor="roadName">Road Name:</label>
             <input

@@ -1,8 +1,13 @@
 import classes from "./memberNew.module.css";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 function MemberNew() {
   const [message, setMessage] = useState();
+  const [ on , setOn] = useState(false);
+useEffect(() => {
+   const timer = setTimeout(() => setMessage(null),7000);
+   return () => clearTimeout(timer);
+},[on])
 
   const memberIdRef = useRef();
   const roadNameUpdateRef = useRef();
@@ -19,6 +24,11 @@ function MemberNew() {
   const lastNameRef = useRef();
   const roleRef = useRef();
 
+  const clearFields = () => {
+  
+    const clearField = document.getElementById('newMemberForm');
+    clearField.reset();
+}
   async function newMemberHandler(event) {
     event.preventDefault();
     const memberId = memberIdRef.current.value;
@@ -59,17 +69,19 @@ function MemberNew() {
     const data = await response.json();
     if(data.message){
         const responseMessage = <p className={classes.error}>Member Added</p>;
+        setOn(true);
         setMessage(responseMessage);
     }
+    clearFields();
    
   }
   return (
     <section className={classes.background}>
       <h1>Member Information</h1>
       <div>
-        {message ? message : ""}
+        {message}
        <div><p>New Member</p></div>
-        <form onSubmit={newMemberHandler}>
+        <form onSubmit={newMemberHandler} id="newMemberForm">
           <div className={classes.control}>
             <label htmlFor="memberNumber">Member Number</label>
             <input
@@ -105,7 +117,7 @@ function MemberNew() {
             <label htmlFor="state">State:</label>
             <input type="text" name="state" id="state" ref={stateUpdateRef} />
             <label htmlFor="zip">Zip: </label>
-            <input type="text" name="zip" id="name" ref={zipUpdateRef} />
+            <input type="text" name="zip" id="zip" ref={zipUpdateRef} />
             <label htmlFor="homePhone">Home Phone Number:</label>
             <input
               type="text"

@@ -44,6 +44,7 @@ async function handler(req, res) {
         role: role, });
 
     res.status(200).json({message: 'User Added'})
+     client.close();
   }
 }
 
