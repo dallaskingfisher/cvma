@@ -18,7 +18,13 @@ async function handler(req, res ) {
             res.status(406).json({message:"File Required"});
         } else {
             const client = await connectDatabase();
-            console.log('connect to data base ')
+            const yearCollection = client.db().collection('years');
+            const dataYear = await yearCollection.findOne({year: year})
+            if(dataYear === null ){
+               await yearCollection.insertOne({year: year});
+            }
+            
+
             const collection = client.db().collection('documents');
              await collection.insertOne({
                 category: category,
@@ -28,6 +34,8 @@ async function handler(req, res ) {
                 location: location
             });
             res.status(200).json({message:'File Uploaded'});
+
+            client.close();
 
             client.close();
 

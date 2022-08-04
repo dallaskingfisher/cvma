@@ -11,6 +11,7 @@ function MainHeader() {
   const router = useRouter();
 
   function logoutHandler(){
+    router.push('/')
     signOut();
     
   }
@@ -40,11 +41,6 @@ function MainHeader() {
   <li className={classes.linkItems}>
     <Link href="/members" ><a className={classes.aItems}>Members</a></Link> 
     </li>
-    )}
-    {session && (
-      <li className={classes.linkItems}>
-      <Link href="/events/"><a className={classes.aItems}>Events</a></Link>
-      </li>
     )}
       {session && (
         <li className={classes.linkItems}>
