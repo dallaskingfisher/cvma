@@ -21,15 +21,9 @@ function Members(props) {
       </div>
 
       <div className={classes.adminouterbox}>
-        
-          <UploadFiles />
-      
-       
-          <Documents />
-        
-        
-          <MemberNew />
-       
+        <UploadFiles />
+        <Documents />
+        <MemberNew />
       </div>
     </section>
   );
@@ -37,11 +31,10 @@ function Members(props) {
 
 export async function getServerSideProps(context) {
   const session = await getSession({ req: context.req });
- 
+
   const members = await fetch(
     "http://localhost:3000/api/members/memberUpdate"
   ).then((response) => response.json());
-  
 
   if (!session) {
     return {

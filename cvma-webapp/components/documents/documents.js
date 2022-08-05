@@ -17,9 +17,12 @@ function Documents() {
     fetch('/api/document/').then((res) => res.json()).then((data) => setDocs(data.docsArray))
   }
 const getData = (docs, cat, year, month) =>{
+  if(cat !== 'meetingMinutes' || cat !== 'cebMinutes'){
+
+  } else {
   let catArray = [];
   let yearArray = [];
-  let monthArray = [];
+  let docsArray = [];
   for (let i=0; i<docs.length; i++){
     if (docs[i][0] === cat){
       catArray.push([docs[i][0],docs[i][1],docs[i][2],docs[i][3],docs[i][4]])
@@ -35,10 +38,10 @@ const getData = (docs, cat, year, month) =>{
    for (let i =0; i < yearArray.length; i++){
     console.log(yearArray[1][1])
     if(yearArray[i][1] === month){
-      monthArray.push([yearArray[i][0],yearArray[i][1],yearArray[i][2],yearArray[i][3],yearArray[i][4]])
+      docsArray.push([yearArray[i][0],yearArray[i][1],yearArray[i][2],yearArray[i][3],yearArray[i][4]])
     }
-  }
-  return monthArray;
+  }}
+  return docsArray;
   }
 
 const docsData = getData(docs,'meetingMinutes','2013','jan')
