@@ -19,26 +19,26 @@ function Documents() {
 const getData = (docs, cat, year, month) =>{
   let catArray = [];
   let yearArray = [];
-  let monthArray = [];
+  let docsArray = [];
   for (let i=0; i<docs.length; i++){
     if (docs[i][0] === cat){
       catArray.push([docs[i][0],docs[i][1],docs[i][2],docs[i][3],docs[i][4]])
     }
   }
-  console.log(catArray);
+  
   for (let i =0; i < catArray.length; i++){
     if(catArray[i][2] === year){
       yearArray.push([catArray[i][0],catArray[i][1],catArray[i][2],catArray[i][3],catArray[i][4]])
     }
   }
-   console.log(yearArray)
+  
    for (let i =0; i < yearArray.length; i++){
     console.log(yearArray[1][1])
     if(yearArray[i][1] === month){
-      monthArray.push([yearArray[i][0],yearArray[i][1],yearArray[i][2],yearArray[i][3],yearArray[i][4]])
+      docsArray.push([yearArray[i][0],yearArray[i][1],yearArray[i][2],yearArray[i][3],yearArray[i][4]])
     }
   }
-  return monthArray;
+  return docsArray;
   }
 
 const docsData = getData(docs,'meetingMinutes','2013','jan')
@@ -47,6 +47,7 @@ const docsData = getData(docs,'meetingMinutes','2013','jan')
      <h1>Documents</h1>
    
      <button onClick={refreshHandler} className={ classes.button}>Refresh</button>
+     <form id="getDocs">
      <div className={classes.control}>
      <select id="category" required>
         <option value='meeting'>Meeting Minutes</option>
@@ -77,6 +78,16 @@ const docsData = getData(docs,'meetingMinutes','2013','jan')
         <option value='dec'>December</option>
       </select>
      </div>
+     <div>
+        <button className={classes.button}>Submit</button>
+      </div> 
+     </form>
+     <div>
+        {
+        `
+        }
+     </div>
+     
     </section>
   );
 }
