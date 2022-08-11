@@ -4,11 +4,14 @@ import MemberUpdate from "../../components/members/memberUpdate";
 import MemberNew from "../../components/members/memberNew";
 import Documents from "../../components/documents/documents";
 import classes from "../../styles/member.module.css";
+import { connectDatabase } from "../../helpers/db-util";
 
 function Members(props) {
-  const member = props.members.data.find(
+  const membersObj = JSON.parse(props.members);
+  const member = membersObj.find(
     (element) => element.memberId === props.session.user.name
   );
+
   return (
     <section>
       <div>
@@ -32,14 +35,15 @@ function Members(props) {
 export async function getServerSideProps(context) {
   const session = await getSession({ req: context.req });
 
-  const members = await fetch(
-    "http://localhost:3000/api/members/memberUpdate"
-  ).then((response) => response.json());
+  const client = await connectDatabase();
+  const collection = client.db().collection("members");
+  const data = await collection.find({}).toArray();
+  const members = JSON.stringify(data);
 
   if (!session) {
     return {
       redirect: {
-        destination: "/login",
+        destination: "/",
         permanent: false,
       },
     };

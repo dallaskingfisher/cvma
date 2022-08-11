@@ -41,7 +41,7 @@ function MemberUpdate(props) {
   const formField = document.getElementById('memberUpdateForm');
   formField.reset();
   }
-  async function updateMemberHandler(event) {
+ async function updateMemberHandler(event) {
     event.preventDefault();
     let roadNameUpdate = roadNameUpdateRef.current.value;
     let cellPhoneUpdate = cellPhoneUpdateRef.current.value;

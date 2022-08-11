@@ -5,7 +5,7 @@ const database = 'cvma'
 
 export async function connectDatabase() {
   const client = await MongoClient.connect(
-    'mongodb+srv://dallasking:bunbuns2022@test.3r6zb.mongodb.net/cvma?retryWrites=true&w=majority'
+    `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@test.3r6zb.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority`
   );
   return client;
 }

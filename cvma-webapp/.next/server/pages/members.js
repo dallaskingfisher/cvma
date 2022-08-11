@@ -1,126 +1,1220 @@
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/members";
-exports.ids = ["pages/members"];
+exports.id = 483;
+exports.ids = [483];
 exports.modules = {
 
-/***/ "./components/documents/documents.module.css":
-/*!***************************************************!*\
-  !*** ./components/documents/documents.module.css ***!
-  \***************************************************/
+/***/ 4145:
 /***/ ((module) => {
 
-eval("// Exports\nmodule.exports = {\n\t\"background\": \"documents_background__5LZ7Y\",\n\t\"control\": \"documents_control__GK6xy\",\n\t\"actions\": \"documents_actions__DRQUI\",\n\t\"button\": \"documents_button__I6VOY\",\n\t\"toggle\": \"documents_toggle__iej3Y\",\n\t\"error\": \"documents_error__oSEnt\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL2RvY3VtZW50cy9kb2N1bWVudHMubW9kdWxlLmNzcy5qcyIsIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9uZXh0anMtcm91dGluZy1jb3Vyc2UvLi9jb21wb25lbnRzL2RvY3VtZW50cy9kb2N1bWVudHMubW9kdWxlLmNzcz84YzYyIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIEV4cG9ydHNcbm1vZHVsZS5leHBvcnRzID0ge1xuXHRcImJhY2tncm91bmRcIjogXCJkb2N1bWVudHNfYmFja2dyb3VuZF9fNUxaN1lcIixcblx0XCJjb250cm9sXCI6IFwiZG9jdW1lbnRzX2NvbnRyb2xfX0dLNnh5XCIsXG5cdFwiYWN0aW9uc1wiOiBcImRvY3VtZW50c19hY3Rpb25zX19EUlFVSVwiLFxuXHRcImJ1dHRvblwiOiBcImRvY3VtZW50c19idXR0b25fX0k2Vk9ZXCIsXG5cdFwidG9nZ2xlXCI6IFwiZG9jdW1lbnRzX3RvZ2dsZV9faWVqM1lcIixcblx0XCJlcnJvclwiOiBcImRvY3VtZW50c19lcnJvcl9fb1NFbnRcIlxufTtcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./components/documents/documents.module.css\n");
+// Exports
+module.exports = {
+	"background": "documents_background__5LZ7Y",
+	"control": "documents_control__GK6xy",
+	"actions": "documents_actions__DRQUI",
+	"button": "documents_button__I6VOY",
+	"toggle": "documents_toggle__iej3Y",
+	"error": "documents_error__oSEnt"
+};
+
 
 /***/ }),
 
-/***/ "./components/members/memberNew.module.css":
-/*!*************************************************!*\
-  !*** ./components/members/memberNew.module.css ***!
-  \*************************************************/
+/***/ 2:
 /***/ ((module) => {
 
-eval("// Exports\nmodule.exports = {\n\t\"background\": \"memberNew_background__W9pF1\",\n\t\"control\": \"memberNew_control__z5XFL\",\n\t\"actions\": \"memberNew_actions__H8iMT\",\n\t\"button\": \"memberNew_button__MSmdh\",\n\t\"toggle\": \"memberNew_toggle__unAbV\",\n\t\"error\": \"memberNew_error__gHqH0\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL21lbWJlcnMvbWVtYmVyTmV3Lm1vZHVsZS5jc3MuanMiLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbmV4dGpzLXJvdXRpbmctY291cnNlLy4vY29tcG9uZW50cy9tZW1iZXJzL21lbWJlck5ldy5tb2R1bGUuY3NzP2Y3ODQiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gRXhwb3J0c1xubW9kdWxlLmV4cG9ydHMgPSB7XG5cdFwiYmFja2dyb3VuZFwiOiBcIm1lbWJlck5ld19iYWNrZ3JvdW5kX19XOXBGMVwiLFxuXHRcImNvbnRyb2xcIjogXCJtZW1iZXJOZXdfY29udHJvbF9fejVYRkxcIixcblx0XCJhY3Rpb25zXCI6IFwibWVtYmVyTmV3X2FjdGlvbnNfX0g4aU1UXCIsXG5cdFwiYnV0dG9uXCI6IFwibWVtYmVyTmV3X2J1dHRvbl9fTVNtZGhcIixcblx0XCJ0b2dnbGVcIjogXCJtZW1iZXJOZXdfdG9nZ2xlX191bkFiVlwiLFxuXHRcImVycm9yXCI6IFwibWVtYmVyTmV3X2Vycm9yX19nSHFIMFwiXG59O1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/members/memberNew.module.css\n");
+// Exports
+module.exports = {
+	"background": "memberNew_background__W9pF1",
+	"control": "memberNew_control__z5XFL",
+	"actions": "memberNew_actions__H8iMT",
+	"button": "memberNew_button__MSmdh",
+	"toggle": "memberNew_toggle__unAbV",
+	"error": "memberNew_error__gHqH0"
+};
+
 
 /***/ }),
 
-/***/ "./components/members/memberUpdate.module.css":
-/*!****************************************************!*\
-  !*** ./components/members/memberUpdate.module.css ***!
-  \****************************************************/
+/***/ 5999:
 /***/ ((module) => {
 
-eval("// Exports\nmodule.exports = {\n\t\"background\": \"memberUpdate_background__iRCDq\",\n\t\"control\": \"memberUpdate_control__MQ_8J\",\n\t\"actions\": \"memberUpdate_actions__h8snj\",\n\t\"button\": \"memberUpdate_button___kPM5\",\n\t\"toggle\": \"memberUpdate_toggle__3xUaV\",\n\t\"error\": \"memberUpdate_error___eoPo\",\n\t\"state\": \"memberUpdate_state__S6h74\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL21lbWJlcnMvbWVtYmVyVXBkYXRlLm1vZHVsZS5jc3MuanMiLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9uZXh0anMtcm91dGluZy1jb3Vyc2UvLi9jb21wb25lbnRzL21lbWJlcnMvbWVtYmVyVXBkYXRlLm1vZHVsZS5jc3M/NjViZCJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBFeHBvcnRzXG5tb2R1bGUuZXhwb3J0cyA9IHtcblx0XCJiYWNrZ3JvdW5kXCI6IFwibWVtYmVyVXBkYXRlX2JhY2tncm91bmRfX2lSQ0RxXCIsXG5cdFwiY29udHJvbFwiOiBcIm1lbWJlclVwZGF0ZV9jb250cm9sX19NUV84SlwiLFxuXHRcImFjdGlvbnNcIjogXCJtZW1iZXJVcGRhdGVfYWN0aW9uc19faDhzbmpcIixcblx0XCJidXR0b25cIjogXCJtZW1iZXJVcGRhdGVfYnV0dG9uX19fa1BNNVwiLFxuXHRcInRvZ2dsZVwiOiBcIm1lbWJlclVwZGF0ZV90b2dnbGVfXzN4VWFWXCIsXG5cdFwiZXJyb3JcIjogXCJtZW1iZXJVcGRhdGVfZXJyb3JfX19lb1BvXCIsXG5cdFwic3RhdGVcIjogXCJtZW1iZXJVcGRhdGVfc3RhdGVfX1M2aDc0XCJcbn07XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./components/members/memberUpdate.module.css\n");
+// Exports
+module.exports = {
+	"background": "memberUpdate_background__iRCDq",
+	"control": "memberUpdate_control__MQ_8J",
+	"actions": "memberUpdate_actions__h8snj",
+	"button": "memberUpdate_button___kPM5",
+	"toggle": "memberUpdate_toggle__3xUaV",
+	"error": "memberUpdate_error___eoPo",
+	"state": "memberUpdate_state__S6h74"
+};
+
 
 /***/ }),
 
-/***/ "./components/upload/upload.module.css":
-/*!*********************************************!*\
-  !*** ./components/upload/upload.module.css ***!
-  \*********************************************/
+/***/ 3489:
 /***/ ((module) => {
 
-eval("// Exports\nmodule.exports = {\n\t\"background\": \"upload_background__a6nJx\",\n\t\"control\": \"upload_control__nM95v\",\n\t\"actions\": \"upload_actions__TvgMD\",\n\t\"button\": \"upload_button__FuH2J\",\n\t\"toggle\": \"upload_toggle___p3lt\",\n\t\"error\": \"upload_error__ZLl2O\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL3VwbG9hZC91cGxvYWQubW9kdWxlLmNzcy5qcyIsIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9uZXh0anMtcm91dGluZy1jb3Vyc2UvLi9jb21wb25lbnRzL3VwbG9hZC91cGxvYWQubW9kdWxlLmNzcz9mMWUzIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIEV4cG9ydHNcbm1vZHVsZS5leHBvcnRzID0ge1xuXHRcImJhY2tncm91bmRcIjogXCJ1cGxvYWRfYmFja2dyb3VuZF9fYTZuSnhcIixcblx0XCJjb250cm9sXCI6IFwidXBsb2FkX2NvbnRyb2xfX25NOTV2XCIsXG5cdFwiYWN0aW9uc1wiOiBcInVwbG9hZF9hY3Rpb25zX19UdmdNRFwiLFxuXHRcImJ1dHRvblwiOiBcInVwbG9hZF9idXR0b25fX0Z1SDJKXCIsXG5cdFwidG9nZ2xlXCI6IFwidXBsb2FkX3RvZ2dsZV9fX3AzbHRcIixcblx0XCJlcnJvclwiOiBcInVwbG9hZF9lcnJvcl9fWkxsMk9cIlxufTtcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./components/upload/upload.module.css\n");
+// Exports
+module.exports = {
+	"background": "upload_background__a6nJx",
+	"control": "upload_control__nM95v",
+	"actions": "upload_actions__TvgMD",
+	"button": "upload_button__FuH2J",
+	"toggle": "upload_toggle___p3lt",
+	"error": "upload_error__ZLl2O"
+};
+
 
 /***/ }),
 
-/***/ "./styles/member.module.css":
-/*!**********************************!*\
-  !*** ./styles/member.module.css ***!
-  \**********************************/
+/***/ 9855:
 /***/ ((module) => {
 
-eval("// Exports\nmodule.exports = {\n\t\"adminouterbox\": \"member_adminouterbox__A17pV\",\n\t\"memberNew\": \"member_memberNew__TwM3_\",\n\t\"memberUpdate\": \"member_memberUpdate__mwcTV\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zdHlsZXMvbWVtYmVyLm1vZHVsZS5jc3MuanMiLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbmV4dGpzLXJvdXRpbmctY291cnNlLy4vc3R5bGVzL21lbWJlci5tb2R1bGUuY3NzP2M2NmEiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gRXhwb3J0c1xubW9kdWxlLmV4cG9ydHMgPSB7XG5cdFwiYWRtaW5vdXRlcmJveFwiOiBcIm1lbWJlcl9hZG1pbm91dGVyYm94X19BMTdwVlwiLFxuXHRcIm1lbWJlck5ld1wiOiBcIm1lbWJlcl9tZW1iZXJOZXdfX1R3TTNfXCIsXG5cdFwibWVtYmVyVXBkYXRlXCI6IFwibWVtYmVyX21lbWJlclVwZGF0ZV9fbXdjVFZcIlxufTtcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./styles/member.module.css\n");
+// Exports
+module.exports = {
+	"adminouterbox": "member_adminouterbox__A17pV",
+	"memberNew": "member_memberNew__TwM3_",
+	"memberUpdate": "member_memberUpdate__mwcTV"
+};
+
 
 /***/ }),
 
-/***/ "./components/documents/documents.js":
-/*!*******************************************!*\
-  !*** ./components/documents/documents.js ***!
-  \*******************************************/
+/***/ 3737:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _documents_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./documents.module.css */ \"./components/documents/documents.module.css\");\n/* harmony import */ var _documents_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_documents_module_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nfunction Documents() {\n    const { 0: years , 1: setYears  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);\n    const { 0: docs1 , 1: setDocs  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        fetch('/api/document/years').then((res)=>res.json()\n        ).then((data)=>setYears(data.yearsArray)\n        );\n        fetch('/api/document/').then((res)=>res.json()\n        ).then((data)=>setDocs(data.docsArray)\n        );\n    }, []);\n    const refreshHandler = (e)=>{\n        e.preventDefault();\n        fetch('/api/document/years').then((res)=>res.json()\n        ).then((data)=>setYears(data.yearsArray)\n        );\n        fetch('/api/document/').then((res)=>res.json()\n        ).then((data)=>setDocs(data.docsArray)\n        );\n    };\n    const getData = (docs, cat, year, month)=>{\n        let catArray = [];\n        let yearArray = [];\n        let docsArray = [];\n        if (cat !== \"meetingMinutes\") {\n            console.log('not minutes');\n        } else {\n            for(let i = 0; i < docs.length; i++){\n                if (docs[i][0] === cat) {\n                    catArray.push([\n                        docs[i][0],\n                        docs[i][1],\n                        docs[i][2],\n                        docs[i][3],\n                        docs[i][4]\n                    ]);\n                }\n            }\n            for(let i1 = 0; i1 < catArray.length; i1++){\n                if (catArray[i1][2] === year) {\n                    yearArray.push([\n                        catArray[i1][0],\n                        catArray[i1][1],\n                        catArray[i1][2],\n                        catArray[i1][3],\n                        catArray[i1][4]\n                    ]);\n                }\n            }\n            for(let i2 = 0; i2 < yearArray.length; i2++){\n                if (yearArray[i2][2] === year) {\n                    docsArray.push([\n                        yearArray[i2][0],\n                        yearArray[i2][1],\n                        yearArray[i2][2],\n                        yearArray[i2][3],\n                        yearArray[i2][4]\n                    ]);\n                }\n            }\n            return docsArray;\n        }\n    };\n    const documents = getData(docs1, \"meetingMinutes\", '2013', 'jan');\n    console.log(documents);\n    return(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"section\", {\n        className: (_documents_module_css__WEBPACK_IMPORTED_MODULE_2___default().background),\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                children: \"Documents\"\n            }, void 0, false, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                lineNumber: 52,\n                columnNumber: 6\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                onClick: refreshHandler,\n                className: (_documents_module_css__WEBPACK_IMPORTED_MODULE_2___default().button),\n                children: \"Refresh\"\n            }, void 0, false, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                lineNumber: 54,\n                columnNumber: 6\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"form\", {\n                id: \"getDocs\",\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        className: (_documents_module_css__WEBPACK_IMPORTED_MODULE_2___default().control),\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"select\", {\n                            id: \"category\",\n                            required: true,\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"meeting\",\n                                    children: \"Meeting Minutes\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                                    lineNumber: 58,\n                                    columnNumber: 9\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"ceb\",\n                                    children: \"CEB Minutes\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                                    lineNumber: 59,\n                                    columnNumber: 9\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"rc\",\n                                    children: \"Road Captain\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                                    lineNumber: 60,\n                                    columnNumber: 9\n                                }, this)\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                            lineNumber: 57,\n                            columnNumber: 6\n                        }, this)\n                    }, void 0, false, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                        lineNumber: 56,\n                        columnNumber: 6\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        className: (_documents_module_css__WEBPACK_IMPORTED_MODULE_2___default().control),\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"select\", {\n                            id: \"yearlist\",\n                            children: years.map((year)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: year,\n                                    children: year\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                                    lineNumber: 66,\n                                    columnNumber: 28\n                                }, this)\n                            )\n                        }, void 0, false, {\n                            fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                            lineNumber: 64,\n                            columnNumber: 6\n                        }, this)\n                    }, void 0, false, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                        lineNumber: 63,\n                        columnNumber: 6\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        className: (_documents_module_css__WEBPACK_IMPORTED_MODULE_2___default().control),\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"select\", {\n                            id: \"months\",\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"jan\",\n                                    children: \"January\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                                    lineNumber: 72,\n                                    columnNumber: 9\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"feb\",\n                                    children: \"Febuary\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                                    lineNumber: 73,\n                                    columnNumber: 9\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"Mar\",\n                                    children: \"March\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                                    lineNumber: 74,\n                                    columnNumber: 9\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"apr\",\n                                    children: \"April\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                                    lineNumber: 75,\n                                    columnNumber: 9\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"may\",\n                                    children: \"May\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                                    lineNumber: 76,\n                                    columnNumber: 9\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"jun\",\n                                    children: \"June\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                                    lineNumber: 77,\n                                    columnNumber: 9\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"jul\",\n                                    children: \"July\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                                    lineNumber: 78,\n                                    columnNumber: 9\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"aug\",\n                                    children: \"August\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                                    lineNumber: 79,\n                                    columnNumber: 9\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"sep\",\n                                    children: \"September\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                                    lineNumber: 80,\n                                    columnNumber: 9\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"oct\",\n                                    children: \"October\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                                    lineNumber: 81,\n                                    columnNumber: 9\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"nov\",\n                                    children: \"November\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                                    lineNumber: 82,\n                                    columnNumber: 9\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"dec\",\n                                    children: \"December\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                                    lineNumber: 83,\n                                    columnNumber: 9\n                                }, this)\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                            lineNumber: 71,\n                            columnNumber: 7\n                        }, this)\n                    }, void 0, false, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                        lineNumber: 70,\n                        columnNumber: 6\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                            className: (_documents_module_css__WEBPACK_IMPORTED_MODULE_2___default().button),\n                            children: \"Submit\"\n                        }, void 0, false, {\n                            fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                            lineNumber: 87,\n                            columnNumber: 9\n                        }, this)\n                    }, void 0, false, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                        lineNumber: 86,\n                        columnNumber: 6\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                lineNumber: 55,\n                columnNumber: 6\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {}, void 0, false, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n                lineNumber: 90,\n                columnNumber: 6\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/documents/documents.js\",\n        lineNumber: 51,\n        columnNumber: 5\n    }, this));\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Documents);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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LENBQU07b0NBQUNDLEtBQUssRUFBQyxDQUFLOzhDQUFDLENBQVM7Ozs7Ozs0R0FDNUJELENBQU07b0NBQUNDLEtBQUssRUFBQyxDQUFLOzhDQUFDLENBQU87Ozs7Ozs0R0FDMUJELENBQU07b0NBQUNDLEtBQUssRUFBQyxDQUFLOzhDQUFDLENBQVE7Ozs7Ozs0R0FDM0JELENBQU07b0NBQUNDLEtBQUssRUFBQyxDQUFLOzhDQUFDLENBQVE7Ozs7Ozs7Ozs7Ozs7Ozs7O2dHQUc5QkwsQ0FBRzs4R0FDQUosQ0FBTTs0QkFBQ0gsU0FBUyxFQUFFL0IscUVBQWM7c0NBQUUsQ0FBTTs7Ozs7Ozs7Ozs7Ozs7Ozs7d0ZBRzNDc0MsQ0FBRzs7Ozs7Ozs7Ozs7QUFRVCxDQUFDO0FBRUQsaUVBQWVuQyxTQUFTLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9uZXh0anMtcm91dGluZy1jb3Vyc2UvLi9jb21wb25lbnRzL2RvY3VtZW50cy9kb2N1bWVudHMuanM/NzQxNyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgY2xhc3NlcyBmcm9tIFwiLi9kb2N1bWVudHMubW9kdWxlLmNzc1wiO1xuaW1wb3J0IHt1c2VTdGF0ZSwgdXNlRWZmZWN0IH0gZnJvbSAncmVhY3QnO1xuXG5cblxuZnVuY3Rpb24gRG9jdW1lbnRzKCkge1xuIGNvbnN0IFt5ZWFycyxzZXRZZWFyc10gPSB1c2VTdGF0ZShbXSk7XG4gY29uc3QgW2RvY3MsIHNldERvY3MgXSA9IHVzZVN0YXRlKFtdKTtcbiB1c2VFZmZlY3QoKCkgPT4ge1xuICBmZXRjaCgnL2FwaS9kb2N1bWVudC95ZWFycycpLnRoZW4oKHJlcykgPT4gcmVzLmpzb24oKSkudGhlbigoZGF0YSkgPT4gc2V0WWVhcnMoZGF0YS55ZWFyc0FycmF5KSk7XG4gIGZldGNoKCcvYXBpL2RvY3VtZW50LycpLnRoZW4oKHJlcykgPT4gcmVzLmpzb24oKSkudGhlbigoZGF0YSkgPT4gc2V0RG9jcyhkYXRhLmRvY3NBcnJheSkpO1xuIH0sW10pXG4gXG4gIGNvbnN0IHJlZnJlc2hIYW5kbGVyID0oZSkgPT57XG4gICAgZS5wcmV2ZW50RGVmYXVsdCgpO1xuICAgIGZldGNoKCcvYXBpL2RvY3VtZW50L3llYXJzJykudGhlbigocmVzKSA9PiByZXMuanNvbigpKS50aGVuKChkYXRhKSA9PiBzZXRZZWFycyhkYXRhLnllYXJzQXJyYXkpKTtcbiAgICBmZXRjaCgnL2FwaS9kb2N1bWVudC8nKS50aGVuKChyZXMpID0+IHJlcy5qc29uKCkpLnRoZW4oKGRhdGEpID0+IHNldERvY3MoZGF0YS5kb2NzQXJyYXkpKVxuICB9XG5jb25zdCBnZXREYXRhID0gKGRvY3MsIGNhdCwgeWVhciwgbW9udGgpID0+e1xuICBsZXQgY2F0QXJyYXkgPSBbXTtcbiAgbGV0IHllYXJBcnJheSA9IFtdO1xuICBsZXQgZG9jc0FycmF5ID0gW107XG5cbiAgaWYoIGNhdCAhPT0gXCJtZWV0aW5nTWludXRlc1wiKXtcbiAgICBjb25zb2xlLmxvZygnbm90IG1pbnV0ZXMnKTtcbiAgfSBlbHNlIHtcbiBmb3IobGV0IGkgPSAwOyBpIDwgZG9jcy5sZW5ndGg7IGkrKyl7XG4gIGlmKGRvY3NbaV1bMF0gPT09IGNhdCl7XG4gICAgY2F0QXJyYXkucHVzaChbZG9jc1tpXVswXSwgZG9jc1tpXVsxXSwgZG9jc1tpXVsyXSwgZG9jc1tpXVszXSwgZG9jc1tpXVs0XV0pXG4gIH1cbiB9XG4gZm9yKGxldCBpID0wOyBpPCBjYXRBcnJheS5sZW5ndGg7IGkrKyl7XG4gIGlmKGNhdEFycmF5W2ldWzJdID09PSB5ZWFyKXtcbiAgICB5ZWFyQXJyYXkucHVzaChbY2F0QXJyYXlbaV1bMF0sY2F0QXJyYXlbaV1bMV0sIGNhdEFycmF5W2ldWzJdLGNhdEFycmF5W2ldWzNdLGNhdEFycmF5W2ldWzRdXSlcbiAgfVxuIH1cbiBmb3IobGV0IGkgPTA7IGk8IHllYXJBcnJheS5sZW5ndGg7IGkrKyl7XG4gIGlmKHllYXJBcnJheVtpXVsyXSA9PT0geWVhcil7XG4gICAgZG9jc0FycmF5LnB1c2goW3llYXJBcnJheVtpXVswXSx5ZWFyQXJyYXlbaV1bMV0sIHllYXJBcnJheVtpXVsyXSx5ZWFyQXJyYXlbaV1bM10seWVhckFycmF5W2ldWzRdXSlcbiAgfVxuIH1cbiByZXR1cm4gZG9jc0FycmF5O1xufVxuIFxuIFxufVxuIFxuY29uc3QgZG9jdW1lbnRzID0gZ2V0RGF0YShkb2NzLCBcIm1lZXRpbmdNaW51dGVzXCIsICcyMDEzJywgJ2phbicpXG5jb25zb2xlLmxvZyhkb2N1bWVudHMpXG4gIHJldHVybiAoXG4gICAgPHNlY3Rpb24gY2xhc3NOYW1lPXtjbGFzc2VzLmJhY2tncm91bmR9PlxuICAgICA8aDE+RG9jdW1lbnRzPC9oMT5cbiAgIFxuICAgICA8YnV0dG9uIG9uQ2xpY2s9e3JlZnJlc2hIYW5kbGVyfSBjbGFzc05hbWU9eyBjbGFzc2VzLmJ1dHRvbn0+UmVmcmVzaDwvYnV0dG9uPlxuICAgICA8Zm9ybSBpZD1cImdldERvY3NcIj5cbiAgICAgPGRpdiBjbGFzc05hbWU9e2NsYXNzZXMuY29udHJvbH0+XG4gICAgIDxzZWxlY3QgaWQ9XCJjYXRlZ29yeVwiIHJlcXVpcmVkPlxuICAgICAgICA8b3B0aW9uIHZhbHVlPSdtZWV0aW5nJz5NZWV0aW5nIE1pbnV0ZXM8L29wdGlvbj5cbiAgICAgICAgPG9wdGlvbiB2YWx1ZT0nY2ViJz5DRUIgTWludXRlczwvb3B0aW9uPlxuICAgICAgICA8b3B0aW9uIHZhbHVlPSdyYyc+Um9hZCBDYXB0YWluPC9vcHRpb24+XG4gICAgICA8L3NlbGVjdD5cbiAgICAgIDwvZGl2PlxuICAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5jb250cm9sfT5cbiAgICAgPHNlbGVjdCBpZD0neWVhcmxpc3QnPlxuICAgICAgeyBcbiAgICAgICB5ZWFycy5tYXAoKHllYXIpID0+IDxvcHRpb24gdmFsdWU9e3llYXJ9Pnt5ZWFyfTwvb3B0aW9uPilcbiAgICAgIH1cbiAgICAgPC9zZWxlY3Q+XG4gICAgIDwvZGl2PlxuICAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5jb250cm9sfT5cbiAgICAgIDxzZWxlY3QgaWQ9J21vbnRocyc+XG4gICAgICAgIDxvcHRpb24gdmFsdWU9J2phbic+SmFudWFyeTwvb3B0aW9uPlxuICAgICAgICA8b3B0aW9uIHZhbHVlPVwiZmViXCI+RmVidWFyeTwvb3B0aW9uPlxuICAgICAgICA8b3B0aW9uIHZhbHVlPSdNYXInPk1hcmNoPC9vcHRpb24+XG4gICAgICAgIDxvcHRpb24gdmFsdWU9J2Fwcic+QXByaWw8L29wdGlvbj5cbiAgICAgICAgPG9wdGlvbiB2YWx1ZT0nbWF5Jz5NYXk8L29wdGlvbj5cbiAgICAgICAgPG9wdGlvbiB2YWx1ZT0nanVuJz5KdW5lPC9vcHRpb24+XG4gICAgICAgIDxvcHRpb24gdmFsdWU9J2p1bCc+SnVseTwvb3B0aW9uPlxuICAgICAgICA8b3B0aW9uIHZhbHVlPSdhdWcnPkF1Z3VzdDwvb3B0aW9uPlxuICAgICAgICA8b3B0aW9uIHZhbHVlPSdzZXAnPlNlcHRlbWJlcjwvb3B0aW9uPlxuICAgICAgICA8b3B0aW9uIHZhbHVlPSdvY3QnPk9jdG9iZXI8L29wdGlvbj5cbiAgICAgICAgPG9wdGlvbiB2YWx1ZT0nbm92Jz5Ob3ZlbWJlcjwvb3B0aW9uPlxuICAgICAgICA8b3B0aW9uIHZhbHVlPSdkZWMnPkRlY2VtYmVyPC9vcHRpb24+XG4gICAgICA8L3NlbGVjdD5cbiAgICAgPC9kaXY+XG4gICAgIDxkaXY+XG4gICAgICAgIDxidXR0b24gY2xhc3NOYW1lPXtjbGFzc2VzLmJ1dHRvbn0+U3VibWl0PC9idXR0b24+XG4gICAgICA8L2Rpdj4gXG4gICAgIDwvZm9ybT5cbiAgICAgPGRpdj5cbiAgICAgICAge1xuICAgICAgICBcbiAgICAgICAgfVxuICAgICA8L2Rpdj5cbiAgICAgXG4gICAgPC9zZWN0aW9uPlxuICApO1xufVxuXG5leHBvcnQgZGVmYXVsdCBEb2N1bWVudHM7XG4iXSwibmFtZXMiOlsiY2xhc3NlcyIsInVzZVN0YXRlIiwidXNlRWZmZWN0IiwiRG9jdW1lbnRzIiwieWVhcnMiLCJzZXRZZWFycyIsImRvY3MiLCJzZXREb2NzIiwiZmV0Y2giLCJ0aGVuIiwicmVzIiwianNvbiIsImRhdGEiLCJ5ZWFyc0FycmF5IiwiZG9jc0FycmF5IiwicmVmcmVzaEhhbmRsZXIiLCJlIiwicHJldmVudERlZmF1bHQiLCJnZXREYXRhIiwiY2F0IiwieWVhciIsIm1vbnRoIiwiY2F0QXJyYXkiLCJ5ZWFyQXJyYXkiLCJjb25zb2xlIiwibG9nIiwiaSIsImxlbmd0aCIsInB1c2giLCJkb2N1bWVudHMiLCJzZWN0aW9uIiwiY2xhc3NOYW1lIiwiYmFja2dyb3VuZCIsImgxIiwiYnV0dG9uIiwib25DbGljayIsImZvcm0iLCJpZCIsImRpdiIsImNvbnRyb2wiLCJzZWxlY3QiLCJyZXF1aXJlZCIsIm9wdGlvbiIsInZhbHVlIiwibWFwIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./components/documents/documents.js\n");
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ members),
+  "getServerSideProps": () => (/* binding */ getServerSideProps)
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: external "next-auth/client"
+var client_ = __webpack_require__(427);
+;// CONCATENATED MODULE: external "next-s3-upload"
+const external_next_s3_upload_namespaceObject = require("next-s3-upload");
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(6689);
+// EXTERNAL MODULE: ./components/upload/upload.module.css
+var upload_module = __webpack_require__(3489);
+var upload_module_default = /*#__PURE__*/__webpack_require__.n(upload_module);
+;// CONCATENATED MODULE: ./components/upload/upload.js
+
+
+
+
+function UploadFiles() {
+    const { FileInput , openFileDialog , uploadToS3  } = (0,external_next_s3_upload_namespaceObject.useS3Upload)();
+    const { 0: location , 1: setLocation  } = (0,external_react_.useState)();
+    const { 0: dbUpload , 1: setDbUpload  } = (0,external_react_.useState)(false);
+    const { 0: message , 1: setMessage  } = (0,external_react_.useState)();
+    const { 0: onMessage , 1: setOnMessage  } = (0,external_react_.useState)(false);
+    (0,external_react_.useEffect)(()=>{
+        setDbUpload(false);
+        const timer = setTimeout(()=>setLocation(null)
+        , 2000);
+        return ()=>clearTimeout(timer)
+        ;
+    }, [
+        dbUpload
+    ]);
+    (0,external_react_.useEffect)(()=>{
+        setOnMessage(false);
+        const messageTimer = setTimeout(()=>setMessage(null)
+        , 10000);
+        return ()=>clearTimeout(messageTimer)
+        ;
+    }, [
+        onMessage
+    ]);
+    const handleFileChange = async (file)=>{
+        let { url  } = await uploadToS3(file);
+        setLocation(url);
+    };
+    const catRef = (0,external_react_.useRef)();
+    const monthRef = (0,external_react_.useRef)();
+    const yearRef = (0,external_react_.useRef)();
+    const fileNameRef = (0,external_react_.useRef)();
+    function clearFields() {
+        const formField = document.getElementById("uploadForm");
+        formField.reset();
+    }
+    async function submitHandler(event) {
+        event.preventDefault();
+        const category = catRef.current.value;
+        const month = monthRef.current.value;
+        const year = yearRef.current.value;
+        const fileName = fileNameRef.current.value;
+        const address = location;
+        if (address === null) {
+            setMessage("File not loaded");
+            setOnMessage(true);
+            return;
+        } else {
+            let data = {
+                category: category,
+                month: month,
+                year: year,
+                title: fileName,
+                location: address
+            };
+            const response = await fetch("/api/document/upload", {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+            const resposneData = await response.json();
+            clearFields();
+            console.log(data);
+            setMessage(resposneData.message);
+            setOnMessage(true);
+            setDbUpload(true);
+        }
+    }
+    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+        className: (upload_module_default()).background,
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                children: "Upload"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                children: message
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(FileInput, {
+                onChange: handleFileChange
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                onClick: openFileDialog,
+                className: (upload_module_default()).button,
+                children: "Upload"
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("form", {
+                onSubmit: submitHandler,
+                id: "uploadForm",
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (upload_module_default()).control,
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("select", {
+                            id: "fileTypes",
+                            ref: catRef,
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "meetingMinutes",
+                                    children: "Meeting Minutes"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "cebMinutes",
+                                    children: "CEB Minutes"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "roadCaptain",
+                                    children: "Road Captains"
+                                })
+                            ]
+                        })
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (upload_module_default()).control,
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("select", {
+                            id: "month",
+                            ref: monthRef,
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "jan",
+                                    children: "January"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "feb",
+                                    children: "Febuary"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "mar",
+                                    children: "March"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "apr",
+                                    children: "April"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "may",
+                                    children: "May"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "jun",
+                                    children: "June"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "jul",
+                                    children: "July"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "aug",
+                                    children: "August"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "sep",
+                                    children: "September"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "oct",
+                                    children: "October"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "nov",
+                                    children: "November"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "dec",
+                                    children: "December"
+                                })
+                            ]
+                        })
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (upload_module_default()).control,
+                        children: [
+                            " ",
+                            /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                type: "text",
+                                placeholder: "Year",
+                                id: "year",
+                                ref: yearRef,
+                                required: true
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (upload_module_default()).control,
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                            type: "text",
+                            placeholder: "File Name",
+                            id: "fileName",
+                            ref: fileNameRef,
+                            required: true
+                        })
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {}),
+                    /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                        id: "submit",
+                        className: (upload_module_default()).button,
+                        children: "Submit"
+                    })
+                ]
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                children: location
+            })
+        ]
+    }));
+}
+/* harmony default export */ const upload = (UploadFiles);
+
+// EXTERNAL MODULE: ./components/members/memberUpdate.module.css
+var memberUpdate_module = __webpack_require__(5999);
+var memberUpdate_module_default = /*#__PURE__*/__webpack_require__.n(memberUpdate_module);
+;// CONCATENATED MODULE: ./components/members/memberUpdate.js
+
+
+
+function MemberUpdate(props) {
+    const { 0: message , 1: setMessage  } = (0,external_react_.useState)();
+    const { 0: messageOn , 1: setMessageOn  } = (0,external_react_.useState)(false);
+    (0,external_react_.useEffect)(()=>{
+        setMessageOn(false);
+        const timer = setTimeout(()=>setMessage(null)
+        , 10000);
+        return ()=>clearTimeout(timer)
+        ;
+    }, [
+        messageOn
+    ]);
+    const firstName = props.user.firstName;
+    const lastName = props.user.lastName;
+    const cellPhone = props.user.cellPhone;
+    const homePhone = props.user.homePhone;
+    const address = props.user.address;
+    const city = props.user.city;
+    const state = props.user.state;
+    const zip = props.user.zip;
+    const roadName = props.user.roadName;
+    const iceName = props.user.iceName;
+    const iceNumber = props.user.iceNumber;
+    const email = props.user.email;
+    const memberId = props.user.memberId;
+    const roadNameUpdateRef = (0,external_react_.useRef)();
+    const cellPhoneUpdateRef = (0,external_react_.useRef)();
+    const homePhoneUpdateRef = (0,external_react_.useRef)();
+    const addressUpdateRef = (0,external_react_.useRef)();
+    const cityUpdateRef = (0,external_react_.useRef)();
+    const stateUpdateRef = (0,external_react_.useRef)();
+    const zipUpdateRef = (0,external_react_.useRef)();
+    const iceNameUpdateRef = (0,external_react_.useRef)();
+    const iceNumberUpdateRef = (0,external_react_.useRef)();
+    const emailUpdateRef = (0,external_react_.useRef)();
+    const clearFields = ()=>{
+        const formField = document.getElementById('memberUpdateForm');
+        formField.reset();
+    };
+    async function updateMemberHandler(event) {
+        event.preventDefault();
+        let roadNameUpdate = roadNameUpdateRef.current.value;
+        let cellPhoneUpdate = cellPhoneUpdateRef.current.value;
+        let homePhoneUpdate = homePhoneUpdateRef.current.value;
+        let addressUpdate = addressUpdateRef.current.value;
+        let cityUpdate = cityUpdateRef.current.value;
+        let stateUpdate = stateUpdateRef.current.value;
+        let zipUpdate = zipUpdateRef.current.value;
+        let iceNameUpdate = iceNameUpdateRef.current.value;
+        let iceNumberUpdate = iceNumberUpdateRef.current.value;
+        let emailUpdate = emailUpdateRef.current.value;
+        //================================================================
+        // write if condition for empty varialbes
+        //================================================================
+        if (!roadNameUpdate) {
+            roadNameUpdate = roadName;
+        }
+        if (!cellPhoneUpdate) {
+            cellPhoneUpdate = cellPhone;
+        }
+        if (!homePhoneUpdate) {
+            homePhoneUpdate = homePhone;
+        }
+        if (!addressUpdate) {
+            addressUpdate = address;
+        }
+        if (!cityUpdate) {
+            cityUpdate = city;
+        }
+        if (!stateUpdate) {
+            stateUpdate = state;
+        }
+        if (!zipUpdate) {
+            zipUpdate = zip;
+        }
+        if (!emailUpdate) {
+            emailUpdate = email;
+        }
+        if (!iceNameUpdate) {
+            iceNameUpdate = iceName;
+        }
+        if (!iceNumberUpdate) {
+            iceNumberUpdate = iceNumber;
+        }
+        const response = await fetch("/api/members/memberUpdate", {
+            method: "POST",
+            body: JSON.stringify({
+                memberId,
+                roadNameUpdate,
+                cellPhoneUpdate,
+                homePhoneUpdate,
+                iceNameUpdate,
+                iceNumberUpdate,
+                addressUpdate,
+                cityUpdate,
+                stateUpdate,
+                zipUpdate,
+                emailUpdate
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+        const data = await response.json();
+        clearFields();
+        const responseMessage = /*#__PURE__*/ jsx_runtime_.jsx("p", {
+            className: (memberUpdate_module_default()).error,
+            children: data.message
+        });
+        setMessage(responseMessage);
+        setMessageOn(true);
+    }
+    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+        className: (memberUpdate_module_default()).background,
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                children: "Member Information"
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                children: [
+                    message ? message : '',
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        children: [
+                            memberId,
+                            " ",
+                            firstName,
+                            " ",
+                            lastName
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("form", {
+                        onSubmit: updateMemberHandler,
+                        id: "memberUpdateForm",
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (memberUpdate_module_default()).control,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "roadName",
+                                        children: "Road Name:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "roadName",
+                                        id: "roadName",
+                                        placeholder: roadName,
+                                        ref: roadNameUpdateRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "email",
+                                        children: "Email:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "email",
+                                        id: "email",
+                                        placeholder: email,
+                                        ref: emailUpdateRef
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (memberUpdate_module_default()).control,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "address",
+                                        children: "Address:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "address",
+                                        id: "address",
+                                        placeholder: address,
+                                        ref: addressUpdateRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "city",
+                                        children: "City:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "city",
+                                        id: "city",
+                                        placeholder: city,
+                                        ref: cityUpdateRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "state",
+                                        children: "State:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "state",
+                                        id: "state",
+                                        placeholder: state,
+                                        ref: stateUpdateRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "zip",
+                                        children: "Zip: "
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "zip",
+                                        id: "name",
+                                        placeholder: zip,
+                                        ref: zipUpdateRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "homePhone",
+                                        children: "Home Phone Number:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "homePhone",
+                                        id: "homePhone",
+                                        placeholder: homePhone,
+                                        ref: homePhoneUpdateRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "cellPhone",
+                                        children: "Cell Phone Number"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "cellPhone",
+                                        id: "cellPhone",
+                                        placeholder: cellPhone,
+                                        ref: cellPhoneUpdateRef
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (memberUpdate_module_default()).control,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "iceName",
+                                        children: "ICE Name:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "iceName",
+                                        id: "iceName",
+                                        placeholder: iceName,
+                                        ref: iceNameUpdateRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "iceNumber",
+                                        children: "ICE Phone Number:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "iceNumber",
+                                        id: "iceNumber",
+                                        placeholder: iceNumber,
+                                        ref: iceNumberUpdateRef
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                type: "submit",
+                                className: (memberUpdate_module_default()).button,
+                                children: "Update!"
+                            })
+                        ]
+                    })
+                ]
+            })
+        ]
+    }));
+}
+/* harmony default export */ const memberUpdate = (MemberUpdate);
+
+// EXTERNAL MODULE: ./components/members/memberNew.module.css
+var memberNew_module = __webpack_require__(2);
+var memberNew_module_default = /*#__PURE__*/__webpack_require__.n(memberNew_module);
+;// CONCATENATED MODULE: ./components/members/memberNew.js
+
+
+
+function MemberNew() {
+    const { 0: message , 1: setMessage  } = (0,external_react_.useState)();
+    const { 0: on , 1: setOn  } = (0,external_react_.useState)(false);
+    (0,external_react_.useEffect)(()=>{
+        const timer = setTimeout(()=>setMessage(null)
+        , 7000);
+        return ()=>clearTimeout(timer)
+        ;
+    }, [
+        on
+    ]);
+    const memberIdRef = (0,external_react_.useRef)();
+    const roadNameUpdateRef = (0,external_react_.useRef)();
+    const cellPhoneUpdateRef = (0,external_react_.useRef)();
+    const homePhoneUpdateRef = (0,external_react_.useRef)();
+    const addressUpdateRef = (0,external_react_.useRef)();
+    const cityUpdateRef = (0,external_react_.useRef)();
+    const stateUpdateRef = (0,external_react_.useRef)();
+    const zipUpdateRef = (0,external_react_.useRef)();
+    const iceNameUpdateRef = (0,external_react_.useRef)();
+    const iceNumberUpdateRef = (0,external_react_.useRef)();
+    const emailUpdateRef = (0,external_react_.useRef)();
+    const firstNameRef = (0,external_react_.useRef)();
+    const lastNameRef = (0,external_react_.useRef)();
+    const roleRef = (0,external_react_.useRef)();
+    const clearFields = ()=>{
+        const clearField = document.getElementById('newMemberForm');
+        clearField.reset();
+    };
+    async function newMemberHandler(event) {
+        event.preventDefault();
+        const memberId = memberIdRef.current.value;
+        const roadNameUpdate = roadNameUpdateRef.current.value;
+        const cellPhoneUpdate = cellPhoneUpdateRef.current.value;
+        const homePhoneUpdate = homePhoneUpdateRef.current.value;
+        const addressUpdate = addressUpdateRef.current.value;
+        const cityUpdate = cityUpdateRef.current.value;
+        const stateUpdate = stateUpdateRef.current.value;
+        const zipUpdate = zipUpdateRef.current.value;
+        const iceNameUpdate = iceNameUpdateRef.current.value;
+        const iceNumberUpdate = iceNumberUpdateRef.current.value;
+        const emailUpdate = emailUpdateRef.current.value;
+        const lastNameUpdate = lastNameRef.current.value;
+        const firstNameUpdate = firstNameRef.current.value;
+        const role = roleRef.current.value;
+        const response = await fetch("/api/members/memberNew", {
+            method: "POST",
+            body: JSON.stringify({
+                memberId,
+                roadNameUpdate,
+                cellPhoneUpdate,
+                homePhoneUpdate,
+                iceNameUpdate,
+                iceNumberUpdate,
+                addressUpdate,
+                cityUpdate,
+                stateUpdate,
+                zipUpdate,
+                emailUpdate,
+                lastNameUpdate,
+                firstNameUpdate,
+                role
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+        const data = await response.json();
+        if (data.message) {
+            const responseMessage = /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                className: (memberNew_module_default()).error,
+                children: "Member Added"
+            });
+            setOn(true);
+            setMessage(responseMessage);
+        }
+        clearFields();
+    }
+    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+        className: (memberNew_module_default()).background,
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                children: "Member Information"
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                children: [
+                    message,
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                            children: "New Member"
+                        })
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("form", {
+                        onSubmit: newMemberHandler,
+                        id: "newMemberForm",
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (memberNew_module_default()).control,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "memberNumber",
+                                        children: "Member Number"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "memberNumber",
+                                        id: "memberNumber",
+                                        ref: memberIdRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "firstName",
+                                        children: "First Name:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "firstName",
+                                        id: "firstName",
+                                        ref: firstNameRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "lastName",
+                                        children: "Last Name:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "lastName",
+                                        id: "lastName",
+                                        ref: lastNameRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "roadName",
+                                        children: "Road Name:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "roadName",
+                                        id: "roadName",
+                                        ref: roadNameUpdateRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "email",
+                                        children: "Email:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "email",
+                                        id: "email",
+                                        ref: emailUpdateRef
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (memberNew_module_default()).control,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "address",
+                                        children: "Address:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "address",
+                                        id: "address",
+                                        ref: addressUpdateRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "city",
+                                        children: "City:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "city",
+                                        id: "city",
+                                        ref: cityUpdateRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "state",
+                                        children: "State:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "state",
+                                        id: "state",
+                                        ref: stateUpdateRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "zip",
+                                        children: "Zip: "
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "zip",
+                                        id: "zip",
+                                        ref: zipUpdateRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "homePhone",
+                                        children: "Home Phone Number:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "homePhone",
+                                        id: "homePhone",
+                                        ref: homePhoneUpdateRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "cellPhone",
+                                        children: "Cell Phone Number"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "cellPhone",
+                                        id: "cellPhone",
+                                        ref: cellPhoneUpdateRef
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (memberNew_module_default()).control,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "iceName",
+                                        children: "ICE Name:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "iceName",
+                                        id: "iceName",
+                                        ref: iceNameUpdateRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "iceNumber",
+                                        children: "ICE Phone Number:"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        type: "text",
+                                        name: "iceNumber",
+                                        id: "iceNumber",
+                                        ref: iceNumberUpdateRef
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("label", {
+                                        htmlFor: "role",
+                                        children: "Role:"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("select", {
+                                        name: "role",
+                                        id: "role",
+                                        ref: roleRef,
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                                value: "admin",
+                                                children: "Administrator"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                                value: "member",
+                                                children: "Member"
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                type: "submit",
+                                className: (memberNew_module_default()).button,
+                                children: "Update!"
+                            })
+                        ]
+                    })
+                ]
+            })
+        ]
+    }));
+}
+/* harmony default export */ const memberNew = (MemberNew);
+
+// EXTERNAL MODULE: ./components/documents/documents.module.css
+var documents_module = __webpack_require__(4145);
+var documents_module_default = /*#__PURE__*/__webpack_require__.n(documents_module);
+;// CONCATENATED MODULE: ./components/documents/documents.js
+
+
+
+function Documents() {
+    const { 0: years , 1: setYears  } = (0,external_react_.useState)([]);
+    const { 0: docs1 , 1: setDocs  } = (0,external_react_.useState)([]);
+    const { 0: results , 1: setResults  } = (0,external_react_.useState)([]);
+    (0,external_react_.useEffect)(()=>{
+        fetch('/api/document/years').then((res)=>res.json()
+        ).then((data)=>setYears(data.yearsArray)
+        );
+        fetch('/api/document/').then((res)=>res.json()
+        ).then((data)=>setDocs(data.docsArray)
+        );
+    }, []);
+    const refreshHandler = (e)=>{
+        e.preventDefault();
+        fetch('/api/document/years').then((res)=>res.json()
+        ).then((data)=>setYears(data.yearsArray)
+        );
+        fetch('/api/document/').then((res)=>res.json()
+        ).then((data)=>setDocs(data.docsArray)
+        );
+    };
+    const getMinutes = (docs, cat, year, month)=>{
+        let catArray = [];
+        let yearArray = [];
+        let docsArray = [];
+        for(let i = 0; i < docs.length; i++){
+            if (docs[i][0] === cat) {
+                catArray.push([
+                    docs[i][0],
+                    docs[i][1],
+                    docs[i][2],
+                    docs[i][3],
+                    docs[i][4]
+                ]);
+            }
+        }
+        for(let i1 = 0; i1 < catArray.length; i1++){
+            if (catArray[i1][2] === year) {
+                yearArray.push([
+                    catArray[i1][0],
+                    catArray[i1][1],
+                    catArray[i1][2],
+                    catArray[i1][3],
+                    catArray[i1][4]
+                ]);
+            }
+        }
+        for(let i2 = 0; i2 < yearArray.length; i2++){
+            if (yearArray[i2][1] === month) {
+                docsArray.push([
+                    yearArray[i2][0],
+                    yearArray[i2][1],
+                    yearArray[i2][2],
+                    yearArray[i2][3],
+                    yearArray[i2][4]
+                ]);
+            }
+        }
+        return docsArray;
+    };
+    const getOtherDocs = (docs, cat)=>{
+        const docsArray = [];
+        for(let i = 0; i < docs.length; i++){
+            if (docs[i][0] === cat) {
+                docsArray.push([
+                    docs[i][0],
+                    docs[i][1],
+                    docs[i][2],
+                    docs[i][3],
+                    docs[i][4]
+                ]);
+            }
+        }
+        return docsArray;
+    };
+    const catRef = (0,external_react_.useRef)();
+    const yearRef = (0,external_react_.useRef)();
+    const monthRef = (0,external_react_.useRef)();
+    function submitHandler(event) {
+        event.preventDefault();
+        const cat = catRef.current.value;
+        const year = yearRef.current.value;
+        const month = monthRef.current.value;
+        console.log(docs1);
+        console.log(cat);
+        console.log(year);
+        console.log(month);
+        switch(cat){
+            case 'meetingMinutes':
+                const data1 = getMinutes(docs1, cat, year, month);
+                console.log(data1);
+                setResults(data1);
+                break;
+            case "cebMinutes":
+                const data2 = getMinutes(docs1, cat, year, month);
+                setResults(data2);
+                break;
+            default:
+                const data3 = getOtherDocs(docs1, cat);
+                setResults(data3);
+        }
+    }
+    if (!results) {} else {
+        const values = [];
+        for(let i = 0; i < results.length; i++){
+            values.push(results[i][3], results[i][4]);
+        }
+    }
+    //VALUES MUST MATCH UPLOAD.JS FOR CATEGORY DROP DOWN AND VERIFY THE MATCH BEFORE ADDING TO PRODUCTION!!
+    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+        className: (documents_module_default()).background,
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                children: "Documents"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                onClick: refreshHandler,
+                className: (documents_module_default()).button,
+                children: "Refresh"
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("form", {
+                id: "getDocs",
+                onSubmit: submitHandler,
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (documents_module_default()).control,
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("select", {
+                            id: "category",
+                            ref: catRef,
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "meetingMinutes",
+                                    children: "Meeting Minutes"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "cebMinutes",
+                                    children: "CEB Minutes"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "roadCaptain",
+                                    children: "Road Captain"
+                                })
+                            ]
+                        })
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (documents_module_default()).control,
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("select", {
+                            id: "yearlist",
+                            ref: yearRef,
+                            children: years.map((year)=>/*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: year,
+                                    children: year
+                                })
+                            )
+                        })
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (documents_module_default()).control,
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("select", {
+                            id: "months",
+                            ref: monthRef,
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "jan",
+                                    children: "January"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "feb",
+                                    children: "Febuary"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "Mar",
+                                    children: "March"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "apr",
+                                    children: "April"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "may",
+                                    children: "May"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "jun",
+                                    children: "June"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "jul",
+                                    children: "July"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "aug",
+                                    children: "August"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "sep",
+                                    children: "September"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "oct",
+                                    children: "October"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "nov",
+                                    children: "November"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                    value: "dec",
+                                    children: "December"
+                                })
+                            ]
+                        })
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                            className: (documents_module_default()).button,
+                            children: "Submit"
+                        })
+                    })
+                ]
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                children: !results ? '' : results.map((value)=>/*#__PURE__*/ jsx_runtime_.jsx("a", {
+                        href: value[4],
+                        children: value[3]
+                    })
+                )
+            })
+        ]
+    }));
+}
+/* harmony default export */ const documents = (Documents);
+
+// EXTERNAL MODULE: ./styles/member.module.css
+var member_module = __webpack_require__(9855);
+var member_module_default = /*#__PURE__*/__webpack_require__.n(member_module);
+;// CONCATENATED MODULE: external "mongodb"
+const external_mongodb_namespaceObject = require("mongodb");
+;// CONCATENATED MODULE: ./helpers/db-util.js
+
+const db_util_password = 'bunbuns2022';
+const database = 'cvma';
+async function connectDatabase() {
+    const client = await external_mongodb_namespaceObject.MongoClient.connect(`mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@test.3r6zb.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority`);
+    return client;
+}
+async function insertDocument(client, collection, document) {
+    const db = client.db();
+    const result = await db.collection(collection).insertOne(document);
+    client.close();
+    return result;
+}
+async function findComments(client, collection, sort, filter) {
+    const db = client.db();
+    const document = await db.collection(collection).find(filter).sort(sort).toArray();
+    return document;
+}
+
+;// CONCATENATED MODULE: ./pages/members/index.js
+
+
+
+
+
+
+
+
+function Members(props) {
+    const membersObj = JSON.parse(props.members);
+    const member = membersObj.find((element)=>element.memberId === props.session.user.name
+    );
+    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                children: /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                    children: "Members Area"
+                })
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: (member_module_default()).adminouterbox,
+                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: (member_module_default()).memberUpdate,
+                    children: /*#__PURE__*/ jsx_runtime_.jsx(memberUpdate, {
+                        user: member
+                    })
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: (member_module_default()).adminouterbox,
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx(upload, {}),
+                    /*#__PURE__*/ jsx_runtime_.jsx(documents, {}),
+                    /*#__PURE__*/ jsx_runtime_.jsx(memberNew, {})
+                ]
+            })
+        ]
+    }));
+}
+async function getServerSideProps(context) {
+    const session = await (0,client_.getSession)({
+        req: context.req
+    });
+    const client = await connectDatabase();
+    const collection = client.db().collection("members");
+    const data = await collection.find({}).toArray();
+    const members = JSON.stringify(data);
+    if (!session) {
+        return {
+            redirect: {
+                destination: "/",
+                permanent: false
+            }
+        };
+    }
+    return {
+        props: {
+            session,
+            members: members
+        }
+    };
+}
+/* harmony default export */ const members = (Members);
+
 
 /***/ }),
 
-/***/ "./components/members/memberNew.js":
-/*!*****************************************!*\
-  !*** ./components/members/memberNew.js ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _memberNew_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./memberNew.module.css */ \"./components/members/memberNew.module.css\");\n/* harmony import */ var _memberNew_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_memberNew_module_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nfunction MemberNew() {\n    const { 0: message , 1: setMessage  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)();\n    const { 0: on , 1: setOn  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        const timer = setTimeout(()=>setMessage(null)\n        , 7000);\n        return ()=>clearTimeout(timer)\n        ;\n    }, [\n        on\n    ]);\n    const memberIdRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const roadNameUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const cellPhoneUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const homePhoneUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const addressUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const cityUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const stateUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const zipUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const iceNameUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const iceNumberUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const emailUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const firstNameRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const lastNameRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const roleRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const clearFields = ()=>{\n        const clearField = document.getElementById('newMemberForm');\n        clearField.reset();\n    };\n    async function newMemberHandler(event) {\n        event.preventDefault();\n        const memberId = memberIdRef.current.value;\n        const roadNameUpdate = roadNameUpdateRef.current.value;\n        const cellPhoneUpdate = cellPhoneUpdateRef.current.value;\n        const homePhoneUpdate = homePhoneUpdateRef.current.value;\n        const addressUpdate = addressUpdateRef.current.value;\n        const cityUpdate = cityUpdateRef.current.value;\n        const stateUpdate = stateUpdateRef.current.value;\n        const zipUpdate = zipUpdateRef.current.value;\n        const iceNameUpdate = iceNameUpdateRef.current.value;\n        const iceNumberUpdate = iceNumberUpdateRef.current.value;\n        const emailUpdate = emailUpdateRef.current.value;\n        const lastNameUpdate = lastNameRef.current.value;\n        const firstNameUpdate = firstNameRef.current.value;\n        const role = roleRef.current.value;\n        const response = await fetch(\"/api/members/memberNew\", {\n            method: \"POST\",\n            body: JSON.stringify({\n                memberId,\n                roadNameUpdate,\n                cellPhoneUpdate,\n                homePhoneUpdate,\n                iceNameUpdate,\n                iceNumberUpdate,\n                addressUpdate,\n                cityUpdate,\n                stateUpdate,\n                zipUpdate,\n                emailUpdate,\n                lastNameUpdate,\n                firstNameUpdate,\n                role\n            }),\n            headers: {\n                \"Content-Type\": \"application/json\"\n            }\n        });\n        const data = await response.json();\n        if (data.message) {\n            const responseMessage = /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                className: (_memberNew_module_css__WEBPACK_IMPORTED_MODULE_2___default().error),\n                children: \"Member Added\"\n            }, void 0, false, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                lineNumber: 71,\n                columnNumber: 33\n            }, this);\n            setOn(true);\n            setMessage(responseMessage);\n        }\n        clearFields();\n    }\n    return(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"section\", {\n        className: (_memberNew_module_css__WEBPACK_IMPORTED_MODULE_2___default().background),\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                children: \"Member Information\"\n            }, void 0, false, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                lineNumber: 80,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                children: [\n                    message,\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                            children: \"New Member\"\n                        }, void 0, false, {\n                            fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                            lineNumber: 83,\n                            columnNumber: 13\n                        }, this)\n                    }, void 0, false, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                        lineNumber: 83,\n                        columnNumber: 8\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"form\", {\n                        onSubmit: newMemberHandler,\n                        id: \"newMemberForm\",\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: (_memberNew_module_css__WEBPACK_IMPORTED_MODULE_2___default().control),\n                                children: [\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"memberNumber\",\n                                        children: \"Member Number\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 86,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"memberNumber\",\n                                        id: \"memberNumber\",\n                                        ref: memberIdRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 87,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"firstName\",\n                                        children: \"First Name:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 93,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"firstName\",\n                                        id: \"firstName\",\n                                        ref: firstNameRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 94,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"lastName\",\n                                        children: \"Last Name:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 95,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"lastName\",\n                                        id: \"lastName\",\n                                        ref: lastNameRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 96,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"roadName\",\n                                        children: \"Road Name:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 97,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"roadName\",\n                                        id: \"roadName\",\n                                        ref: roadNameUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 98,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"email\",\n                                        children: \"Email:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 104,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"email\",\n                                        id: \"email\",\n                                        ref: emailUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 105,\n                                        columnNumber: 13\n                                    }, this)\n                                ]\n                            }, void 0, true, {\n                                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                lineNumber: 85,\n                                columnNumber: 11\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: (_memberNew_module_css__WEBPACK_IMPORTED_MODULE_2___default().control),\n                                children: [\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"address\",\n                                        children: \"Address:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 108,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"address\",\n                                        id: \"address\",\n                                        ref: addressUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 109,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"city\",\n                                        children: \"City:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 115,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"city\",\n                                        id: \"city\",\n                                        ref: cityUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 116,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"state\",\n                                        children: \"State:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 117,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"state\",\n                                        id: \"state\",\n                                        ref: stateUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 118,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"zip\",\n                                        children: \"Zip: \"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 119,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"zip\",\n                                        id: \"zip\",\n                                        ref: zipUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 120,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"homePhone\",\n                                        children: \"Home Phone Number:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 121,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"homePhone\",\n                                        id: \"homePhone\",\n                                        ref: homePhoneUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 122,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"cellPhone\",\n                                        children: \"Cell Phone Number\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 128,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"cellPhone\",\n                                        id: \"cellPhone\",\n                                        ref: cellPhoneUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 129,\n                                        columnNumber: 13\n                                    }, this)\n                                ]\n                            }, void 0, true, {\n                                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                lineNumber: 107,\n                                columnNumber: 11\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: (_memberNew_module_css__WEBPACK_IMPORTED_MODULE_2___default().control),\n                                children: [\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"iceName\",\n                                        children: \"ICE Name:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 137,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"iceName\",\n                                        id: \"iceName\",\n                                        ref: iceNameUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 138,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"iceNumber\",\n                                        children: \"ICE Phone Number:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 144,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"iceNumber\",\n                                        id: \"iceNumber\",\n                                        ref: iceNumberUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 145,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"role\",\n                                        children: \"Role:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 151,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"select\", {\n                                        name: \"role\",\n                                        id: \"role\",\n                                        ref: roleRef,\n                                        children: [\n                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                                value: \"admin\",\n                                                children: \"Administrator\"\n                                            }, void 0, false, {\n                                                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                                lineNumber: 153,\n                                                columnNumber: 17\n                                            }, this),\n                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                                value: \"member\",\n                                                children: \"Member\"\n                                            }, void 0, false, {\n                                                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                                lineNumber: 154,\n                                                columnNumber: 17\n                                            }, this)\n                                        ]\n                                    }, void 0, true, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                        lineNumber: 152,\n                                        columnNumber: 13\n                                    }, this)\n                                ]\n                            }, void 0, true, {\n                                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                lineNumber: 136,\n                                columnNumber: 11\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                                type: \"submit\",\n                                className: (_memberNew_module_css__WEBPACK_IMPORTED_MODULE_2___default().button),\n                                children: \"Update!\"\n                            }, void 0, false, {\n                                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                                lineNumber: 157,\n                                columnNumber: 11\n                            }, this)\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                        lineNumber: 84,\n                        columnNumber: 9\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n                lineNumber: 81,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberNew.js\",\n        lineNumber: 79,\n        columnNumber: 5\n    }, this));\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MemberNew);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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SSxFQUFDLENBQVc7d0NBQ2hCTixFQUFFLEVBQUMsQ0FBVzt3Q0FDZE8sR0FBRyxFQUFFOUQsa0JBQWtCOzs7Ozs7Ozs7Ozs7d0dBRzFCb0QsQ0FBRztnQ0FBQ0wsU0FBUyxFQUFFN0Qsc0VBQWU7O2dIQUM1QnVFLENBQUs7d0NBQUNDLE9BQU8sRUFBQyxDQUFTO2tEQUFDLENBQVM7Ozs7OztnSEFDakNDLENBQUs7d0NBQ0pDLElBQUksRUFBQyxDQUFNO3dDQUNYQyxJQUFJLEVBQUMsQ0FBUzt3Q0FDZE4sRUFBRSxFQUFDLENBQVM7d0NBQ1pPLEdBQUcsRUFBRXhELGdCQUFnQjs7Ozs7O2dIQUV0Qm1ELENBQUs7d0NBQUNDLE9BQU8sRUFBQyxDQUFXO2tEQUFDLENBQWlCOzs7Ozs7Z0hBQzNDQyxDQUFLO3dDQUNKQyxJQUFJLEVBQUMsQ0FBTTt3Q0FDWEMsSUFBSSxFQUFDLENBQVc7d0NBQ2hCTixFQUFFLEVBQUMsQ0FBVzt3Q0FDZE8sR0FBRyxFQUFFdkQsa0JBQWtCOzs7Ozs7Z0hBRXhCa0QsQ0FBSzt3Q0FBQ0MsT0FBTyxFQUFDLENBQU07a0RBQUMsQ0FBSzs7Ozs7O2dIQUMxQkssQ0FBTTt3Q0FBQ0YsSUFBSSxFQUFDLENBQU07d0NBQUNOLEVBQUUsRUFBQyxDQUFNO3dDQUFDTyxHQUFHLEVBQUVuRCxPQUFPOzt3SEFDckNxRCxDQUFNO2dEQUFDMUMsS0FBSyxFQUFDLENBQU87MERBQUMsQ0FBYTs7Ozs7O3dIQUNsQzBDLENBQU07Z0RBQUMxQyxLQUFLLEVBQUMsQ0FBUTswREFBQyxDQUFNOzs7Ozs7Ozs7Ozs7Ozs7Ozs7d0dBR2xDMkMsQ0FBTTtnQ0FBQ0wsSUFBSSxFQUFDLENBQVE7Z0NBQUNiLFNBQVMsRUFBRTdELHFFQUFjOzBDQUFFLENBRWpEOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFLVixDQUFDO0FBRUQsaUVBQWVJLFNBQVMsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL25leHRqcy1yb3V0aW5nLWNvdXJzZS8uL2NvbXBvbmVudHMvbWVtYmVycy9tZW1iZXJOZXcuanM/OTJmNCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgY2xhc3NlcyBmcm9tIFwiLi9tZW1iZXJOZXcubW9kdWxlLmNzc1wiO1xuaW1wb3J0IHsgdXNlUmVmLCB1c2VTdGF0ZSwgdXNlRWZmZWN0IH0gZnJvbSBcInJlYWN0XCI7XG5cbmZ1bmN0aW9uIE1lbWJlck5ldygpIHtcbiAgY29uc3QgW21lc3NhZ2UsIHNldE1lc3NhZ2VdID0gdXNlU3RhdGUoKTtcbiAgY29uc3QgWyBvbiAsIHNldE9uXSA9IHVzZVN0YXRlKGZhbHNlKTtcbnVzZUVmZmVjdCgoKSA9PiB7XG4gICBjb25zdCB0aW1lciA9IHNldFRpbWVvdXQoKCkgPT4gc2V0TWVzc2FnZShudWxsKSw3MDAwKTtcbiAgIHJldHVybiAoKSA9PiBjbGVhclRpbWVvdXQodGltZXIpO1xufSxbb25dKVxuXG4gIGNvbnN0IG1lbWJlcklkUmVmID0gdXNlUmVmKCk7XG4gIGNvbnN0IHJvYWROYW1lVXBkYXRlUmVmID0gdXNlUmVmKCk7XG4gIGNvbnN0IGNlbGxQaG9uZVVwZGF0ZVJlZiA9IHVzZVJlZigpO1xuICBjb25zdCBob21lUGhvbmVVcGRhdGVSZWYgPSB1c2VSZWYoKTtcbiAgY29uc3QgYWRkcmVzc1VwZGF0ZVJlZiA9IHVzZVJlZigpO1xuICBjb25zdCBjaXR5VXBkYXRlUmVmID0gdXNlUmVmKCk7XG4gIGNvbnN0IHN0YXRlVXBkYXRlUmVmID0gdXNlUmVmKCk7XG4gIGNvbnN0IHppcFVwZGF0ZVJlZiA9IHVzZVJlZigpO1xuICBjb25zdCBpY2VOYW1lVXBkYXRlUmVmID0gdXNlUmVmKCk7XG4gIGNvbnN0IGljZU51bWJlclVwZGF0ZVJlZiA9IHVzZVJlZigpO1xuICBjb25zdCBlbWFpbFVwZGF0ZVJlZiA9IHVzZVJlZigpO1xuICBjb25zdCBmaXJzdE5hbWVSZWYgPSB1c2VSZWYoKTtcbiAgY29uc3QgbGFzdE5hbWVSZWYgPSB1c2VSZWYoKTtcbiAgY29uc3Qgcm9sZVJlZiA9IHVzZVJlZigpO1xuXG4gIGNvbnN0IGNsZWFyRmllbGRzID0gKCkgPT4ge1xuICBcbiAgICBjb25zdCBjbGVhckZpZWxkID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ25ld01lbWJlckZvcm0nKTtcbiAgICBjbGVhckZpZWxkLnJlc2V0KCk7XG59XG4gIGFzeW5jIGZ1bmN0aW9uIG5ld01lbWJlckhhbmRsZXIoZXZlbnQpIHtcbiAgICBldmVudC5wcmV2ZW50RGVmYXVsdCgpO1xuICAgIGNvbnN0IG1lbWJlcklkID0gbWVtYmVySWRSZWYuY3VycmVudC52YWx1ZTtcbiAgICBjb25zdCByb2FkTmFtZVVwZGF0ZSA9IHJvYWROYW1lVXBkYXRlUmVmLmN1cnJlbnQudmFsdWU7XG4gICAgY29uc3QgY2VsbFBob25lVXBkYXRlID0gY2VsbFBob25lVXBkYXRlUmVmLmN1cnJlbnQudmFsdWU7XG4gICAgY29uc3QgaG9tZVBob25lVXBkYXRlID0gaG9tZVBob25lVXBkYXRlUmVmLmN1cnJlbnQudmFsdWU7XG4gICAgY29uc3QgYWRkcmVzc1VwZGF0ZSA9IGFkZHJlc3NVcGRhdGVSZWYuY3VycmVudC52YWx1ZTtcbiAgICBjb25zdCBjaXR5VXBkYXRlID0gY2l0eVVwZGF0ZVJlZi5jdXJyZW50LnZhbHVlO1xuICAgIGNvbnN0IHN0YXRlVXBkYXRlID0gc3RhdGVVcGRhdGVSZWYuY3VycmVudC52YWx1ZTtcbiAgICBjb25zdCB6aXBVcGRhdGUgPSB6aXBVcGRhdGVSZWYuY3VycmVudC52YWx1ZTtcbiAgICBjb25zdCBpY2VOYW1lVXBkYXRlID0gaWNlTmFtZVVwZGF0ZVJlZi5jdXJyZW50LnZhbHVlO1xuICAgIGNvbnN0IGljZU51bWJlclVwZGF0ZSA9IGljZU51bWJlclVwZGF0ZVJlZi5jdXJyZW50LnZhbHVlO1xuICAgIGNvbnN0IGVtYWlsVXBkYXRlID0gZW1haWxVcGRhdGVSZWYuY3VycmVudC52YWx1ZTtcbiAgICBjb25zdCBsYXN0TmFtZVVwZGF0ZSA9IGxhc3ROYW1lUmVmLmN1cnJlbnQudmFsdWU7XG4gICAgY29uc3QgZmlyc3ROYW1lVXBkYXRlID0gZmlyc3ROYW1lUmVmLmN1cnJlbnQudmFsdWU7XG4gICAgY29uc3Qgcm9sZSA9IHJvbGVSZWYuY3VycmVudC52YWx1ZTtcblxuICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgZmV0Y2goXCIvYXBpL21lbWJlcnMvbWVtYmVyTmV3XCIsIHtcbiAgICAgIG1ldGhvZDogXCJQT1NUXCIsXG4gICAgICBib2R5OiBKU09OLnN0cmluZ2lmeSh7XG4gICAgICAgIG1lbWJlcklkLFxuICAgICAgICByb2FkTmFtZVVwZGF0ZSxcbiAgICAgICAgY2VsbFBob25lVXBkYXRlLFxuICAgICAgICBob21lUGhvbmVVcGRhdGUsXG4gICAgICAgIGljZU5hbWVVcGRhdGUsXG4gICAgICAgIGljZU51bWJlclVwZGF0ZSxcbiAgICAgICAgYWRkcmVzc1VwZGF0ZSxcbiAgICAgICAgY2l0eVVwZGF0ZSxcbiAgICAgICAgc3RhdGVVcGRhdGUsXG4gICAgICAgIHppcFVwZGF0ZSxcbiAgICAgICAgZW1haWxVcGRhdGUsXG4gICAgICAgIGxhc3ROYW1lVXBkYXRlLFxuICAgICAgICBmaXJzdE5hbWVVcGRhdGUsXG4gICAgICAgIHJvbGVcbiAgICAgIH0pLFxuICAgICAgaGVhZGVyczogeyBcIkNvbnRlbnQtVHlwZVwiOiBcImFwcGxpY2F0aW9uL2pzb25cIiB9LFxuICAgIH0pO1xuICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXNwb25zZS5qc29uKCk7XG4gICAgaWYoZGF0YS5tZXNzYWdlKXtcbiAgICAgICAgY29uc3QgcmVzcG9uc2VNZXNzYWdlID0gPHAgY2xhc3NOYW1lPXtjbGFzc2VzLmVycm9yfT5NZW1iZXIgQWRkZWQ8L3A+O1xuICAgICAgICBzZXRPbih0cnVlKTtcbiAgICAgICAgc2V0TWVzc2FnZShyZXNwb25zZU1lc3NhZ2UpO1xuICAgIH1cbiAgICBjbGVhckZpZWxkcygpO1xuICAgXG4gIH1cbiAgcmV0dXJuIChcbiAgICA8c2VjdGlvbiBjbGFzc05hbWU9e2NsYXNzZXMuYmFja2dyb3VuZH0+XG4gICAgICA8aDE+TWVtYmVyIEluZm9ybWF0aW9uPC9oMT5cbiAgICAgIDxkaXY+XG4gICAgICAgIHttZXNzYWdlfVxuICAgICAgIDxkaXY+PHA+TmV3IE1lbWJlcjwvcD48L2Rpdj5cbiAgICAgICAgPGZvcm0gb25TdWJtaXQ9e25ld01lbWJlckhhbmRsZXJ9IGlkPVwibmV3TWVtYmVyRm9ybVwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtjbGFzc2VzLmNvbnRyb2x9PlxuICAgICAgICAgICAgPGxhYmVsIGh0bWxGb3I9XCJtZW1iZXJOdW1iZXJcIj5NZW1iZXIgTnVtYmVyPC9sYWJlbD5cbiAgICAgICAgICAgIDxpbnB1dFxuICAgICAgICAgICAgICB0eXBlPVwidGV4dFwiXG4gICAgICAgICAgICAgIG5hbWU9XCJtZW1iZXJOdW1iZXJcIlxuICAgICAgICAgICAgICBpZD1cIm1lbWJlck51bWJlclwiXG4gICAgICAgICAgICAgIHJlZj17bWVtYmVySWRSZWZ9XG4gICAgICAgICAgICAvPlxuICAgICAgICAgICAgPGxhYmVsIGh0bWxGb3I9XCJmaXJzdE5hbWVcIj5GaXJzdCBOYW1lOjwvbGFiZWw+XG4gICAgICAgICAgICA8aW5wdXQgdHlwZT1cInRleHRcIiBuYW1lPVwiZmlyc3ROYW1lXCIgaWQ9XCJmaXJzdE5hbWVcIiByZWY9e2ZpcnN0TmFtZVJlZn0gLz5cbiAgICAgICAgICAgIDxsYWJlbCBodG1sRm9yPVwibGFzdE5hbWVcIj5MYXN0IE5hbWU6PC9sYWJlbD5cbiAgICAgICAgICAgIDxpbnB1dCB0eXBlPVwidGV4dFwiIG5hbWU9XCJsYXN0TmFtZVwiIGlkPVwibGFzdE5hbWVcIiByZWY9e2xhc3ROYW1lUmVmfSAvPlxuICAgICAgICAgICAgPGxhYmVsIGh0bWxGb3I9XCJyb2FkTmFtZVwiPlJvYWQgTmFtZTo8L2xhYmVsPlxuICAgICAgICAgICAgPGlucHV0XG4gICAgICAgICAgICAgIHR5cGU9XCJ0ZXh0XCJcbiAgICAgICAgICAgICAgbmFtZT1cInJvYWROYW1lXCJcbiAgICAgICAgICAgICAgaWQ9XCJyb2FkTmFtZVwiXG4gICAgICAgICAgICAgIHJlZj17cm9hZE5hbWVVcGRhdGVSZWZ9XG4gICAgICAgICAgICAvPlxuICAgICAgICAgICAgPGxhYmVsIGh0bWxGb3I9XCJlbWFpbFwiPkVtYWlsOjwvbGFiZWw+XG4gICAgICAgICAgICA8aW5wdXQgdHlwZT1cInRleHRcIiBuYW1lPVwiZW1haWxcIiBpZD1cImVtYWlsXCIgcmVmPXtlbWFpbFVwZGF0ZVJlZn0gLz5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5jb250cm9sfT5cbiAgICAgICAgICAgIDxsYWJlbCBodG1sRm9yPVwiYWRkcmVzc1wiPkFkZHJlc3M6PC9sYWJlbD5cbiAgICAgICAgICAgIDxpbnB1dFxuICAgICAgICAgICAgICB0eXBlPVwidGV4dFwiXG4gICAgICAgICAgICAgIG5hbWU9XCJhZGRyZXNzXCJcbiAgICAgICAgICAgICAgaWQ9XCJhZGRyZXNzXCJcbiAgICAgICAgICAgICAgcmVmPXthZGRyZXNzVXBkYXRlUmVmfVxuICAgICAgICAgICAgLz5cbiAgICAgICAgICAgIDxsYWJlbCBodG1sRm9yPVwiY2l0eVwiPkNpdHk6PC9sYWJlbD5cbiAgICAgICAgICAgIDxpbnB1dCB0eXBlPVwidGV4dFwiIG5hbWU9XCJjaXR5XCIgaWQ9XCJjaXR5XCIgcmVmPXtjaXR5VXBkYXRlUmVmfSAvPlxuICAgICAgICAgICAgPGxhYmVsIGh0bWxGb3I9XCJzdGF0ZVwiPlN0YXRlOjwvbGFiZWw+XG4gICAgICAgICAgICA8aW5wdXQgdHlwZT1cInRleHRcIiBuYW1lPVwic3RhdGVcIiBpZD1cInN0YXRlXCIgcmVmPXtzdGF0ZVVwZGF0ZVJlZn0gLz5cbiAgICAgICAgICAgIDxsYWJlbCBodG1sRm9yPVwiemlwXCI+WmlwOiA8L2xhYmVsPlxuICAgICAgICAgICAgPGlucHV0IHR5cGU9XCJ0ZXh0XCIgbmFtZT1cInppcFwiIGlkPVwiemlwXCIgcmVmPXt6aXBVcGRhdGVSZWZ9IC8+XG4gICAgICAgICAgICA8bGFiZWwgaHRtbEZvcj1cImhvbWVQaG9uZVwiPkhvbWUgUGhvbmUgTnVtYmVyOjwvbGFiZWw+XG4gICAgICAgICAgICA8aW5wdXRcbiAgICAgICAgICAgICAgdHlwZT1cInRleHRcIlxuICAgICAgICAgICAgICBuYW1lPVwiaG9tZVBob25lXCJcbiAgICAgICAgICAgICAgaWQ9XCJob21lUGhvbmVcIlxuICAgICAgICAgICAgICByZWY9e2hvbWVQaG9uZVVwZGF0ZVJlZn1cbiAgICAgICAgICAgIC8+XG4gICAgICAgICAgICA8bGFiZWwgaHRtbEZvcj1cImNlbGxQaG9uZVwiPkNlbGwgUGhvbmUgTnVtYmVyPC9sYWJlbD5cbiAgICAgICAgICAgIDxpbnB1dFxuICAgICAgICAgICAgICB0eXBlPVwidGV4dFwiXG4gICAgICAgICAgICAgIG5hbWU9XCJjZWxsUGhvbmVcIlxuICAgICAgICAgICAgICBpZD1cImNlbGxQaG9uZVwiXG4gICAgICAgICAgICAgIHJlZj17Y2VsbFBob25lVXBkYXRlUmVmfVxuICAgICAgICAgICAgLz5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5jb250cm9sfT5cbiAgICAgICAgICAgIDxsYWJlbCBodG1sRm9yPVwiaWNlTmFtZVwiPklDRSBOYW1lOjwvbGFiZWw+XG4gICAgICAgICAgICA8aW5wdXRcbiAgICAgICAgICAgICAgdHlwZT1cInRleHRcIlxuICAgICAgICAgICAgICBuYW1lPVwiaWNlTmFtZVwiXG4gICAgICAgICAgICAgIGlkPVwiaWNlTmFtZVwiXG4gICAgICAgICAgICAgIHJlZj17aWNlTmFtZVVwZGF0ZVJlZn1cbiAgICAgICAgICAgIC8+XG4gICAgICAgICAgICA8bGFiZWwgaHRtbEZvcj1cImljZU51bWJlclwiPklDRSBQaG9uZSBOdW1iZXI6PC9sYWJlbD5cbiAgICAgICAgICAgIDxpbnB1dFxuICAgICAgICAgICAgICB0eXBlPVwidGV4dFwiXG4gICAgICAgICAgICAgIG5hbWU9XCJpY2VOdW1iZXJcIlxuICAgICAgICAgICAgICBpZD1cImljZU51bWJlclwiXG4gICAgICAgICAgICAgIHJlZj17aWNlTnVtYmVyVXBkYXRlUmVmfVxuICAgICAgICAgICAgLz5cbiAgICAgICAgICAgIDxsYWJlbCBodG1sRm9yPVwicm9sZVwiPlJvbGU6PC9sYWJlbD5cbiAgICAgICAgICAgIDxzZWxlY3QgbmFtZT1cInJvbGVcIiBpZD1cInJvbGVcIiByZWY9e3JvbGVSZWZ9PlxuICAgICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9XCJhZG1pblwiPkFkbWluaXN0cmF0b3I8L29wdGlvbj5cbiAgICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPVwibWVtYmVyXCI+TWVtYmVyPC9vcHRpb24+XG4gICAgICAgICAgICAgIDwvc2VsZWN0PlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDxidXR0b24gdHlwZT1cInN1Ym1pdFwiIGNsYXNzTmFtZT17Y2xhc3Nlcy5idXR0b259PlxuICAgICAgICAgICAgVXBkYXRlIVxuICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICA8L2Zvcm0+XG4gICAgICA8L2Rpdj5cbiAgICA8L3NlY3Rpb24+XG4gICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IE1lbWJlck5ldztcbiJdLCJuYW1lcyI6WyJjbGFzc2VzIiwidXNlUmVmIiwidXNlU3RhdGUiLCJ1c2VFZmZlY3QiLCJNZW1iZXJOZXciLCJtZXNzYWdlIiwic2V0TWVzc2FnZSIsIm9uIiwic2V0T24iLCJ0aW1lciIsInNldFRpbWVvdXQiLCJjbGVhclRpbWVvdXQiLCJtZW1iZXJJZFJlZiIsInJvYWROYW1lVXBkYXRlUmVmIiwiY2VsbFBob25lVXBkYXRlUmVmIiwiaG9tZVBob25lVXBkYXRlUmVmIiwiYWRkcmVzc1VwZGF0ZVJlZiIsImNpdHlVcGRhdGVSZWYiLCJzdGF0ZVVwZGF0ZVJlZiIsInppcFVwZGF0ZVJlZiIsImljZU5hbWVVcGRhdGVSZWYiLCJpY2VOdW1iZXJVcGRhdGVSZWYiLCJlbWFpbFVwZGF0ZVJlZiIsImZpcnN0TmFtZVJlZiIsImxhc3ROYW1lUmVmIiwicm9sZVJlZiIsImNsZWFyRmllbGRzIiwiY2xlYXJGaWVsZCIsImRvY3VtZW50IiwiZ2V0RWxlbWVudEJ5SWQiLCJyZXNldCIsIm5ld01lbWJlckhhbmRsZXIiLCJldmVudCIsInByZXZlbnREZWZhdWx0IiwibWVtYmVySWQiLCJjdXJyZW50IiwidmFsdWUiLCJyb2FkTmFtZVVwZGF0ZSIsImNlbGxQaG9uZVVwZGF0ZSIsImhvbWVQaG9uZVVwZGF0ZSIsImFkZHJlc3NVcGRhdGUiLCJjaXR5VXBkYXRlIiwic3RhdGVVcGRhdGUiLCJ6aXBVcGRhdGUiLCJpY2VOYW1lVXBkYXRlIiwiaWNlTnVtYmVyVXBkYXRlIiwiZW1haWxVcGRhdGUiLCJsYXN0TmFtZVVwZGF0ZSIsImZpcnN0TmFtZVVwZGF0ZSIsInJvbGUiLCJyZXNwb25zZSIsImZldGNoIiwibWV0aG9kIiwiYm9keSIsIkpTT04iLCJzdHJpbmdpZnkiLCJoZWFkZXJzIiwiZGF0YSIsImpzb24iLCJyZXNwb25zZU1lc3NhZ2UiLCJwIiwiY2xhc3NOYW1lIiwiZXJyb3IiLCJzZWN0aW9uIiwiYmFja2dyb3VuZCIsImgxIiwiZGl2IiwiZm9ybSIsIm9uU3VibWl0IiwiaWQiLCJjb250cm9sIiwibGFiZWwiLCJodG1sRm9yIiwiaW5wdXQiLCJ0eXBlIiwibmFtZSIsInJlZiIsInNlbGVjdCIsIm9wdGlvbiIsImJ1dHRvbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./components/members/memberNew.js\n");
-
-/***/ }),
-
-/***/ "./components/members/memberUpdate.js":
-/*!********************************************!*\
-  !*** ./components/members/memberUpdate.js ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _memberUpdate_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./memberUpdate.module.css */ \"./components/members/memberUpdate.module.css\");\n/* harmony import */ var _memberUpdate_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_memberUpdate_module_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nfunction MemberUpdate(props) {\n    const { 0: message , 1: setMessage  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)();\n    const { 0: messageOn , 1: setMessageOn  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        setMessageOn(false);\n        const timer = setTimeout(()=>setMessage(null)\n        , 10000);\n        return ()=>clearTimeout(timer)\n        ;\n    }, [\n        messageOn\n    ]);\n    const firstName = props.user.firstName;\n    const lastName = props.user.lastName;\n    const cellPhone = props.user.cellPhone;\n    const homePhone = props.user.homePhone;\n    const address = props.user.address;\n    const city = props.user.city;\n    const state = props.user.state;\n    const zip = props.user.zip;\n    const roadName = props.user.roadName;\n    const iceName = props.user.iceName;\n    const iceNumber = props.user.iceNumber;\n    const email = props.user.email;\n    const memberId = props.user.memberId;\n    const roadNameUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const cellPhoneUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const homePhoneUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const addressUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const cityUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const stateUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const zipUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const iceNameUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const iceNumberUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const emailUpdateRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n    const clearFields = ()=>{\n        const formField = document.getElementById('memberUpdateForm');\n        formField.reset();\n    };\n    async function updateMemberHandler(event) {\n        event.preventDefault();\n        let roadNameUpdate = roadNameUpdateRef.current.value;\n        let cellPhoneUpdate = cellPhoneUpdateRef.current.value;\n        let homePhoneUpdate = homePhoneUpdateRef.current.value;\n        let addressUpdate = addressUpdateRef.current.value;\n        let cityUpdate = cityUpdateRef.current.value;\n        let stateUpdate = stateUpdateRef.current.value;\n        let zipUpdate = zipUpdateRef.current.value;\n        let iceNameUpdate = iceNameUpdateRef.current.value;\n        let iceNumberUpdate = iceNumberUpdateRef.current.value;\n        let emailUpdate = emailUpdateRef.current.value;\n        //================================================================\n        // write if condition for empty varialbes\n        //================================================================\n        if (!roadNameUpdate) {\n            roadNameUpdate = roadName;\n        }\n        if (!cellPhoneUpdate) {\n            cellPhoneUpdate = cellPhone;\n        }\n        if (!homePhoneUpdate) {\n            homePhoneUpdate = homePhone;\n        }\n        if (!addressUpdate) {\n            addressUpdate = address;\n        }\n        if (!cityUpdate) {\n            cityUpdate = city;\n        }\n        if (!stateUpdate) {\n            stateUpdate = state;\n        }\n        if (!zipUpdate) {\n            zipUpdate = zip;\n        }\n        if (!emailUpdate) {\n            emailUpdate = email;\n        }\n        if (!iceNameUpdate) {\n            iceNameUpdate = iceName;\n        }\n        if (!iceNumberUpdate) {\n            iceNumberUpdate = iceNumber;\n        }\n        const response = await fetch(\"/api/members/memberUpdate\", {\n            method: \"POST\",\n            body: JSON.stringify({\n                memberId,\n                roadNameUpdate,\n                cellPhoneUpdate,\n                homePhoneUpdate,\n                iceNameUpdate,\n                iceNumberUpdate,\n                addressUpdate,\n                cityUpdate,\n                stateUpdate,\n                zipUpdate,\n                emailUpdate\n            }),\n            headers: {\n                \"Content-Type\": \"application/json\"\n            }\n        });\n        const data = await response.json();\n        clearFields();\n        const responseMessage = /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n            className: (_memberUpdate_module_css__WEBPACK_IMPORTED_MODULE_2___default().error),\n            children: data.message\n        }, void 0, false, {\n            fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n            lineNumber: 110,\n            columnNumber: 29\n        }, this);\n        setMessage(responseMessage);\n        setMessageOn(true);\n    }\n    return(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"section\", {\n        className: (_memberUpdate_module_css__WEBPACK_IMPORTED_MODULE_2___default().background),\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                children: \"Member Information\"\n            }, void 0, false, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                lineNumber: 117,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                children: [\n                    message ? message : '',\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        children: [\n                            memberId,\n                            \" \",\n                            firstName,\n                            \" \",\n                            lastName\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                        lineNumber: 120,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"form\", {\n                        onSubmit: updateMemberHandler,\n                        id: \"memberUpdateForm\",\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: (_memberUpdate_module_css__WEBPACK_IMPORTED_MODULE_2___default().control),\n                                children: [\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"roadName\",\n                                        children: \"Road Name:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 125,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"roadName\",\n                                        id: \"roadName\",\n                                        placeholder: roadName,\n                                        ref: roadNameUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 126,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"email\",\n                                        children: \"Email:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 133,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"email\",\n                                        id: \"email\",\n                                        placeholder: email,\n                                        ref: emailUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 134,\n                                        columnNumber: 13\n                                    }, this)\n                                ]\n                            }, void 0, true, {\n                                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                lineNumber: 124,\n                                columnNumber: 11\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: (_memberUpdate_module_css__WEBPACK_IMPORTED_MODULE_2___default().control),\n                                children: [\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"address\",\n                                        children: \"Address:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 143,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"address\",\n                                        id: \"address\",\n                                        placeholder: address,\n                                        ref: addressUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 144,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"city\",\n                                        children: \"City:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 151,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"city\",\n                                        id: \"city\",\n                                        placeholder: city,\n                                        ref: cityUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 152,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"state\",\n                                        children: \"State:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 159,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"state\",\n                                        id: \"state\",\n                                        placeholder: state,\n                                        ref: stateUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 160,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"zip\",\n                                        children: \"Zip: \"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 167,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"zip\",\n                                        id: \"name\",\n                                        placeholder: zip,\n                                        ref: zipUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 168,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"homePhone\",\n                                        children: \"Home Phone Number:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 175,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"homePhone\",\n                                        id: \"homePhone\",\n                                        placeholder: homePhone,\n                                        ref: homePhoneUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 176,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"cellPhone\",\n                                        children: \"Cell Phone Number\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 183,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"cellPhone\",\n                                        id: \"cellPhone\",\n                                        placeholder: cellPhone,\n                                        ref: cellPhoneUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 184,\n                                        columnNumber: 13\n                                    }, this)\n                                ]\n                            }, void 0, true, {\n                                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                lineNumber: 142,\n                                columnNumber: 11\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: (_memberUpdate_module_css__WEBPACK_IMPORTED_MODULE_2___default().control),\n                                children: [\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"iceName\",\n                                        children: \"ICE Name:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 193,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"iceName\",\n                                        id: \"iceName\",\n                                        placeholder: iceName,\n                                        ref: iceNameUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 194,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                                        htmlFor: \"iceNumber\",\n                                        children: \"ICE Phone Number:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 201,\n                                        columnNumber: 13\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                        type: \"text\",\n                                        name: \"iceNumber\",\n                                        id: \"iceNumber\",\n                                        placeholder: iceNumber,\n                                        ref: iceNumberUpdateRef\n                                    }, void 0, false, {\n                                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                        lineNumber: 202,\n                                        columnNumber: 13\n                                    }, this)\n                                ]\n                            }, void 0, true, {\n                                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                lineNumber: 192,\n                                columnNumber: 11\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                                type: \"submit\",\n                                className: (_memberUpdate_module_css__WEBPACK_IMPORTED_MODULE_2___default().button),\n                                children: \"Update!\"\n                            }, void 0, false, {\n                                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                                lineNumber: 210,\n                                columnNumber: 11\n                            }, this)\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                        lineNumber: 123,\n                        columnNumber: 9\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n                lineNumber: 118,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/members/memberUpdate.js\",\n        lineNumber: 116,\n        columnNumber: 5\n    }, this));\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MemberUpdate);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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LFNBQVMsRUFBRXBFLHlFQUFlOztnSEFDNUI4RSxDQUFLO3dDQUFDQyxPQUFPLEVBQUMsQ0FBUztrREFBQyxDQUFTOzs7Ozs7Z0hBQ2pDQyxDQUFLO3dDQUNKQyxJQUFJLEVBQUMsQ0FBTTt3Q0FDWEMsSUFBSSxFQUFDLENBQVM7d0NBQ2ROLEVBQUUsRUFBQyxDQUFTO3dDQUNaTyxXQUFXLEVBQUU1RCxPQUFPO3dDQUNwQjZELEdBQUcsRUFBRWxELGdCQUFnQjs7Ozs7O2dIQUV0QjRDLENBQUs7d0NBQUNDLE9BQU8sRUFBQyxDQUFXO2tEQUFDLENBQWlCOzs7Ozs7Z0hBQzNDQyxDQUFLO3dDQUNKQyxJQUFJLEVBQUMsQ0FBTTt3Q0FDWEMsSUFBSSxFQUFDLENBQVc7d0NBQ2hCTixFQUFFLEVBQUMsQ0FBVzt3Q0FDZE8sV0FBVyxFQUFFM0QsU0FBUzt3Q0FDdEI0RCxHQUFHLEVBQUVqRCxrQkFBa0I7Ozs7Ozs7Ozs7Ozt3R0FHMUJrRCxDQUFNO2dDQUFDSixJQUFJLEVBQUMsQ0FBUTtnQ0FBQ2IsU0FBUyxFQUFFcEUsd0VBQWM7MENBQUUsQ0FFakQ7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUtWLENBQUM7QUFFRCxpRUFBZUksWUFBWSxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbmV4dGpzLXJvdXRpbmctY291cnNlLy4vY29tcG9uZW50cy9tZW1iZXJzL21lbWJlclVwZGF0ZS5qcz9mOGVlIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBjbGFzc2VzIGZyb20gXCIuL21lbWJlclVwZGF0ZS5tb2R1bGUuY3NzXCI7XG5pbXBvcnQgeyB1c2VSZWYsIHVzZVN0YXRlLCB1c2VFZmZlY3QgfSBmcm9tIFwicmVhY3RcIjtcblxuZnVuY3Rpb24gTWVtYmVyVXBkYXRlKHByb3BzKSB7XG4gXG4gICAgY29uc3QgW21lc3NhZ2UsIHNldE1lc3NhZ2VdID0gdXNlU3RhdGUoKTtcbiAgICBjb25zdCBbbWVzc2FnZU9uLCBzZXRNZXNzYWdlT24gXSA9IHVzZVN0YXRlKGZhbHNlKTtcblxuICAgIHVzZUVmZmVjdCgoKSA9PiB7XG4gICAgICBzZXRNZXNzYWdlT24oZmFsc2UpO1xuICAgICAgY29uc3QgdGltZXIgPSBzZXRUaW1lb3V0KCgpID0+IHNldE1lc3NhZ2UobnVsbCksIDEwMDAwKTtcbiAgICAgIHJldHVybiAoKSA9PiBjbGVhclRpbWVvdXQodGltZXIpO1xuICAgIH0sIFttZXNzYWdlT25dKVxuIFxuICAgIGNvbnN0IGZpcnN0TmFtZSA9IHByb3BzLnVzZXIuZmlyc3ROYW1lO1xuICAgIGNvbnN0IGxhc3ROYW1lID0gcHJvcHMudXNlci5sYXN0TmFtZTtcbiAgICBjb25zdCBjZWxsUGhvbmUgPSBwcm9wcy51c2VyLmNlbGxQaG9uZTtcbiAgICBjb25zdCBob21lUGhvbmUgPSBwcm9wcy51c2VyLmhvbWVQaG9uZTtcbiAgICBjb25zdCBhZGRyZXNzID0gcHJvcHMudXNlci5hZGRyZXNzO1xuICAgIGNvbnN0IGNpdHkgPSBwcm9wcy51c2VyLmNpdHk7XG4gICBjb25zdCAgc3RhdGUgPSBwcm9wcy51c2VyLnN0YXRlO1xuICAgIGNvbnN0IHppcCA9IHByb3BzLnVzZXIuemlwO1xuICAgIGNvbnN0IHJvYWROYW1lID0gcHJvcHMudXNlci5yb2FkTmFtZTtcbiAgICBjb25zdCBpY2VOYW1lID0gcHJvcHMudXNlci5pY2VOYW1lO1xuICAgIGNvbnN0IGljZU51bWJlciA9IHByb3BzLnVzZXIuaWNlTnVtYmVyO1xuICAgIGNvbnN0IGVtYWlsID0gcHJvcHMudXNlci5lbWFpbDtcbiAgICBjb25zdCBtZW1iZXJJZCA9IHByb3BzLnVzZXIubWVtYmVySWQ7XG4gIFxuXG4gIGNvbnN0IHJvYWROYW1lVXBkYXRlUmVmID0gdXNlUmVmKCk7XG4gIGNvbnN0IGNlbGxQaG9uZVVwZGF0ZVJlZiA9IHVzZVJlZigpO1xuICBjb25zdCBob21lUGhvbmVVcGRhdGVSZWYgPSB1c2VSZWYoKTtcbiAgY29uc3QgYWRkcmVzc1VwZGF0ZVJlZiA9IHVzZVJlZigpO1xuICBjb25zdCBjaXR5VXBkYXRlUmVmID0gdXNlUmVmKCk7XG4gIGNvbnN0IHN0YXRlVXBkYXRlUmVmID0gdXNlUmVmKCk7XG4gIGNvbnN0IHppcFVwZGF0ZVJlZiA9IHVzZVJlZigpO1xuICBjb25zdCBpY2VOYW1lVXBkYXRlUmVmID0gdXNlUmVmKCk7XG4gIGNvbnN0IGljZU51bWJlclVwZGF0ZVJlZiA9IHVzZVJlZigpO1xuICBjb25zdCBlbWFpbFVwZGF0ZVJlZiA9IHVzZVJlZigpO1xuICBjb25zdCBjbGVhckZpZWxkcyA9ICgpID0+IHtcbiAgY29uc3QgZm9ybUZpZWxkID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ21lbWJlclVwZGF0ZUZvcm0nKTtcbiAgZm9ybUZpZWxkLnJlc2V0KCk7XG4gIH1cbiAgYXN5bmMgZnVuY3Rpb24gdXBkYXRlTWVtYmVySGFuZGxlcihldmVudCkge1xuICAgIGV2ZW50LnByZXZlbnREZWZhdWx0KCk7XG4gICAgbGV0IHJvYWROYW1lVXBkYXRlID0gcm9hZE5hbWVVcGRhdGVSZWYuY3VycmVudC52YWx1ZTtcbiAgICBsZXQgY2VsbFBob25lVXBkYXRlID0gY2VsbFBob25lVXBkYXRlUmVmLmN1cnJlbnQudmFsdWU7XG4gICAgbGV0IGhvbWVQaG9uZVVwZGF0ZSA9IGhvbWVQaG9uZVVwZGF0ZVJlZi5jdXJyZW50LnZhbHVlO1xuICAgIGxldCBhZGRyZXNzVXBkYXRlID0gYWRkcmVzc1VwZGF0ZVJlZi5jdXJyZW50LnZhbHVlO1xuICAgIGxldCBjaXR5VXBkYXRlID0gY2l0eVVwZGF0ZVJlZi5jdXJyZW50LnZhbHVlO1xuICAgIGxldCBzdGF0ZVVwZGF0ZSA9IHN0YXRlVXBkYXRlUmVmLmN1cnJlbnQudmFsdWU7XG4gICAgbGV0IHppcFVwZGF0ZSA9IHppcFVwZGF0ZVJlZi5jdXJyZW50LnZhbHVlO1xuICAgIGxldCBpY2VOYW1lVXBkYXRlID0gaWNlTmFtZVVwZGF0ZVJlZi5jdXJyZW50LnZhbHVlO1xuICAgIGxldCBpY2VOdW1iZXJVcGRhdGUgPSBpY2VOdW1iZXJVcGRhdGVSZWYuY3VycmVudC52YWx1ZTtcbiAgICBsZXQgZW1haWxVcGRhdGUgPSBlbWFpbFVwZGF0ZVJlZi5jdXJyZW50LnZhbHVlO1xuICAgIC8vPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuICAgIC8vIHdyaXRlIGlmIGNvbmRpdGlvbiBmb3IgZW1wdHkgdmFyaWFsYmVzXG4gICAgLy89PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4gICAgXG4gICAgaWYoIXJvYWROYW1lVXBkYXRlKSB7XG4gICAgICByb2FkTmFtZVVwZGF0ZSA9IHJvYWROYW1lO1xuICAgIH1cbiAgICBpZighY2VsbFBob25lVXBkYXRlKSB7XG4gICAgICBjZWxsUGhvbmVVcGRhdGUgPSBjZWxsUGhvbmU7XG4gICAgfVxuICAgIGlmKCFob21lUGhvbmVVcGRhdGUpIHtcbiAgICAgIGhvbWVQaG9uZVVwZGF0ZSA9IGhvbWVQaG9uZTtcbiAgICB9XG4gICAgaWYoIWFkZHJlc3NVcGRhdGUgKSB7XG4gICAgICBhZGRyZXNzVXBkYXRlID0gYWRkcmVzcztcbiAgICB9XG4gICAgaWYoIWNpdHlVcGRhdGUgKSB7XG4gICAgICBjaXR5VXBkYXRlID0gY2l0eTtcbiAgICB9XG4gICAgaWYoIXN0YXRlVXBkYXRlICkge1xuICAgICAgc3RhdGVVcGRhdGUgPSBzdGF0ZTtcbiAgICB9XG4gICAgaWYoIXppcFVwZGF0ZSApIHtcbiAgICAgIHppcFVwZGF0ZSA9IHppcDtcbiAgICB9XG4gICAgaWYoIWVtYWlsVXBkYXRlICkge1xuICAgICAgZW1haWxVcGRhdGUgPSBlbWFpbDtcbiAgICB9XG4gICAgaWYoIWljZU5hbWVVcGRhdGUgKSB7XG4gICAgICBpY2VOYW1lVXBkYXRlID0gaWNlTmFtZTtcbiAgICB9XG4gICAgaWYoIWljZU51bWJlclVwZGF0ZSApIHtcbiAgICAgIGljZU51bWJlclVwZGF0ZSA9IGljZU51bWJlcjtcbiAgICB9XG5cbiAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKFwiL2FwaS9tZW1iZXJzL21lbWJlclVwZGF0ZVwiLCB7XG4gICAgICBtZXRob2Q6IFwiUE9TVFwiLFxuICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkoe1xuICAgICAgICBtZW1iZXJJZCxcbiAgICAgICAgcm9hZE5hbWVVcGRhdGUsXG4gICAgICAgIGNlbGxQaG9uZVVwZGF0ZSxcbiAgICAgICAgaG9tZVBob25lVXBkYXRlLFxuICAgICAgICBpY2VOYW1lVXBkYXRlLFxuICAgICAgICBpY2VOdW1iZXJVcGRhdGUsXG4gICAgICAgIGFkZHJlc3NVcGRhdGUsXG4gICAgICAgIGNpdHlVcGRhdGUsXG4gICAgICAgIHN0YXRlVXBkYXRlLFxuICAgICAgICB6aXBVcGRhdGUsXG4gICAgICAgIGVtYWlsVXBkYXRlLFxuICAgICAgfSksXG4gICAgICBoZWFkZXJzOiB7IFwiQ29udGVudC1UeXBlXCI6IFwiYXBwbGljYXRpb24vanNvblwiIH0sXG4gICAgfSk7XG4gICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlc3BvbnNlLmpzb24oKTtcbiAgICBjbGVhckZpZWxkcygpO1xuICAgIGNvbnN0IHJlc3BvbnNlTWVzc2FnZSA9IDxwIGNsYXNzTmFtZT17Y2xhc3Nlcy5lcnJvcn0+e2RhdGEubWVzc2FnZX08L3A+XG4gICAgc2V0TWVzc2FnZShyZXNwb25zZU1lc3NhZ2UpXG4gICAgc2V0TWVzc2FnZU9uKHRydWUpO1xuXG4gIH1cbiAgcmV0dXJuIChcbiAgICA8c2VjdGlvbiBjbGFzc05hbWU9e2NsYXNzZXMuYmFja2dyb3VuZH0+XG4gICAgICA8aDE+TWVtYmVyIEluZm9ybWF0aW9uPC9oMT5cbiAgICAgIDxkaXY+XG4gICAgICAgIHttZXNzYWdlID8gbWVzc2FnZSA6ICcnfVxuICAgICAgICA8ZGl2PlxuICAgICAgICAgIHttZW1iZXJJZH0ge2ZpcnN0TmFtZX0ge2xhc3ROYW1lfVxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGZvcm0gb25TdWJtaXQ9e3VwZGF0ZU1lbWJlckhhbmRsZXJ9IGlkPVwibWVtYmVyVXBkYXRlRm9ybVwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtjbGFzc2VzLmNvbnRyb2x9PlxuICAgICAgICAgICAgPGxhYmVsIGh0bWxGb3I9XCJyb2FkTmFtZVwiPlJvYWQgTmFtZTo8L2xhYmVsPlxuICAgICAgICAgICAgPGlucHV0XG4gICAgICAgICAgICAgIHR5cGU9XCJ0ZXh0XCJcbiAgICAgICAgICAgICAgbmFtZT1cInJvYWROYW1lXCJcbiAgICAgICAgICAgICAgaWQ9XCJyb2FkTmFtZVwiXG4gICAgICAgICAgICAgIHBsYWNlaG9sZGVyPXtyb2FkTmFtZX1cbiAgICAgICAgICAgICAgcmVmPXtyb2FkTmFtZVVwZGF0ZVJlZn1cbiAgICAgICAgICAgIC8+XG4gICAgICAgICAgICA8bGFiZWwgaHRtbEZvcj1cImVtYWlsXCI+RW1haWw6PC9sYWJlbD5cbiAgICAgICAgICAgIDxpbnB1dFxuICAgICAgICAgICAgICB0eXBlPVwidGV4dFwiXG4gICAgICAgICAgICAgIG5hbWU9XCJlbWFpbFwiXG4gICAgICAgICAgICAgIGlkPVwiZW1haWxcIlxuICAgICAgICAgICAgICBwbGFjZWhvbGRlcj17ZW1haWx9XG4gICAgICAgICAgICAgIHJlZj17ZW1haWxVcGRhdGVSZWZ9XG4gICAgICAgICAgICAvPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtjbGFzc2VzLmNvbnRyb2x9PlxuICAgICAgICAgICAgPGxhYmVsIGh0bWxGb3I9XCJhZGRyZXNzXCI+QWRkcmVzczo8L2xhYmVsPlxuICAgICAgICAgICAgPGlucHV0XG4gICAgICAgICAgICAgIHR5cGU9XCJ0ZXh0XCJcbiAgICAgICAgICAgICAgbmFtZT1cImFkZHJlc3NcIlxuICAgICAgICAgICAgICBpZD1cImFkZHJlc3NcIlxuICAgICAgICAgICAgICBwbGFjZWhvbGRlcj17YWRkcmVzc31cbiAgICAgICAgICAgICAgcmVmPXthZGRyZXNzVXBkYXRlUmVmfVxuICAgICAgICAgICAgLz5cbiAgICAgICAgICAgIDxsYWJlbCBodG1sRm9yPVwiY2l0eVwiPkNpdHk6PC9sYWJlbD5cbiAgICAgICAgICAgIDxpbnB1dFxuICAgICAgICAgICAgICB0eXBlPVwidGV4dFwiXG4gICAgICAgICAgICAgIG5hbWU9XCJjaXR5XCJcbiAgICAgICAgICAgICAgaWQ9XCJjaXR5XCJcbiAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9e2NpdHl9XG4gICAgICAgICAgICAgIHJlZj17Y2l0eVVwZGF0ZVJlZn1cbiAgICAgICAgICAgIC8+XG4gICAgICAgICAgICA8bGFiZWwgaHRtbEZvcj1cInN0YXRlXCI+U3RhdGU6PC9sYWJlbD5cbiAgICAgICAgICAgIDxpbnB1dFxuICAgICAgICAgICAgICB0eXBlPVwidGV4dFwiXG4gICAgICAgICAgICAgIG5hbWU9XCJzdGF0ZVwiXG4gICAgICAgICAgICAgIGlkPVwic3RhdGVcIlxuICAgICAgICAgICAgICBwbGFjZWhvbGRlcj17c3RhdGV9XG4gICAgICAgICAgICAgIHJlZj17c3RhdGVVcGRhdGVSZWZ9XG4gICAgICAgICAgICAvPlxuICAgICAgICAgICAgPGxhYmVsIGh0bWxGb3I9XCJ6aXBcIj5aaXA6IDwvbGFiZWw+XG4gICAgICAgICAgICA8aW5wdXRcbiAgICAgICAgICAgICAgdHlwZT1cInRleHRcIlxuICAgICAgICAgICAgICBuYW1lPVwiemlwXCJcbiAgICAgICAgICAgICAgaWQ9XCJuYW1lXCJcbiAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9e3ppcH1cbiAgICAgICAgICAgICAgcmVmPXt6aXBVcGRhdGVSZWZ9XG4gICAgICAgICAgICAvPlxuICAgICAgICAgICAgPGxhYmVsIGh0bWxGb3I9XCJob21lUGhvbmVcIj5Ib21lIFBob25lIE51bWJlcjo8L2xhYmVsPlxuICAgICAgICAgICAgPGlucHV0XG4gICAgICAgICAgICAgIHR5cGU9XCJ0ZXh0XCJcbiAgICAgICAgICAgICAgbmFtZT1cImhvbWVQaG9uZVwiXG4gICAgICAgICAgICAgIGlkPVwiaG9tZVBob25lXCJcbiAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9e2hvbWVQaG9uZX1cbiAgICAgICAgICAgICAgcmVmPXtob21lUGhvbmVVcGRhdGVSZWZ9XG4gICAgICAgICAgICAvPlxuICAgICAgICAgICAgPGxhYmVsIGh0bWxGb3I9XCJjZWxsUGhvbmVcIj5DZWxsIFBob25lIE51bWJlcjwvbGFiZWw+XG4gICAgICAgICAgICA8aW5wdXRcbiAgICAgICAgICAgICAgdHlwZT1cInRleHRcIlxuICAgICAgICAgICAgICBuYW1lPVwiY2VsbFBob25lXCJcbiAgICAgICAgICAgICAgaWQ9XCJjZWxsUGhvbmVcIlxuICAgICAgICAgICAgICBwbGFjZWhvbGRlcj17Y2VsbFBob25lfVxuICAgICAgICAgICAgICByZWY9e2NlbGxQaG9uZVVwZGF0ZVJlZn1cbiAgICAgICAgICAgIC8+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9e2NsYXNzZXMuY29udHJvbH0+XG4gICAgICAgICAgICA8bGFiZWwgaHRtbEZvcj1cImljZU5hbWVcIj5JQ0UgTmFtZTo8L2xhYmVsPlxuICAgICAgICAgICAgPGlucHV0XG4gICAgICAgICAgICAgIHR5cGU9XCJ0ZXh0XCJcbiAgICAgICAgICAgICAgbmFtZT1cImljZU5hbWVcIlxuICAgICAgICAgICAgICBpZD1cImljZU5hbWVcIlxuICAgICAgICAgICAgICBwbGFjZWhvbGRlcj17aWNlTmFtZX1cbiAgICAgICAgICAgICAgcmVmPXtpY2VOYW1lVXBkYXRlUmVmfVxuICAgICAgICAgICAgLz5cbiAgICAgICAgICAgIDxsYWJlbCBodG1sRm9yPVwiaWNlTnVtYmVyXCI+SUNFIFBob25lIE51bWJlcjo8L2xhYmVsPlxuICAgICAgICAgICAgPGlucHV0XG4gICAgICAgICAgICAgIHR5cGU9XCJ0ZXh0XCJcbiAgICAgICAgICAgICAgbmFtZT1cImljZU51bWJlclwiXG4gICAgICAgICAgICAgIGlkPVwiaWNlTnVtYmVyXCJcbiAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9e2ljZU51bWJlcn1cbiAgICAgICAgICAgICAgcmVmPXtpY2VOdW1iZXJVcGRhdGVSZWZ9XG4gICAgICAgICAgICAvPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDxidXR0b24gdHlwZT1cInN1Ym1pdFwiIGNsYXNzTmFtZT17Y2xhc3Nlcy5idXR0b259PlxuICAgICAgICAgICAgVXBkYXRlIVxuICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICA8L2Zvcm0+XG4gICAgICA8L2Rpdj5cbiAgICA8L3NlY3Rpb24+XG4gICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IE1lbWJlclVwZGF0ZTtcbiJdLCJuYW1lcyI6WyJjbGFzc2VzIiwidXNlUmVmIiwidXNlU3RhdGUiLCJ1c2VFZmZlY3QiLCJNZW1iZXJVcGRhdGUiLCJwcm9wcyIsIm1lc3NhZ2UiLCJzZXRNZXNzYWdlIiwibWVzc2FnZU9uIiwic2V0TWVzc2FnZU9uIiwidGltZXIiLCJzZXRUaW1lb3V0IiwiY2xlYXJUaW1lb3V0IiwiZmlyc3ROYW1lIiwidXNlciIsImxhc3ROYW1lIiwiY2VsbFBob25lIiwiaG9tZVBob25lIiwiYWRkcmVzcyIsImNpdHkiLCJzdGF0ZSIsInppcCIsInJvYWROYW1lIiwiaWNlTmFtZSIsImljZU51bWJlciIsImVtYWlsIiwibWVtYmVySWQiLCJyb2FkTmFtZVVwZGF0ZVJlZiIsImNlbGxQaG9uZVVwZGF0ZVJlZiIsImhvbWVQaG9uZVVwZGF0ZVJlZiIsImFkZHJlc3NVcGRhdGVSZWYiLCJjaXR5VXBkYXRlUmVmIiwic3RhdGVVcGRhdGVSZWYiLCJ6aXBVcGRhdGVSZWYiLCJpY2VOYW1lVXBkYXRlUmVmIiwiaWNlTnVtYmVyVXBkYXRlUmVmIiwiZW1haWxVcGRhdGVSZWYiLCJjbGVhckZpZWxkcyIsImZvcm1GaWVsZCIsImRvY3VtZW50IiwiZ2V0RWxlbWVudEJ5SWQiLCJyZXNldCIsInVwZGF0ZU1lbWJlckhhbmRsZXIiLCJldmVudCIsInByZXZlbnREZWZhdWx0Iiwicm9hZE5hbWVVcGRhdGUiLCJjdXJyZW50IiwidmFsdWUiLCJjZWxsUGhvbmVVcGRhdGUiLCJob21lUGhvbmVVcGRhdGUiLCJhZGRyZXNzVXBkYXRlIiwiY2l0eVVwZGF0ZSIsInN0YXRlVXBkYXRlIiwiemlwVXBkYXRlIiwiaWNlTmFtZVVwZGF0ZSIsImljZU51bWJlclVwZGF0ZSIsImVtYWlsVXBkYXRlIiwicmVzcG9uc2UiLCJmZXRjaCIsIm1ldGhvZCIsImJvZHkiLCJKU09OIiwic3RyaW5naWZ5IiwiaGVhZGVycyIsImRhdGEiLCJqc29uIiwicmVzcG9uc2VNZXNzYWdlIiwicCIsImNsYXNzTmFtZSIsImVycm9yIiwic2VjdGlvbiIsImJhY2tncm91bmQiLCJoMSIsImRpdiIsImZvcm0iLCJvblN1Ym1pdCIsImlkIiwiY29udHJvbCIsImxhYmVsIiwiaHRtbEZvciIsImlucHV0IiwidHlwZSIsIm5hbWUiLCJwbGFjZWhvbGRlciIsInJlZiIsImJ1dHRvbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./components/members/memberUpdate.js\n");
-
-/***/ }),
-
-/***/ "./components/upload/upload.js":
-/*!*************************************!*\
-  !*** ./components/upload/upload.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_s3_upload__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next-s3-upload */ \"next-s3-upload\");\n/* harmony import */ var next_s3_upload__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_s3_upload__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _upload_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./upload.module.css */ \"./components/upload/upload.module.css\");\n/* harmony import */ var _upload_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_upload_module_css__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\nfunction UploadFiles() {\n    const { FileInput , openFileDialog , uploadToS3  } = (0,next_s3_upload__WEBPACK_IMPORTED_MODULE_1__.useS3Upload)();\n    const { 0: location , 1: setLocation  } = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)();\n    const { 0: dbUpload , 1: setDbUpload  } = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);\n    const { 0: message , 1: setMessage  } = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)();\n    const { 0: onMessage , 1: setOnMessage  } = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);\n    (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{\n        setDbUpload(false);\n        const timer = setTimeout(()=>setLocation(null)\n        , 2000);\n        return ()=>clearTimeout(timer)\n        ;\n    }, [\n        dbUpload\n    ]);\n    (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{\n        setOnMessage(false);\n        const messageTimer = setTimeout(()=>setMessage(null)\n        , 10000);\n        return ()=>clearTimeout(messageTimer)\n        ;\n    }, [\n        onMessage\n    ]);\n    const handleFileChange = async (file)=>{\n        let { url  } = await uploadToS3(file);\n        setLocation(url);\n    };\n    const catRef = (0,react__WEBPACK_IMPORTED_MODULE_2__.useRef)();\n    const monthRef = (0,react__WEBPACK_IMPORTED_MODULE_2__.useRef)();\n    const yearRef = (0,react__WEBPACK_IMPORTED_MODULE_2__.useRef)();\n    const fileNameRef = (0,react__WEBPACK_IMPORTED_MODULE_2__.useRef)();\n    function clearFields() {\n        const formField = document.getElementById(\"uploadForm\");\n        formField.reset();\n    }\n    async function submitHandler(event) {\n        event.preventDefault();\n        const category = catRef.current.value;\n        const month = monthRef.current.value;\n        const year = yearRef.current.value;\n        const fileName = fileNameRef.current.value;\n        const address = location;\n        if (address === null) {\n            setMessage(\"File not loaded\");\n            setOnMessage(true);\n            return;\n        } else {\n            let data = {\n                category: category,\n                month: month,\n                year: year,\n                title: fileName,\n                location: address\n            };\n            const response = await fetch(\"/api/document/upload\", {\n                method: \"POST\",\n                body: JSON.stringify(data),\n                headers: {\n                    \"Content-Type\": \"application/json\"\n                }\n            });\n            const resposneData = await response.json();\n            clearFields();\n            console.log(data);\n            setMessage(resposneData.message);\n            setOnMessage(true);\n            setDbUpload(true);\n        }\n    }\n    return(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"section\", {\n        className: (_upload_module_css__WEBPACK_IMPORTED_MODULE_3___default().background),\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                children: \"Upload\"\n            }, void 0, false, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                lineNumber: 74,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h5\", {\n                children: message\n            }, void 0, false, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                lineNumber: 75,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(FileInput, {\n                onChange: handleFileChange\n            }, void 0, false, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                lineNumber: 76,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                onClick: openFileDialog,\n                className: (_upload_module_css__WEBPACK_IMPORTED_MODULE_3___default().button),\n                children: \"Upload\"\n            }, void 0, false, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                lineNumber: 77,\n                columnNumber: 9\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"form\", {\n                onSubmit: submitHandler,\n                id: \"uploadForm\",\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        className: (_upload_module_css__WEBPACK_IMPORTED_MODULE_3___default().control),\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"select\", {\n                            id: \"fileTypes\",\n                            ref: catRef,\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"meetingMinutes\",\n                                    children: \"Meeting Minutes\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                                    lineNumber: 83,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"cebMinuts\",\n                                    children: \"CEB Minutes\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                                    lineNumber: 84,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"roadCaptain\",\n                                    children: \"Road Captains\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                                    lineNumber: 85,\n                                    columnNumber: 13\n                                }, this)\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                            lineNumber: 82,\n                            columnNumber: 11\n                        }, this)\n                    }, void 0, false, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                        lineNumber: 81,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        className: (_upload_module_css__WEBPACK_IMPORTED_MODULE_3___default().control),\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"select\", {\n                            id: \"month\",\n                            ref: monthRef,\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"jan\",\n                                    children: \"January\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                                    lineNumber: 90,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"feb\",\n                                    children: \"Febuary\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                                    lineNumber: 91,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"mar\",\n                                    children: \"March\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                                    lineNumber: 92,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"apr\",\n                                    children: \"April\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                                    lineNumber: 93,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"may\",\n                                    children: \"May\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                                    lineNumber: 94,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"jun\",\n                                    children: \"June\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                                    lineNumber: 95,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"jul\",\n                                    children: \"July\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                                    lineNumber: 96,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"aug\",\n                                    children: \"August\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                                    lineNumber: 97,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"sep\",\n                                    children: \"September\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                                    lineNumber: 98,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"oct\",\n                                    children: \"October\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                                    lineNumber: 99,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"nov\",\n                                    children: \"November\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                                    lineNumber: 100,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                                    value: \"dec\",\n                                    children: \"December\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                                    lineNumber: 101,\n                                    columnNumber: 13\n                                }, this)\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                            lineNumber: 89,\n                            columnNumber: 11\n                        }, this)\n                    }, void 0, false, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                        lineNumber: 88,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        className: (_upload_module_css__WEBPACK_IMPORTED_MODULE_3___default().control),\n                        children: [\n                            \" \",\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                type: \"text\",\n                                placeholder: \"Year\",\n                                id: \"year\",\n                                ref: yearRef,\n                                required: true\n                            }, void 0, false, {\n                                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                                lineNumber: 106,\n                                columnNumber: 11\n                            }, this)\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                        lineNumber: 104,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        className: (_upload_module_css__WEBPACK_IMPORTED_MODULE_3___default().control),\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                            type: \"text\",\n                            placeholder: \"File Name\",\n                            id: \"fileName\",\n                            ref: fileNameRef,\n                            required: true\n                        }, void 0, false, {\n                            fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                            lineNumber: 115,\n                            columnNumber: 11\n                        }, this)\n                    }, void 0, false, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                        lineNumber: 114,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {}, void 0, false, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                        lineNumber: 123,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                        id: \"submit\",\n                        className: (_upload_module_css__WEBPACK_IMPORTED_MODULE_3___default().button),\n                        children: \"Submit\"\n                    }, void 0, false, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                        lineNumber: 127,\n                        columnNumber: 9\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                lineNumber: 80,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                children: location\n            }, void 0, false, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n                lineNumber: 132,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/components/upload/upload.js\",\n        lineNumber: 73,\n        columnNumber: 5\n    }, this));\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (UploadFiles);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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QU07Z0NBQ1RJLEdBQUcsRUFBRTVDLE9BQU87Z0NBQ1ppRCxRQUFROzs7Ozs7Ozs7Ozs7Z0dBR1hSLENBQUc7d0JBQUNWLFNBQVMsRUFBRXJELG1FQUFlOzhHQUM1Qm9FLENBQUs7NEJBQ0pDLElBQUksRUFBQyxDQUFNOzRCQUNYQyxXQUFXLEVBQUMsQ0FBVzs0QkFDdkJSLEVBQUUsRUFBQyxDQUFVOzRCQUNiSSxHQUFHLEVBQUUzQyxXQUFXOzRCQUNoQmdELFFBQVE7Ozs7Ozs7Ozs7O2dHQUdYUixDQUFHOzs7OztnR0FJSEwsQ0FBTTt3QkFBQ0ksRUFBRSxFQUFDLENBQVE7d0JBQUNULFNBQVMsRUFBRXJELGtFQUFjO2tDQUFFLENBRS9DOzs7Ozs7Ozs7Ozs7d0ZBR0R3RSxDQUFDOzBCQUFFbkUsUUFBUTs7Ozs7Ozs7Ozs7O0FBR2xCLENBQUM7QUFDRCxpRUFBZUosV0FBVyxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbmV4dGpzLXJvdXRpbmctY291cnNlLy4vY29tcG9uZW50cy91cGxvYWQvdXBsb2FkLmpzP2QzZGQiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgdXNlUzNVcGxvYWQgfSBmcm9tIFwibmV4dC1zMy11cGxvYWRcIjtcbmltcG9ydCB7IHVzZVN0YXRlLCB1c2VFZmZlY3QsIHVzZVJlZiB9IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IGNsYXNzZXMgZnJvbSBcIi4vdXBsb2FkLm1vZHVsZS5jc3NcIjtcblxuZnVuY3Rpb24gVXBsb2FkRmlsZXMoKSB7XG4gIGNvbnN0IHsgRmlsZUlucHV0LCBvcGVuRmlsZURpYWxvZywgdXBsb2FkVG9TMyB9ID0gdXNlUzNVcGxvYWQoKTtcbiAgY29uc3QgW2xvY2F0aW9uLCBzZXRMb2NhdGlvbl0gPSB1c2VTdGF0ZSgpO1xuICBjb25zdCBbZGJVcGxvYWQsIHNldERiVXBsb2FkXSA9IHVzZVN0YXRlKGZhbHNlKTtcbiAgXG4gIGNvbnN0IFttZXNzYWdlLCBzZXRNZXNzYWdlXSA9IHVzZVN0YXRlKCk7XG4gIGNvbnN0IFtvbk1lc3NhZ2UsIHNldE9uTWVzc2FnZV0gPSB1c2VTdGF0ZShmYWxzZSk7XG4gIHVzZUVmZmVjdCgoKSA9PiB7XG4gICAgc2V0RGJVcGxvYWQoZmFsc2UpO1xuICAgXG5cbiAgICBjb25zdCB0aW1lciA9IHNldFRpbWVvdXQoKCkgPT4gc2V0TG9jYXRpb24obnVsbCksIDIwMDApO1xuICAgIHJldHVybiAoKSA9PiBjbGVhclRpbWVvdXQodGltZXIpO1xuICB9LCBbZGJVcGxvYWRdKTtcblxuICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgIHNldE9uTWVzc2FnZShmYWxzZSk7XG4gICAgY29uc3QgbWVzc2FnZVRpbWVyID0gc2V0VGltZW91dCgoKSA9PiBzZXRNZXNzYWdlKG51bGwpLCAxMDAwMCk7XG4gICAgcmV0dXJuICgpID0+IGNsZWFyVGltZW91dChtZXNzYWdlVGltZXIpO1xuICB9LCBbb25NZXNzYWdlXSk7XG4gIGNvbnN0IGhhbmRsZUZpbGVDaGFuZ2UgPSBhc3luYyAoZmlsZSkgPT4ge1xuICAgIGxldCB7IHVybCB9ID0gYXdhaXQgdXBsb2FkVG9TMyhmaWxlKTtcbiAgICBzZXRMb2NhdGlvbih1cmwpO1xuICB9O1xuXG4gIGNvbnN0IGNhdFJlZiA9IHVzZVJlZigpO1xuICBjb25zdCBtb250aFJlZiA9IHVzZVJlZigpO1xuICBjb25zdCB5ZWFyUmVmID0gdXNlUmVmKCk7XG4gIGNvbnN0IGZpbGVOYW1lUmVmID0gdXNlUmVmKCk7XG4gIGZ1bmN0aW9uIGNsZWFyRmllbGRzKCkge1xuICAgIGNvbnN0IGZvcm1GaWVsZCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKFwidXBsb2FkRm9ybVwiKTtcbiAgICBmb3JtRmllbGQucmVzZXQoKTtcbiAgfVxuICBhc3luYyBmdW5jdGlvbiBzdWJtaXRIYW5kbGVyKGV2ZW50KSB7XG4gICAgZXZlbnQucHJldmVudERlZmF1bHQoKTtcbiAgICBjb25zdCBjYXRlZ29yeSA9IGNhdFJlZi5jdXJyZW50LnZhbHVlO1xuICAgIGNvbnN0IG1vbnRoID0gbW9udGhSZWYuY3VycmVudC52YWx1ZTtcbiAgICBjb25zdCB5ZWFyID0geWVhclJlZi5jdXJyZW50LnZhbHVlO1xuICAgIGNvbnN0IGZpbGVOYW1lID0gZmlsZU5hbWVSZWYuY3VycmVudC52YWx1ZTtcbiAgICBjb25zdCBhZGRyZXNzID0gbG9jYXRpb247XG4gICAgaWYgKGFkZHJlc3MgPT09IG51bGwpIHtcbiAgICAgIHNldE1lc3NhZ2UoXCJGaWxlIG5vdCBsb2FkZWRcIik7XG4gICAgICBzZXRPbk1lc3NhZ2UodHJ1ZSk7XG4gICAgICByZXR1cm47XG4gICAgfSBlbHNlIHtcbiAgICAgIGxldCBkYXRhID0ge1xuICAgICAgICBjYXRlZ29yeTogY2F0ZWdvcnksXG4gICAgICAgIG1vbnRoOiBtb250aCxcbiAgICAgICAgeWVhcjogeWVhcixcbiAgICAgICAgdGl0bGU6IGZpbGVOYW1lLFxuICAgICAgICBsb2NhdGlvbjogYWRkcmVzcyxcbiAgICAgIH07XG4gICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKFwiL2FwaS9kb2N1bWVudC91cGxvYWRcIiwge1xuICAgICAgICBtZXRob2Q6IFwiUE9TVFwiLFxuICAgICAgICBib2R5OiBKU09OLnN0cmluZ2lmeShkYXRhKSxcbiAgICAgICAgaGVhZGVyczogeyBcIkNvbnRlbnQtVHlwZVwiOiBcImFwcGxpY2F0aW9uL2pzb25cIiB9LFxuICAgICAgfSk7XG5cbiAgICAgICBjb25zdCByZXNwb3NuZURhdGEgPSBhd2FpdCByZXNwb25zZS5qc29uKCk7XG4gICAgICBjbGVhckZpZWxkcygpO1xuICAgICAgY29uc29sZS5sb2coZGF0YSk7XG4gICAgICAgc2V0TWVzc2FnZShyZXNwb3NuZURhdGEubWVzc2FnZSk7XG4gICAgICBzZXRPbk1lc3NhZ2UodHJ1ZSk7XG4gICAgICBzZXREYlVwbG9hZCh0cnVlKTtcbiAgICB9XG4gIH1cblxuICByZXR1cm4gKFxuICAgIDxzZWN0aW9uIGNsYXNzTmFtZT17Y2xhc3Nlcy5iYWNrZ3JvdW5kfT5cbiAgICAgIDxoMT5VcGxvYWQ8L2gxPlxuICAgICAgPGg1PnttZXNzYWdlfTwvaDU+XG4gICAgICA8RmlsZUlucHV0IG9uQ2hhbmdlPXtoYW5kbGVGaWxlQ2hhbmdlfSAvPlxuICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9e29wZW5GaWxlRGlhbG9nfSBjbGFzc05hbWU9e2NsYXNzZXMuYnV0dG9ufT5cbiAgICAgICAgICBVcGxvYWRcbiAgICAgICAgPC9idXR0b24+XG4gICAgICA8Zm9ybSBvblN1Ym1pdD17c3VibWl0SGFuZGxlcn0gaWQ9XCJ1cGxvYWRGb3JtXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPXtjbGFzc2VzLmNvbnRyb2x9PlxuICAgICAgICAgIDxzZWxlY3QgaWQ9XCJmaWxlVHlwZXNcIiByZWY9e2NhdFJlZn0+XG4gICAgICAgICAgICA8b3B0aW9uIHZhbHVlPVwibWVldGluZ01pbnV0ZXNcIj5NZWV0aW5nIE1pbnV0ZXM8L29wdGlvbj5cbiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9XCJjZWJNaW51dHNcIj5DRUIgTWludXRlczwvb3B0aW9uPlxuICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT1cInJvYWRDYXB0YWluXCI+Um9hZCBDYXB0YWluczwvb3B0aW9uPlxuICAgICAgICAgIDwvc2VsZWN0PlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9e2NsYXNzZXMuY29udHJvbH0+XG4gICAgICAgICAgPHNlbGVjdCBpZD1cIm1vbnRoXCIgcmVmPXttb250aFJlZn0+XG4gICAgICAgICAgICA8b3B0aW9uIHZhbHVlPVwiamFuXCI+SmFudWFyeTwvb3B0aW9uPlxuICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT1cImZlYlwiPkZlYnVhcnk8L29wdGlvbj5cbiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9XCJtYXJcIj5NYXJjaDwvb3B0aW9uPlxuICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT1cImFwclwiPkFwcmlsPC9vcHRpb24+XG4gICAgICAgICAgICA8b3B0aW9uIHZhbHVlPVwibWF5XCI+TWF5PC9vcHRpb24+XG4gICAgICAgICAgICA8b3B0aW9uIHZhbHVlPVwianVuXCI+SnVuZTwvb3B0aW9uPlxuICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT1cImp1bFwiPkp1bHk8L29wdGlvbj5cbiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9XCJhdWdcIj5BdWd1c3Q8L29wdGlvbj5cbiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9XCJzZXBcIj5TZXB0ZW1iZXI8L29wdGlvbj5cbiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9XCJvY3RcIj5PY3RvYmVyPC9vcHRpb24+XG4gICAgICAgICAgICA8b3B0aW9uIHZhbHVlPVwibm92XCI+Tm92ZW1iZXI8L29wdGlvbj5cbiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9XCJkZWNcIj5EZWNlbWJlcjwvb3B0aW9uPlxuICAgICAgICAgIDwvc2VsZWN0PlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9e2NsYXNzZXMuY29udHJvbH0+XG4gICAgICAgICAge1wiIFwifVxuICAgICAgICAgIDxpbnB1dFxuICAgICAgICAgICAgdHlwZT1cInRleHRcIlxuICAgICAgICAgICAgcGxhY2Vob2xkZXI9XCJZZWFyXCJcbiAgICAgICAgICAgIGlkPVwieWVhclwiXG4gICAgICAgICAgICByZWY9e3llYXJSZWZ9XG4gICAgICAgICAgICByZXF1aXJlZFxuICAgICAgICAgIC8+XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5jb250cm9sfT5cbiAgICAgICAgICA8aW5wdXRcbiAgICAgICAgICAgIHR5cGU9XCJ0ZXh0XCJcbiAgICAgICAgICAgIHBsYWNlaG9sZGVyPVwiRmlsZSBOYW1lXCJcbiAgICAgICAgICAgIGlkPVwiZmlsZU5hbWVcIlxuICAgICAgICAgICAgcmVmPXtmaWxlTmFtZVJlZn1cbiAgICAgICAgICAgIHJlcXVpcmVkXG4gICAgICAgICAgLz5cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxkaXY+XG4gICAgICAgIFxuICAgICAgICA8L2Rpdj5cbiAgICAgICBcbiAgICAgICAgPGJ1dHRvbiBpZD1cInN1Ym1pdFwiIGNsYXNzTmFtZT17Y2xhc3Nlcy5idXR0b259PlxuICAgICAgICAgIFN1Ym1pdFxuICAgICAgICA8L2J1dHRvbj5cbiAgICAgIDwvZm9ybT5cblxuICAgICAgPHA+e2xvY2F0aW9ufTwvcD5cbiAgICA8L3NlY3Rpb24+XG4gICk7XG59XG5leHBvcnQgZGVmYXVsdCBVcGxvYWRGaWxlcztcbiJdLCJuYW1lcyI6WyJ1c2VTM1VwbG9hZCIsInVzZVN0YXRlIiwidXNlRWZmZWN0IiwidXNlUmVmIiwiY2xhc3NlcyIsIlVwbG9hZEZpbGVzIiwiRmlsZUlucHV0Iiwib3BlbkZpbGVEaWFsb2ciLCJ1cGxvYWRUb1MzIiwibG9jYXRpb24iLCJzZXRMb2NhdGlvbiIsImRiVXBsb2FkIiwic2V0RGJVcGxvYWQiLCJtZXNzYWdlIiwic2V0TWVzc2FnZSIsIm9uTWVzc2FnZSIsInNldE9uTWVzc2FnZSIsInRpbWVyIiwic2V0VGltZW91dCIsImNsZWFyVGltZW91dCIsIm1lc3NhZ2VUaW1lciIsImhhbmRsZUZpbGVDaGFuZ2UiLCJmaWxlIiwidXJsIiwiY2F0UmVmIiwibW9udGhSZWYiLCJ5ZWFyUmVmIiwiZmlsZU5hbWVSZWYiLCJjbGVhckZpZWxkcyIsImZvcm1GaWVsZCIsImRvY3VtZW50IiwiZ2V0RWxlbWVudEJ5SWQiLCJyZXNldCIsInN1Ym1pdEhhbmRsZXIiLCJldmVudCIsInByZXZlbnREZWZhdWx0IiwiY2F0ZWdvcnkiLCJjdXJyZW50IiwidmFsdWUiLCJtb250aCIsInllYXIiLCJmaWxlTmFtZSIsImFkZHJlc3MiLCJkYXRhIiwidGl0bGUiLCJyZXNwb25zZSIsImZldGNoIiwibWV0aG9kIiwiYm9keSIsIkpTT04iLCJzdHJpbmdpZnkiLCJoZWFkZXJzIiwicmVzcG9zbmVEYXRhIiwianNvbiIsImNvbnNvbGUiLCJsb2ciLCJzZWN0aW9uIiwiY2xhc3NOYW1lIiwiYmFja2dyb3VuZCIsImgxIiwiaDUiLCJvbkNoYW5nZSIsImJ1dHRvbiIsIm9uQ2xpY2siLCJmb3JtIiwib25TdWJtaXQiLCJpZCIsImRpdiIsImNvbnRyb2wiLCJzZWxlY3QiLCJyZWYiLCJvcHRpb24iLCJpbnB1dCIsInR5cGUiLCJwbGFjZWhvbGRlciIsInJlcXVpcmVkIiwicCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./components/upload/upload.js\n");
-
-/***/ }),
-
-/***/ "./pages/members/index.js":
-/*!********************************!*\
-  !*** ./pages/members/index.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getServerSideProps\": () => (/* binding */ getServerSideProps),\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_auth_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next-auth/client */ \"next-auth/client\");\n/* harmony import */ var next_auth_client__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_auth_client__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_upload_upload__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/upload/upload */ \"./components/upload/upload.js\");\n/* harmony import */ var _components_members_memberUpdate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/members/memberUpdate */ \"./components/members/memberUpdate.js\");\n/* harmony import */ var _components_members_memberNew__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/members/memberNew */ \"./components/members/memberNew.js\");\n/* harmony import */ var _components_documents_documents__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/documents/documents */ \"./components/documents/documents.js\");\n/* harmony import */ var _styles_member_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../styles/member.module.css */ \"./styles/member.module.css\");\n/* harmony import */ var _styles_member_module_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_member_module_css__WEBPACK_IMPORTED_MODULE_6__);\n\n\n\n\n\n\n\nfunction Members(props) {\n    const member = props.members.data.find((element)=>element.memberId === props.session.user.name\n    );\n    return(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"section\", {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                    children: \"Members Area\"\n                }, void 0, false, {\n                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/pages/members/index.js\",\n                    lineNumber: 15,\n                    columnNumber: 9\n                }, this)\n            }, void 0, false, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/pages/members/index.js\",\n                lineNumber: 14,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: (_styles_member_module_css__WEBPACK_IMPORTED_MODULE_6___default().adminouterbox),\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    className: (_styles_member_module_css__WEBPACK_IMPORTED_MODULE_6___default().memberUpdate),\n                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_members_memberUpdate__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n                        user: member\n                    }, void 0, false, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/pages/members/index.js\",\n                        lineNumber: 19,\n                        columnNumber: 11\n                    }, this)\n                }, void 0, false, {\n                    fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/pages/members/index.js\",\n                    lineNumber: 18,\n                    columnNumber: 9\n                }, this)\n            }, void 0, false, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/pages/members/index.js\",\n                lineNumber: 17,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: (_styles_member_module_css__WEBPACK_IMPORTED_MODULE_6___default().adminouterbox),\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_upload_upload__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {}, void 0, false, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/pages/members/index.js\",\n                        lineNumber: 24,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_documents_documents__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {}, void 0, false, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/pages/members/index.js\",\n                        lineNumber: 25,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_members_memberNew__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {}, void 0, false, {\n                        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/pages/members/index.js\",\n                        lineNumber: 26,\n                        columnNumber: 9\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/pages/members/index.js\",\n                lineNumber: 23,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/dallasfisher/Documents/GitHub/cvma/cvma-webapp/pages/members/index.js\",\n        lineNumber: 13,\n        columnNumber: 5\n    }, this));\n}\nasync function getServerSideProps(context) {\n    const session = await (0,next_auth_client__WEBPACK_IMPORTED_MODULE_1__.getSession)({\n        req: context.req\n    });\n    const members = await fetch(\"http://localhost:3000/api/members/memberUpdate\").then((response)=>response.json()\n    );\n    if (!session) {\n        return {\n            redirect: {\n                destination: \"/login\",\n                permanent: false\n            }\n        };\n    }\n    return {\n        props: {\n            session,\n            members: members\n        }\n    };\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Members);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9tZW1iZXJzL2luZGV4LmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBNkM7QUFDVztBQUNRO0FBQ047QUFDRTtBQUNSO1NBRTNDTSxPQUFPLENBQUNDLEtBQUssRUFBRSxDQUFDO0lBQ3ZCLEtBQUssQ0FBQ0MsTUFBTSxHQUFHRCxLQUFLLENBQUNFLE9BQU8sQ0FBQ0MsSUFBSSxDQUFDQyxJQUFJLEVBQ25DQyxPQUFPLEdBQUtBLE9BQU8sQ0FBQ0MsUUFBUSxLQUFLTixLQUFLLENBQUNPLE9BQU8sQ0FBQ0MsSUFBSSxDQUFDQyxJQUFJOztJQUUzRCxNQUFNLDZFQUNIQyxDQUFPOzt3RkFDTEMsQ0FBRztzR0FDREMsQ0FBRTs4QkFBQyxDQUFZOzs7Ozs7Ozs7Ozt3RkFFakJELENBQUc7Z0JBQUNFLFNBQVMsRUFBRWYsZ0ZBQXFCO3NHQUNsQ2EsQ0FBRztvQkFBQ0UsU0FBUyxFQUFFZiwrRUFBb0I7MEdBQ2pDSCx3RUFBWTt3QkFBQ2EsSUFBSSxFQUFFUCxNQUFNOzs7Ozs7Ozs7Ozs7Ozs7O3dGQUk3QlUsQ0FBRztnQkFBQ0UsU0FBUyxFQUFFZixnRkFBcUI7O2dHQUNsQ0osaUVBQVc7Ozs7O2dHQUNYRyx1RUFBUzs7Ozs7Z0dBQ1RELHFFQUFTOzs7Ozs7Ozs7Ozs7Ozs7OztBQUlsQixDQUFDO0FBRU0sZUFBZW9CLGtCQUFrQixDQUFDQyxPQUFPLEVBQUUsQ0FBQztJQUNqRCxLQUFLLENBQUNWLE9BQU8sR0FBRyxLQUFLLENBQUNkLDREQUFVLENBQUMsQ0FBQztRQUFDeUIsR0FBRyxFQUFFRCxPQUFPLENBQUNDLEdBQUc7SUFBQyxDQUFDO0lBRXJELEtBQUssQ0FBQ2hCLE9BQU8sR0FBRyxLQUFLLENBQUNpQixLQUFLLENBQ3pCLENBQWdELGlEQUNoREMsSUFBSSxFQUFFQyxRQUFRLEdBQUtBLFFBQVEsQ0FBQ0MsSUFBSTs7SUFFbEMsRUFBRSxHQUFHZixPQUFPLEVBQUUsQ0FBQztRQUNiLE1BQU0sQ0FBQyxDQUFDO1lBQ05nQixRQUFRLEVBQUUsQ0FBQztnQkFDVEMsV0FBVyxFQUFFLENBQVE7Z0JBQ3JCQyxTQUFTLEVBQUUsS0FBSztZQUNsQixDQUFDO1FBQ0gsQ0FBQztJQUNILENBQUM7SUFFRCxNQUFNLENBQUMsQ0FBQztRQUFDekIsS0FBSyxFQUFFLENBQUM7WUFBQ08sT0FBTztZQUFFTCxPQUFPLEVBQUVBLE9BQU87UUFBQyxDQUFDO0lBQUMsQ0FBQztBQUNqRCxDQUFDO0FBRUQsaUVBQWVILE9BQU8sRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL25leHRqcy1yb3V0aW5nLWNvdXJzZS8uL3BhZ2VzL21lbWJlcnMvaW5kZXguanM/NDNmYSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBnZXRTZXNzaW9uIH0gZnJvbSBcIm5leHQtYXV0aC9jbGllbnRcIjtcbmltcG9ydCBVcGxvYWRGaWxlcyBmcm9tIFwiLi4vLi4vY29tcG9uZW50cy91cGxvYWQvdXBsb2FkXCI7XG5pbXBvcnQgTWVtYmVyVXBkYXRlIGZyb20gXCIuLi8uLi9jb21wb25lbnRzL21lbWJlcnMvbWVtYmVyVXBkYXRlXCI7XG5pbXBvcnQgTWVtYmVyTmV3IGZyb20gXCIuLi8uLi9jb21wb25lbnRzL21lbWJlcnMvbWVtYmVyTmV3XCI7XG5pbXBvcnQgRG9jdW1lbnRzIGZyb20gXCIuLi8uLi9jb21wb25lbnRzL2RvY3VtZW50cy9kb2N1bWVudHNcIjtcbmltcG9ydCBjbGFzc2VzIGZyb20gXCIuLi8uLi9zdHlsZXMvbWVtYmVyLm1vZHVsZS5jc3NcIjtcblxuZnVuY3Rpb24gTWVtYmVycyhwcm9wcykge1xuICBjb25zdCBtZW1iZXIgPSBwcm9wcy5tZW1iZXJzLmRhdGEuZmluZChcbiAgICAoZWxlbWVudCkgPT4gZWxlbWVudC5tZW1iZXJJZCA9PT0gcHJvcHMuc2Vzc2lvbi51c2VyLm5hbWVcbiAgKTtcbiAgcmV0dXJuIChcbiAgICA8c2VjdGlvbj5cbiAgICAgIDxkaXY+XG4gICAgICAgIDxoMT5NZW1iZXJzIEFyZWE8L2gxPlxuICAgICAgPC9kaXY+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5hZG1pbm91dGVyYm94fT5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9e2NsYXNzZXMubWVtYmVyVXBkYXRlfT5cbiAgICAgICAgICA8TWVtYmVyVXBkYXRlIHVzZXI9e21lbWJlcn0gLz5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cblxuICAgICAgPGRpdiBjbGFzc05hbWU9e2NsYXNzZXMuYWRtaW5vdXRlcmJveH0+XG4gICAgICAgIDxVcGxvYWRGaWxlcyAvPlxuICAgICAgICA8RG9jdW1lbnRzIC8+XG4gICAgICAgIDxNZW1iZXJOZXcgLz5cbiAgICAgIDwvZGl2PlxuICAgIDwvc2VjdGlvbj5cbiAgKTtcbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFNlcnZlclNpZGVQcm9wcyhjb250ZXh0KSB7XG4gIGNvbnN0IHNlc3Npb24gPSBhd2FpdCBnZXRTZXNzaW9uKHsgcmVxOiBjb250ZXh0LnJlcSB9KTtcblxuICBjb25zdCBtZW1iZXJzID0gYXdhaXQgZmV0Y2goXG4gICAgXCJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL21lbWJlcnMvbWVtYmVyVXBkYXRlXCJcbiAgKS50aGVuKChyZXNwb25zZSkgPT4gcmVzcG9uc2UuanNvbigpKTtcblxuICBpZiAoIXNlc3Npb24pIHtcbiAgICByZXR1cm4ge1xuICAgICAgcmVkaXJlY3Q6IHtcbiAgICAgICAgZGVzdGluYXRpb246IFwiL2xvZ2luXCIsXG4gICAgICAgIHBlcm1hbmVudDogZmFsc2UsXG4gICAgICB9LFxuICAgIH07XG4gIH1cblxuICByZXR1cm4geyBwcm9wczogeyBzZXNzaW9uLCBtZW1iZXJzOiBtZW1iZXJzIH0gfTtcbn1cblxuZXhwb3J0IGRlZmF1bHQgTWVtYmVycztcbiJdLCJuYW1lcyI6WyJnZXRTZXNzaW9uIiwiVXBsb2FkRmlsZXMiLCJNZW1iZXJVcGRhdGUiLCJNZW1iZXJOZXciLCJEb2N1bWVudHMiLCJjbGFzc2VzIiwiTWVtYmVycyIsInByb3BzIiwibWVtYmVyIiwibWVtYmVycyIsImRhdGEiLCJmaW5kIiwiZWxlbWVudCIsIm1lbWJlcklkIiwic2Vzc2lvbiIsInVzZXIiLCJuYW1lIiwic2VjdGlvbiIsImRpdiIsImgxIiwiY2xhc3NOYW1lIiwiYWRtaW5vdXRlcmJveCIsIm1lbWJlclVwZGF0ZSIsImdldFNlcnZlclNpZGVQcm9wcyIsImNvbnRleHQiLCJyZXEiLCJmZXRjaCIsInRoZW4iLCJyZXNwb25zZSIsImpzb24iLCJyZWRpcmVjdCIsImRlc3RpbmF0aW9uIiwicGVybWFuZW50Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/members/index.js\n");
-
-/***/ }),
-
-/***/ "next-auth/client":
-/*!***********************************!*\
-  !*** external "next-auth/client" ***!
-  \***********************************/
+/***/ 427:
 /***/ ((module) => {
 
 "use strict";
@@ -128,21 +1222,7 @@ module.exports = require("next-auth/client");
 
 /***/ }),
 
-/***/ "next-s3-upload":
-/*!*********************************!*\
-  !*** external "next-s3-upload" ***!
-  \*********************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next-s3-upload");
-
-/***/ }),
-
-/***/ "react":
-/*!************************!*\
-  !*** external "react" ***!
-  \************************/
+/***/ 6689:
 /***/ ((module) => {
 
 "use strict";
@@ -150,14 +1230,11 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ "react/jsx-dev-runtime":
-/*!****************************************!*\
-  !*** external "react/jsx-dev-runtime" ***!
-  \****************************************/
+/***/ 997:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("react/jsx-dev-runtime");
+module.exports = require("react/jsx-runtime");
 
 /***/ })
 
@@ -168,7 +1245,7 @@ module.exports = require("react/jsx-dev-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("./pages/members/index.js"));
+var __webpack_exports__ = (__webpack_exec__(3737));
 module.exports = __webpack_exports__;
 
 })();

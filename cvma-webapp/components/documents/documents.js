@@ -1,74 +1,117 @@
 import classes from "./documents.module.css";
-import {useState, useEffect } from 'react';
+import {useState, useEffect, useRef } from 'react';
 
 
 
 function Documents() {
  const [years,setYears] = useState([]);
  const [docs, setDocs ] = useState([]);
+ const [results, setResults ] = useState([]);
  useEffect(() => {
   fetch('/api/document/years').then((res) => res.json()).then((data) => setYears(data.yearsArray));
   fetch('/api/document/').then((res) => res.json()).then((data) => setDocs(data.docsArray));
  },[])
- 
-  const refreshHandler =(e) =>{
-    e.preventDefault();
-    fetch('/api/document/years').then((res) => res.json()).then((data) => setYears(data.yearsArray));
-    fetch('/api/document/').then((res) => res.json()).then((data) => setDocs(data.docsArray))
-  }
-const getData = (docs, cat, year, month) =>{
+ const refreshHandler =(e) =>{
+ e.preventDefault();
+  fetch('/api/document/years').then((res) => res.json()).then((data) => setYears(data.yearsArray));
+  fetch('/api/document/').then((res) => res.json()).then((data) => setDocs(data.docsArray))
+}
+
+const getMinutes = (docs, cat, year, month) =>{
   let catArray = [];
   let yearArray = [];
   let docsArray = [];
 
-  if( cat !== "meetingMinutes"){
-    console.log('not minutes');
-  } else {
  for(let i = 0; i < docs.length; i++){
   if(docs[i][0] === cat){
     catArray.push([docs[i][0], docs[i][1], docs[i][2], docs[i][3], docs[i][4]])
   }
  }
+
  for(let i =0; i< catArray.length; i++){
   if(catArray[i][2] === year){
     yearArray.push([catArray[i][0],catArray[i][1], catArray[i][2],catArray[i][3],catArray[i][4]])
   }
  }
+
  for(let i =0; i< yearArray.length; i++){
-  if(yearArray[i][2] === year){
-    docsArray.push([yearArray[i][0],yearArray[i][1], yearArray[i][2],yearArray[i][3],yearArray[i][4]])
+  if(yearArray[i][1] === month){
+    docsArray.push([yearArray[i][0], yearArray[i][1], yearArray[i][2], yearArray[i][3], yearArray[i][4]])
   }
  }
- return docsArray;
+return docsArray; 
 }
- 
- 
+
+const getOtherDocs =(docs, cat) => {
+ const docsArray = [];
+ for(let i = 0; i < docs.length; i++){
+  if(docs[i][0] === cat){
+    docsArray.push([docs[i][0], docs[i][1], docs[i][2], docs[i][3], docs[i][4]])
+  }}
+  return docsArray;
 }
+
+
+const catRef = useRef();
+const yearRef = useRef();
+const monthRef = useRef();
+function submitHandler(event) {
+  event.preventDefault();
+  const cat = catRef.current.value;
+  const year = yearRef.current.value;
+  const month = monthRef.current.value;
  
-const documents = getData(docs, "meetingMinutes", '2013', 'jan')
-console.log(documents)
+  console.log(docs)
+  console.log(cat)
+  console.log(year)
+  console.log(month)
+ 
+
+  switch(cat){
+    case 'meetingMinutes':
+      const data1 = getMinutes(docs, cat, year, month);
+      console.log(data1)
+      setResults(data1);
+      break;
+    case "cebMinutes":
+      const data2 = getMinutes(docs, cat, year, month);
+      setResults(data2);
+      break;
+    default:
+      const data3 = getOtherDocs(docs, cat);
+      setResults(data3);
+  }
+}
+  if(!results){
+
+  } else{
+ const values = [];
+  for (let i =0; i < results.length; i++) {values.push( results[i][3],results[i][4])}
+  }
+  //VALUES MUST MATCH UPLOAD.JS FOR CATEGORY DROP DOWN AND VERIFY THE MATCH BEFORE ADDING TO PRODUCTION!!
+
   return (
     <section className={classes.background}>
      <h1>Documents</h1>
    
      <button onClick={refreshHandler} className={ classes.button}>Refresh</button>
-     <form id="getDocs">
+     <form id="getDocs" onSubmit={submitHandler}>
      <div className={classes.control}>
-     <select id="category" required>
-        <option value='meeting'>Meeting Minutes</option>
-        <option value='ceb'>CEB Minutes</option>
-        <option value='rc'>Road Captain</option>
+     <select id="category" ref={catRef}>
+        <option value='meetingMinutes'>Meeting Minutes</option>
+        <option value='cebMinutes'>CEB Minutes</option>
+        <option value='roadCaptain'>Road Captain</option>
       </select>
       </div>
      <div className={classes.control}>
-     <select id='yearlist'>
+     <select id='yearlist' ref={yearRef} >
       { 
        years.map((year) => <option value={year}>{year}</option>)
       }
      </select>
      </div>
      <div className={classes.control}>
-      <select id='months'>
+      <select id='months' ref={monthRef} >
         <option value='jan'>January</option>
         <option value="feb">Febuary</option>
         <option value='Mar'>March</option>
@@ -88,9 +131,7 @@ console.log(documents)
       </div> 
      </form>
      <div>
-        {
-        
-        }
+      {!results ? '': results.map((value) => <a href={value[4]}>{value[3]}</a>)}
      </div>
      
     </section>

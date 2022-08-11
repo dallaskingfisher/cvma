@@ -81,7 +81,7 @@ function UploadFiles() {
         <div className={classes.control}>
           <select id="fileTypes" ref={catRef}>
             <option value="meetingMinutes">Meeting Minutes</option>
-            <option value="cebMinuts">CEB Minutes</option>
+            <option value="cebMinutes">CEB Minutes</option>
             <option value="roadCaptain">Road Captains</option>
           </select>
         </div>

@@ -1,45 +1,105 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/api/document/upload";
-exports.ids = ["pages/api/document/upload"];
+exports.id = 457;
+exports.ids = [457];
 exports.modules = {
 
-/***/ "mongodb":
-/*!**************************!*\
-  !*** external "mongodb" ***!
-  \**************************/
+/***/ 8013:
 /***/ ((module) => {
 
 module.exports = require("mongodb");
 
 /***/ }),
 
-/***/ "(api)/./helpers/db-util.js":
-/*!****************************!*\
-  !*** ./helpers/db-util.js ***!
-  \****************************/
+/***/ 1993:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"connectDatabase\": () => (/* binding */ connectDatabase),\n/* harmony export */   \"insertDocument\": () => (/* binding */ insertDocument),\n/* harmony export */   \"findComments\": () => (/* binding */ findComments)\n/* harmony export */ });\n/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mongodb */ \"mongodb\");\n/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongodb__WEBPACK_IMPORTED_MODULE_0__);\n\nconst password = 'bunbuns2022';\nconst database = 'cvma';\nasync function connectDatabase() {\n    const client = await mongodb__WEBPACK_IMPORTED_MODULE_0__.MongoClient.connect('mongodb+srv://dallasking:bunbuns2022@test.3r6zb.mongodb.net/cvma?retryWrites=true&w=majority');\n    return client;\n}\nasync function insertDocument(client, collection, document) {\n    const db = client.db();\n    const result = await db.collection(collection).insertOne(document);\n    client.close();\n    return result;\n}\nasync function findComments(client, collection, sort, filter) {\n    const db = client.db();\n    const document = await db.collection(collection).find(filter).sort(sort).toArray();\n    return document;\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9oZWxwZXJzL2RiLXV0aWwuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7QUFBcUM7QUFFckMsS0FBSyxDQUFDQyxRQUFRLEdBQUcsQ0FBYTtBQUM5QixLQUFLLENBQUNDLFFBQVEsR0FBRyxDQUFNO0FBRWhCLGVBQWVDLGVBQWUsR0FBRyxDQUFDO0lBQ3ZDLEtBQUssQ0FBQ0MsTUFBTSxHQUFHLEtBQUssQ0FBQ0osd0RBQW1CLENBQ3RDLENBQThGO0lBRWhHLE1BQU0sQ0FBQ0ksTUFBTTtBQUNmLENBQUM7QUFFTSxlQUFlRSxjQUFjLENBQUNGLE1BQU0sRUFBRUcsVUFBVSxFQUFFQyxRQUFRLEVBQUUsQ0FBQztJQUNsRSxLQUFLLENBQUNDLEVBQUUsR0FBR0wsTUFBTSxDQUFDSyxFQUFFO0lBQ3BCLEtBQUssQ0FBQ0MsTUFBTSxHQUFHLEtBQUssQ0FBQ0QsRUFBRSxDQUFDRixVQUFVLENBQUNBLFVBQVUsRUFBRUksU0FBUyxDQUFDSCxRQUFRO0lBQ2pFSixNQUFNLENBQUNRLEtBQUs7SUFDWixNQUFNLENBQUNGLE1BQU07QUFDZixDQUFDO0FBRU0sZUFBZUcsWUFBWSxDQUFDVCxNQUFNLEVBQUVHLFVBQVUsRUFBRU8sSUFBSSxFQUFFQyxNQUFNLEVBQUUsQ0FBQztJQUNwRSxLQUFLLENBQUNOLEVBQUUsR0FBR0wsTUFBTSxDQUFDSyxFQUFFO0lBQ3BCLEtBQUssQ0FBQ0QsUUFBUSxHQUFHLEtBQUssQ0FBQ0MsRUFBRSxDQUN0QkYsVUFBVSxDQUFDQSxVQUFVLEVBQ3JCUyxJQUFJLENBQUNELE1BQU0sRUFDWEQsSUFBSSxDQUFDQSxJQUFJLEVBQ1RHLE9BQU87SUFFVixNQUFNLENBQUNULFFBQVE7QUFDakIsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL25leHRqcy1yb3V0aW5nLWNvdXJzZS8uL2hlbHBlcnMvZGItdXRpbC5qcz9mNTc3Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IE1vbmdvQ2xpZW50IH0gZnJvbSBcIm1vbmdvZGJcIjtcblxuY29uc3QgcGFzc3dvcmQgPSAnYnVuYnVuczIwMjInO1xuY29uc3QgZGF0YWJhc2UgPSAnY3ZtYSdcblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGNvbm5lY3REYXRhYmFzZSgpIHtcbiAgY29uc3QgY2xpZW50ID0gYXdhaXQgTW9uZ29DbGllbnQuY29ubmVjdChcbiAgICAnbW9uZ29kYitzcnY6Ly9kYWxsYXNraW5nOmJ1bmJ1bnMyMDIyQHRlc3QuM3I2emIubW9uZ29kYi5uZXQvY3ZtYT9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHknXG4gICk7XG4gIHJldHVybiBjbGllbnQ7XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBpbnNlcnREb2N1bWVudChjbGllbnQsIGNvbGxlY3Rpb24sIGRvY3VtZW50KSB7XG4gIGNvbnN0IGRiID0gY2xpZW50LmRiKCk7XG4gIGNvbnN0IHJlc3VsdCA9IGF3YWl0IGRiLmNvbGxlY3Rpb24oY29sbGVjdGlvbikuaW5zZXJ0T25lKGRvY3VtZW50KTtcbiAgY2xpZW50LmNsb3NlKCk7XG4gIHJldHVybiByZXN1bHQ7XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBmaW5kQ29tbWVudHMoY2xpZW50LCBjb2xsZWN0aW9uLCBzb3J0LCBmaWx0ZXIpIHtcbiAgY29uc3QgZGIgPSBjbGllbnQuZGIoKTtcbiAgY29uc3QgZG9jdW1lbnQgPSBhd2FpdCBkYlxuICAgIC5jb2xsZWN0aW9uKGNvbGxlY3Rpb24pXG4gICAgLmZpbmQoZmlsdGVyKVxuICAgIC5zb3J0KHNvcnQpXG4gICAgLnRvQXJyYXkoKTtcbiAgXG4gIHJldHVybiBkb2N1bWVudDtcbn1cbiJdLCJuYW1lcyI6WyJNb25nb0NsaWVudCIsInBhc3N3b3JkIiwiZGF0YWJhc2UiLCJjb25uZWN0RGF0YWJhc2UiLCJjbGllbnQiLCJjb25uZWN0IiwiaW5zZXJ0RG9jdW1lbnQiLCJjb2xsZWN0aW9uIiwiZG9jdW1lbnQiLCJkYiIsInJlc3VsdCIsImluc2VydE9uZSIsImNsb3NlIiwiZmluZENvbW1lbnRzIiwic29ydCIsImZpbHRlciIsImZpbmQiLCJ0b0FycmF5Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./helpers/db-util.js\n");
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "TR": () => (/* binding */ connectDatabase)
+/* harmony export */ });
+/* unused harmony exports insertDocument, findComments */
+/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8013);
+/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongodb__WEBPACK_IMPORTED_MODULE_0__);
+
+const password = 'bunbuns2022';
+const database = 'cvma';
+async function connectDatabase() {
+    const client = await mongodb__WEBPACK_IMPORTED_MODULE_0__.MongoClient.connect(`mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@test.3r6zb.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority`);
+    return client;
+}
+async function insertDocument(client, collection, document) {
+    const db = client.db();
+    const result = await db.collection(collection).insertOne(document);
+    client.close();
+    return result;
+}
+async function findComments(client, collection, sort, filter) {
+    const db = client.db();
+    const document = await db.collection(collection).find(filter).sort(sort).toArray();
+    return document;
+}
+
 
 /***/ }),
 
-/***/ "(api)/./pages/api/document/upload.js":
-/*!**************************************!*\
-  !*** ./pages/api/document/upload.js ***!
-  \**************************************/
+/***/ 1703:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _helpers_db_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../helpers/db-util */ \"(api)/./helpers/db-util.js\");\n\nasync function handler(req, res) {\n    if (req.method === 'POST') {\n        const category = req.body.category;\n        const month = req.body.month;\n        const year = req.body.year;\n        const title = req.body.title;\n        const location = req.body.location;\n        if (year === '') {\n            res.status(406).json({\n                message: \"Year Required\"\n            });\n        } else if (title === '') {\n            res.status(406).json({\n                message: \"Title Required\"\n            });\n        } else if (location === null || location === undefined) {\n            res.status(406).json({\n                message: \"File Required\"\n            });\n        } else {\n            const client = await (0,_helpers_db_util__WEBPACK_IMPORTED_MODULE_0__.connectDatabase)();\n            const yearCollection = client.db().collection('years');\n            const dataYear = await yearCollection.findOne({\n                year: year\n            });\n            if (dataYear === null) {\n                await yearCollection.insertOne({\n                    year: year\n                });\n            }\n            const collection = client.db().collection('documents');\n            await collection.insertOne({\n                category: category,\n                month: month,\n                year: year,\n                title: title,\n                location: location\n            });\n            res.status(200).json({\n                message: 'File Uploaded'\n            });\n            client.close();\n            client.close();\n        }\n    }\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (handler);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wYWdlcy9hcGkvZG9jdW1lbnQvdXBsb2FkLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7O0FBQXlEO2VBRTFDQyxPQUFPLENBQUNDLEdBQUcsRUFBRUMsR0FBRyxFQUFHLENBQUM7SUFFL0IsRUFBRSxFQUFDRCxHQUFHLENBQUNFLE1BQU0sS0FBSyxDQUFNLE9BQUUsQ0FBQztRQUV2QixLQUFLLENBQUNDLFFBQVEsR0FBR0gsR0FBRyxDQUFDSSxJQUFJLENBQUNELFFBQVE7UUFDbEMsS0FBSyxDQUFDRSxLQUFLLEdBQUdMLEdBQUcsQ0FBQ0ksSUFBSSxDQUFDQyxLQUFLO1FBQzVCLEtBQUssQ0FBQ0MsSUFBSSxHQUFHTixHQUFHLENBQUNJLElBQUksQ0FBQ0UsSUFBSTtRQUMxQixLQUFLLENBQUNDLEtBQUssR0FBR1AsR0FBRyxDQUFDSSxJQUFJLENBQUNHLEtBQUs7UUFDNUIsS0FBSyxDQUFDQyxRQUFRLEdBQUdSLEdBQUcsQ0FBQ0ksSUFBSSxDQUFDSSxRQUFRO1FBRWxDLEVBQUUsRUFBRUYsSUFBSSxLQUFLLENBQUUsR0FBRSxDQUFDO1lBQ2RMLEdBQUcsQ0FBQ1EsTUFBTSxDQUFDLEdBQUcsRUFBRUMsSUFBSSxDQUFDLENBQUNDO2dCQUFBQSxPQUFPLEVBQUMsQ0FBZTtZQUFBLENBQUM7UUFDbEQsQ0FBQyxNQUFNLEVBQUUsRUFBRUosS0FBSyxLQUFLLENBQUUsR0FBRSxDQUFDO1lBQ3RCTixHQUFHLENBQUNRLE1BQU0sQ0FBQyxHQUFHLEVBQUVDLElBQUksQ0FBQyxDQUFDQztnQkFBQUEsT0FBTyxFQUFDLENBQWdCO1lBQUEsQ0FBQztRQUNuRCxDQUFDLE1BQU0sRUFBRSxFQUFFSCxRQUFRLEtBQUssSUFBSSxJQUFJQSxRQUFRLEtBQUtJLFNBQVMsRUFBRSxDQUFDO1lBQ3JEWCxHQUFHLENBQUNRLE1BQU0sQ0FBQyxHQUFHLEVBQUVDLElBQUksQ0FBQyxDQUFDQztnQkFBQUEsT0FBTyxFQUFDLENBQWU7WUFBQSxDQUFDO1FBQ2xELENBQUMsTUFBTSxDQUFDO1lBQ0osS0FBSyxDQUFDRSxNQUFNLEdBQUcsS0FBSyxDQUFDZixpRUFBZTtZQUNwQyxLQUFLLENBQUNnQixjQUFjLEdBQUdELE1BQU0sQ0FBQ0UsRUFBRSxHQUFHQyxVQUFVLENBQUMsQ0FBTztZQUNyRCxLQUFLLENBQUNDLFFBQVEsR0FBRyxLQUFLLENBQUNILGNBQWMsQ0FBQ0ksT0FBTyxDQUFDLENBQUNaO2dCQUFBQSxJQUFJLEVBQUVBLElBQUk7WUFBQSxDQUFDO1lBQzFELEVBQUUsRUFBQ1csUUFBUSxLQUFLLElBQUksRUFBRSxDQUFDO2dCQUNwQixLQUFLLENBQUNILGNBQWMsQ0FBQ0ssU0FBUyxDQUFDLENBQUNiO29CQUFBQSxJQUFJLEVBQUVBLElBQUk7Z0JBQUEsQ0FBQztZQUM5QyxDQUFDO1lBR0QsS0FBSyxDQUFDVSxVQUFVLEdBQUdILE1BQU0sQ0FBQ0UsRUFBRSxHQUFHQyxVQUFVLENBQUMsQ0FBVztZQUNwRCxLQUFLLENBQUNBLFVBQVUsQ0FBQ0csU0FBUyxDQUFDLENBQUM7Z0JBQ3pCaEIsUUFBUSxFQUFFQSxRQUFRO2dCQUNsQkUsS0FBSyxFQUFFQSxLQUFLO2dCQUNaQyxJQUFJLEVBQUVBLElBQUk7Z0JBQ1ZDLEtBQUssRUFBRUEsS0FBSztnQkFDWkMsUUFBUSxFQUFFQSxRQUFRO1lBQ3RCLENBQUM7WUFDRFAsR0FBRyxDQUFDUSxNQUFNLENBQUMsR0FBRyxFQUFFQyxJQUFJLENBQUMsQ0FBQ0M7Z0JBQUFBLE9BQU8sRUFBQyxDQUFlO1lBQUEsQ0FBQztZQUU5Q0UsTUFBTSxDQUFDTyxLQUFLO1lBRVpQLE1BQU0sQ0FBQ08sS0FBSztRQUVqQixDQUFDO0lBRUosQ0FBQztBQUNMLENBQUM7QUFFRCxpRUFBZXJCLE9BQU8sRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL25leHRqcy1yb3V0aW5nLWNvdXJzZS8uL3BhZ2VzL2FwaS9kb2N1bWVudC91cGxvYWQuanM/NzIzMiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge2Nvbm5lY3REYXRhYmFzZSB9IGZyb20gJy4uLy4uLy4uL2hlbHBlcnMvZGItdXRpbCc7XG5cbmFzeW5jIGZ1bmN0aW9uIGhhbmRsZXIocmVxLCByZXMgKSB7XG5cbiAgICBpZihyZXEubWV0aG9kID09PSAnUE9TVCcpIHtcblxuICAgICAgICBjb25zdCBjYXRlZ29yeSA9IHJlcS5ib2R5LmNhdGVnb3J5O1xuICAgICAgICBjb25zdCBtb250aCA9IHJlcS5ib2R5Lm1vbnRoO1xuICAgICAgICBjb25zdCB5ZWFyID0gcmVxLmJvZHkueWVhcjtcbiAgICAgICAgY29uc3QgdGl0bGUgPSByZXEuYm9keS50aXRsZTtcbiAgICAgICAgY29uc3QgbG9jYXRpb24gPSByZXEuYm9keS5sb2NhdGlvbjtcblxuICAgICAgICBpZiggeWVhciA9PT0gJycpIHtcbiAgICAgICAgICAgIHJlcy5zdGF0dXMoNDA2KS5qc29uKHttZXNzYWdlOlwiWWVhciBSZXF1aXJlZFwifSk7XG4gICAgICAgIH0gZWxzZSBpZiAodGl0bGUgPT09ICcnKSB7XG4gICAgICAgICAgICByZXMuc3RhdHVzKDQwNikuanNvbih7bWVzc2FnZTpcIlRpdGxlIFJlcXVpcmVkXCJ9KTtcbiAgICAgICAgfSBlbHNlIGlmIChsb2NhdGlvbiA9PT0gbnVsbCB8fCBsb2NhdGlvbiA9PT0gdW5kZWZpbmVkKSB7XG4gICAgICAgICAgICByZXMuc3RhdHVzKDQwNikuanNvbih7bWVzc2FnZTpcIkZpbGUgUmVxdWlyZWRcIn0pO1xuICAgICAgICB9IGVsc2Uge1xuICAgICAgICAgICAgY29uc3QgY2xpZW50ID0gYXdhaXQgY29ubmVjdERhdGFiYXNlKCk7XG4gICAgICAgICAgICBjb25zdCB5ZWFyQ29sbGVjdGlvbiA9IGNsaWVudC5kYigpLmNvbGxlY3Rpb24oJ3llYXJzJyk7XG4gICAgICAgICAgICBjb25zdCBkYXRhWWVhciA9IGF3YWl0IHllYXJDb2xsZWN0aW9uLmZpbmRPbmUoe3llYXI6IHllYXJ9KVxuICAgICAgICAgICAgaWYoZGF0YVllYXIgPT09IG51bGwgKXtcbiAgICAgICAgICAgICAgIGF3YWl0IHllYXJDb2xsZWN0aW9uLmluc2VydE9uZSh7eWVhcjogeWVhcn0pO1xuICAgICAgICAgICAgfVxuICAgICAgICAgICAgXG5cbiAgICAgICAgICAgIGNvbnN0IGNvbGxlY3Rpb24gPSBjbGllbnQuZGIoKS5jb2xsZWN0aW9uKCdkb2N1bWVudHMnKTtcbiAgICAgICAgICAgICBhd2FpdCBjb2xsZWN0aW9uLmluc2VydE9uZSh7XG4gICAgICAgICAgICAgICAgY2F0ZWdvcnk6IGNhdGVnb3J5LFxuICAgICAgICAgICAgICAgIG1vbnRoOiBtb250aCxcbiAgICAgICAgICAgICAgICB5ZWFyOiB5ZWFyLFxuICAgICAgICAgICAgICAgIHRpdGxlOiB0aXRsZSxcbiAgICAgICAgICAgICAgICBsb2NhdGlvbjogbG9jYXRpb25cbiAgICAgICAgICAgIH0pO1xuICAgICAgICAgICAgcmVzLnN0YXR1cygyMDApLmpzb24oe21lc3NhZ2U6J0ZpbGUgVXBsb2FkZWQnfSk7XG5cbiAgICAgICAgICAgIGNsaWVudC5jbG9zZSgpO1xuXG4gICAgICAgICAgICBjbGllbnQuY2xvc2UoKTtcblxuICAgICAgIH1cblxuICAgIH1cbn1cblxuZXhwb3J0IGRlZmF1bHQgaGFuZGxlcjsiXSwibmFtZXMiOlsiY29ubmVjdERhdGFiYXNlIiwiaGFuZGxlciIsInJlcSIsInJlcyIsIm1ldGhvZCIsImNhdGVnb3J5IiwiYm9keSIsIm1vbnRoIiwieWVhciIsInRpdGxlIiwibG9jYXRpb24iLCJzdGF0dXMiLCJqc29uIiwibWVzc2FnZSIsInVuZGVmaW5lZCIsImNsaWVudCIsInllYXJDb2xsZWN0aW9uIiwiZGIiLCJjb2xsZWN0aW9uIiwiZGF0YVllYXIiLCJmaW5kT25lIiwiaW5zZXJ0T25lIiwiY2xvc2UiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(api)/./pages/api/document/upload.js\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _helpers_db_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1993);
+
+async function handler(req, res) {
+    if (req.method === 'POST') {
+        const category = req.body.category;
+        const month = req.body.month;
+        const year = req.body.year;
+        const title = req.body.title;
+        const location = req.body.location;
+        if (year === '') {
+            res.status(406).json({
+                message: "Year Required"
+            });
+        } else if (title === '') {
+            res.status(406).json({
+                message: "Title Required"
+            });
+        } else if (location === null || location === undefined) {
+            res.status(406).json({
+                message: "File Required"
+            });
+        } else {
+            const client = await (0,_helpers_db_util__WEBPACK_IMPORTED_MODULE_0__/* .connectDatabase */ .TR)();
+            const yearCollection = client.db().collection('years');
+            const dataYear = await yearCollection.findOne({
+                year: year
+            });
+            if (dataYear === null) {
+                await yearCollection.insertOne({
+                    year: year
+                });
+            }
+            const collection = client.db().collection('documents');
+            await collection.insertOne({
+                category: category,
+                month: month,
+                year: year,
+                title: title,
+                location: location
+            });
+            res.status(200).json({
+                message: 'File Uploaded'
+            });
+            client.close();
+            client.close();
+        }
+    }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (handler);
+
 
 /***/ })
 
@@ -50,7 +110,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 var __webpack_require__ = require("../../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("(api)/./pages/api/document/upload.js"));
+var __webpack_exports__ = (__webpack_exec__(1703));
 module.exports = __webpack_exports__;
 
 })();

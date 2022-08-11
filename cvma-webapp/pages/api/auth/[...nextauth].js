@@ -13,12 +13,12 @@ export default NextAuth({
         const client = await connectDatabase();
 
         const usersCollection = client.db().collection("members");
-
+        
        
         const user = await usersCollection.findOne({
           memberId: credentials.memberNumber
         });
-
+        console.log(user)
         if (!user) {
           client.close();
           throw new Error("No User Found");
