@@ -45,35 +45,41 @@ async function handler(req, res) {
     const user = await database.findOne({ memberId: memNumber });
 
     if (user === null) {
-      await client.close();
+       client.close();
       res.status(422).json({ message: "Member does not Exist" });
     }
+    if (email.toLowerCase() !== user.email.toLowerCase()) {
+      client.close();
+      res.status(422).json({ message: "Email Dose Not Match" });
+    }
+    console.log(user.password)
+   if (user.password === "") {
+   
+    try{  const hashedPassword = await hashPasswd(passwd);
 
-   if (user.password !== null) {
-      await client.close();
+      const message = await database.updateOne(
+        { memberId: memNumber },
+        { $set: { password: hashedPassword } }
+      );
+  
+      res.status(200).json({ message: message});
+    }catch (err) {
+      console.log("Error", err);
+    }
+  
+  }
+ 
+      
+    } else {
+      client.close();
       res
         .status(422)
         .json({
           message: "User already Registered Please login with current password",
         });
-    } 
-
-    console.log(user);
-    console.log(email);
-    console.log(user.email);
-    if (email.toLowerCase() !== user.email.toLowerCase()) {
-      client.close();
-      res.status(422).json({ message: "Email Dose Not Match" });
     }
 
-    const hashedPassword = await hashPasswd(passwd);
+   
 
-    await database.updateOne(
-      { memberId: memNumber },
-      { $set: { password: hashedPassword } }
-    );
-
-    res.status(200);
-  }
 }
 export default handler;

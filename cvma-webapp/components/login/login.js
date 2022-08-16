@@ -6,23 +6,7 @@ import { useRouter } from "next/router";
 import { signIn } from "next-auth/client";
 
 //create registerUser function to update user in database
- async function createPasswd(memNumber, email, passwd, passwdVerify) {
-  const response = await fetch('/api/login/registerUser',{
-    method: 'POST',
-    body: JSON.stringify({memNumber,email,passwd,passwdVerify}),
-    headers: {'Content-Type': 'application/json'}
-  })
 
- const data = await response.json();
-
-  
-
-  if (!response.ok) {
-    return data.message
-  }
-  return "OK"
-  
-} 
 
 function LoginSignup() {
   const [isLogin, setIsLogin] = useState(true);
@@ -32,6 +16,25 @@ function LoginSignup() {
   const passwdRef = useRef();
   const passwdVerifyRef = useRef(" ");
   const router = useRouter();
+
+  async function createPasswd(memNumber, email, passwd, passwdVerify) {
+    const response = await fetch('/api/login/registerUser',{
+      method: 'POST',
+      body: JSON.stringify({memNumber,email,passwd,passwdVerify}),
+      headers: {'Content-Type': 'application/json'}
+    })
+  
+   const data = await response.json();
+  
+    
+   console.log(data)
+    if (!response.ok) {
+      return data.message
+    }
+    setIsLogin(true);
+    return "Password Set please login"
+    
+  } 
 
   async function submitHandler(event) {
     event.preventDefault();

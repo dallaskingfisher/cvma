@@ -1,20 +1,5 @@
 {
   "/_app": "pages/_app.js",
-  "/api/auth/[...nextauth]": "pages/api/auth/[...nextauth].js",
-  "/api/document": "pages/api/document.js",
-  "/api/document/upload": "pages/api/document/upload.js",
-  "/api/document/years": "pages/api/document/years.js",
-  "/api/login/registerUser": "pages/api/login/registerUser.js",
-  "/api/login/reset": "pages/api/login/reset.js",
-  "/api/members": "pages/api/members.js",
-  "/api/members/memberNew": "pages/api/members/memberNew.js",
-  "/api/members/memberUpdate": "pages/api/members/memberUpdate.js",
-  "/api/s3-upload": "pages/api/s3-upload.js",
-  "/": "pages/index.html",
-  "/login": "pages/login.html",
-  "/login/passwd-reset": "pages/login/passwd-reset.html",
-  "/members": "pages/members.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/_document": "pages/_document.js"
 }

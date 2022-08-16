@@ -3,15 +3,23 @@ import UploadFiles from "../../components/upload/upload";
 import MemberUpdate from "../../components/members/memberUpdate";
 import MemberNew from "../../components/members/memberNew";
 import Documents from "../../components/documents/documents";
+import MemberRole from "../../components/members/memberRolls";
 import classes from "../../styles/member.module.css";
 import { connectDatabase } from "../../helpers/db-util";
+import { useState } from 'react';
 
 function Members(props) {
   const membersObj = JSON.parse(props.members);
   const member = membersObj.find(
     (element) => element.memberId === props.session.user.name
   );
-
+  const [memberId, setMemberId] = useState();
+  const [ modal, setModal] = useState(false);
+  
+  function openModal (memberId){
+    setMemberId(memberId);
+    setModal(!modal)
+  }
   return (
     <section>
       <div>
@@ -27,6 +35,7 @@ function Members(props) {
         <UploadFiles />
         <Documents />
         <MemberNew />
+        <MemberRole members={membersObj} openModel={openModal} />
       </div>
     </section>
   );
