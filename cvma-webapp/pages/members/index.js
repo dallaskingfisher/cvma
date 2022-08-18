@@ -4,9 +4,10 @@ import MemberUpdate from "../../components/members/memberUpdate";
 import MemberNew from "../../components/members/memberNew";
 import Documents from "../../components/documents/documents";
 import MemberRole from "../../components/members/memberRolls";
+import Modal from "../../components/modal/modal";
 import classes from "../../styles/member.module.css";
 import { connectDatabase } from "../../helpers/db-util";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Members(props) {
   const membersObj = JSON.parse(props.members);
@@ -14,12 +15,19 @@ function Members(props) {
     (element) => element.memberId === props.session.user.name
   );
   const [memberId, setMemberId] = useState();
-  const [ modal, setModal] = useState(false);
-  
-  function openModal (memberId){
-    setMemberId(memberId);
+  const [ modal, setModal] = useState(true);
+  const [ effect, setEffect ] =useState(false)
+   useEffect(() => {
     setModal(!modal)
+    console.log(memberId)
+   },[effect])
+  const modalOpen = () =>{
+    setEffect(!effect)
   }
+  const modalClose = () =>{
+    setEffect(!effect)
+  }
+  
   return (
     <section>
       <div>
@@ -35,8 +43,9 @@ function Members(props) {
         <UploadFiles />
         <Documents />
         <MemberNew />
-        <MemberRole members={membersObj} openModel={openModal} />
+        <MemberRole members={props.members} setMemberId={setMemberId} modalOpen={modalOpen}/>
       </div>
+     <Modal  memberId={memberId} show={modal} setEffect={setEffect} modalClose={modalClose}/>
     </section>
   );
 }
