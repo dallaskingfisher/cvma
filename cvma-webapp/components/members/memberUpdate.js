@@ -18,7 +18,7 @@ function MemberUpdate(props) {
     const homePhone = props.user.homePhone;
     const address = props.user.address;
     const city = props.user.city;
-   const  state = props.user.state;
+    const  state = props.user.state;
     const zip = props.user.zip;
     const roadName = props.user.roadName;
     const iceName = props.user.iceName;

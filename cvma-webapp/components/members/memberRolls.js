@@ -19,11 +19,11 @@ function MemberRole(props) {
               {members1.map((member) => (
                 <tr key={member["_id"]}>
                   <td>
-                    <a onClick={() => { props.modalOpen();props.setMemberId(member["memberId"]);}}>
+                    <a className={classes.tablelink} onClick={() => { props.modalOpen();props.setMemberId(member["memberId"]);}}>
                       {member["memberId"]}
                     </a>
                   </td>
-                  <td>{`${member["firstName"]} "${member["roadName"]}" ${member["lastName"]}`}</td>
+                  <td>{`${member["firstName"]} ${member["roadName"] ?`"${member["roadName"]}"` : ''} ${member["lastName"]}`}</td>
                 </tr>
               ))}
             </tbody>

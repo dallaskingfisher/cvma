@@ -45,7 +45,7 @@ function Members(props) {
         <MemberNew />
         <MemberRole members={props.members} setMemberId={setMemberId} modalOpen={modalOpen}/>
       </div>
-     <Modal  memberId={memberId} show={modal} setEffect={setEffect} modalClose={modalClose}/>
+     <Modal  memberId={memberId} show={modal} setEffect={setEffect} modalClose={modalClose} members={props.members}/>
     </section>
   );
 }
@@ -55,7 +55,7 @@ export async function getServerSideProps(context) {
 
   const client = await connectDatabase();
   const collection = client.db().collection("members");
-  const data = await collection.find({}).toArray();
+  const data = await collection.find({}).sort({firstName: 1}).toArray();
   const members = JSON.stringify(data);
 
   if (!session) {
