@@ -1,31 +1,27 @@
-import {useRef,useState} from 'react';
+import {useState} from 'react';
 
 function  Test () {
-    const [checkbox , setCheckbox ] = useState(false)
- 
-    function onChangeHanlder (){
-    setCheckbox(!checkbox)
-     
+    const [selected, setSelected ] = useState(false)
+    const role = 'member'
+    const roleOption = (role) =>{
+        if (role === 'admin'){
+            return <select>
+                 <option selected >value 1</option>
+                    <option >value 2</option>
+            </select>
+        } else {
+            return <select>
+                 <option  >value 1</option>
+                    <option selected >value 2</option>
+            </select>
+        }
     }
-     console.log(checkbox);
-    const submitHandler =(e) => {
-        e.preventDefault();
-       if(checkbox){
-        const newDate = new Date();
-       // let date = `${newDate.getDay()}-${newDate.getMonth()}`;
-       let date = newDate.toString()
-       }else{  date = ''}
-       console.log(date)        
-     
-    }
+    const memberRole = roleOption(role);
     return(
         <div>
-             
-            <form onSubmit={submitHandler}>
-                <input type="checkbox" name="test" value={checkbox} onChange={onChangeHanlder} />
-                <button>Submit</button>
-               
-            </form>
+             {memberRole}
+                
+            
 
         </div>
     )

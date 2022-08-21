@@ -17,7 +17,8 @@
     background-color: #fff;
     padding: 2rem;
     border-radius: 20px;
-
+    display: flex;
+    flex-wrap:wrap;
     background-color: rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(5px);
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
@@ -46,4 +47,244 @@
     margin-right: 1rem;
     background-color: #364348;
     color: #fff;
+}
+
+.background {
+    margin: 3rem auto;
+    width: 95%;
+    max-width: 25rem;
+    border-radius: 6px;
+    background-color: rgba(139, 136, 136, 0.738);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .background h1 {
+    text-align: center;
+    color: rgb(255,204,1);
+  }
+  
+  .control {
+    margin-bottom: 0.5rem;
+  }
+  
+  .control label {
+    display: block;
+    color: rgb(255,204,1);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .control input {
+    font: inherit;
+    background-color: rgba(183, 176, 176);
+    color: #000;
+    border-radius: 4px;
+    border: 1px solid rgb(255,204,1);
+    width: 100%;
+    text-align: left;
+    padding: 0.25rem;
+  }
+  .control input::placeholder{
+    color: rgb(255,204,1);
+  }
+  .control textarea {
+    font: inherit;
+    background-color: rgba(183, 176, 176, 0.807);
+    color: #000;
+    border-radius: 4px;
+    border: 1px solid rgb(255,204,1);
+    width: 100%;
+    text-align: left;
+    padding: 0.25rem;
+  }
+
+  .control select  option{
+    font: inherit;
+    background-color: rgba(183, 176, 176, 0.807);
+    color: #000;
+    border-radius: 4px;
+    border: 1px solid rgb(255,204,1);
+    width: 100%;
+    text-align: left;
+    padding: 0.25rem;
+  }
+  
+  .actions {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button {
+    cursor: pointer;
+    font: inherit;
+    color: rgb(255,204,1);
+    background-color: #840303;
+    border: 1px solid #840303;
+    border-radius: 4px;
+    padding: 0.5rem 2.5rem;
+    margin: 0.25rem;
+  }
+  
+  .button:hover {
+    background-color: #840303;
+    border-color: #840303;
+  }
+  
+  .actions .toggle {
+    margin-top: 1rem;
+    background-color: transparent;
+    color: rgb(255,204,1);
+    border: none;
+    padding: 0.15rem 1.5rem;
+    
+  }
+  
+  .actions .toggle:hover {
+    background-color: transparent;
+    color: rgb(255,204,1);
+  }
+  .error {
+    color:#840303;
+    font-size: 2em;
+    font-weight: bold;
+  }
+.formatCheckbox {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width:640px){
+
+    .background {
+        margin: 3rem auto;
+        width: 95%;
+        max-width: 50rem;
+        border-radius: 6px;
+        background-color: rgba(139, 136, 136, 0.738);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        text-align: center;
+      }
+      
+      .background h1 {
+        text-align: center;
+        color: rgb(255,204,1);
+      }
+      
+      .control {
+        margin-bottom: 0.5rem;
+      }
+      
+      .control label {
+        display: block;
+        color: rgb(255,204,1);
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+      
+      .control input {
+        font: inherit;
+        background-color: rgba(183, 176, 176, 0.807);
+        color: #000;
+        border-radius: 4px;
+        border: 1px solid rgb(255,204,1);
+        width: 50%;
+        text-align: left;
+        padding: 0.25rem;
+        font-weight: bold;
+      }
+      .control select option {
+        font: inherit;
+        background-color: rgba(183, 176, 176, 0.807);
+        color: #000;
+        border-radius: 4px;
+        border: 1px solid rgb(255,204,1);
+        width: 50%;
+        text-align: left;
+        padding: 0.25rem;
+        font-weight: bold;
+      }
+      #state{
+          width:50px;
+      }
+      .control textarea {
+        font: inherit;
+        background-color: rgba(183, 176, 176, 0.807);
+        color: #000;
+        border-radius: 4px;
+        border: 1px solid rgb(255,204,1);
+        width: 100%;
+        text-align: left;
+        padding: 0.25rem;
+      }
+    
+      .control select {
+        font: inherit;
+        background-color: rgba(183, 176, 176, 0.807);
+        color: #000;
+        border-radius: 4px;
+        border: 1px solid rgb(255,204,1);
+        width: 100%;
+        text-align: left;
+        padding: 0.25rem;
+      }
+      
+      .actions {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .button {
+        cursor: pointer;
+        font: inherit;
+        color: rgb(255,204,1);
+        background-color: #840303;
+        border: 1px solid #840303;
+        border-radius: 4px;
+        padding: 0.5rem 2.5rem;
+      }
+      
+      .button:hover {
+        background-color: #840303;
+        border-color: #840303;
+      }
+      
+      .actions .toggle {
+        margin-top: 1rem;
+        background-color: transparent;
+        color: rgb(255,204,1);
+        border: none;
+        padding: 0.15rem 1.5rem;
+        
+      }
+      
+      .actions .toggle:hover {
+        background-color: transparent;
+        color: rgb(255,204,1);
+      }
+      .error {
+        color:#840303;
+        font-size: 2em;
+        font-weight: bold;
+      }
+}
+
+@media only screen and (min-width:1024px) {
+
+}
+
+@media only screen and (min-width:1440px) {
+
 }
