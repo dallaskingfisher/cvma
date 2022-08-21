@@ -14,12 +14,12 @@ function Members(props) {
   const member = membersObj.find(
     (element) => element.memberId === props.session.user.name
   );
+ 
   const [memberId, setMemberId] = useState();
   const [ modal, setModal] = useState(true);
   const [ effect, setEffect ] =useState(false)
    useEffect(() => {
     setModal(!modal)
-    console.log(memberId)
    },[effect])
   const modalOpen = () =>{
     setEffect(!effect)
@@ -45,7 +45,7 @@ function Members(props) {
         <MemberNew />
         <MemberRole members={props.members} setMemberId={setMemberId} modalOpen={modalOpen}/>
       </div>
-     <Modal  memberId={memberId} show={modal} setEffect={setEffect} modalClose={modalClose} members={props.members}/>
+     <Modal  memberId={memberId} show={modal} setEffect={setEffect} modalClose={modalClose} members={props.members} member={member}/>
     </section>
   );
 }
