@@ -1,45 +1,82 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/api/document";
-exports.ids = ["pages/api/document"];
+exports.id = 262;
+exports.ids = [262];
 exports.modules = {
 
-/***/ "mongodb":
-/*!**************************!*\
-  !*** external "mongodb" ***!
-  \**************************/
+/***/ 8013:
 /***/ ((module) => {
 
 module.exports = require("mongodb");
 
 /***/ }),
 
-/***/ "(api)/./helpers/db-util.js":
-/*!****************************!*\
-  !*** ./helpers/db-util.js ***!
-  \****************************/
+/***/ 1993:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"connectDatabase\": () => (/* binding */ connectDatabase),\n/* harmony export */   \"insertDocument\": () => (/* binding */ insertDocument),\n/* harmony export */   \"findComments\": () => (/* binding */ findComments)\n/* harmony export */ });\n/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mongodb */ \"mongodb\");\n/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongodb__WEBPACK_IMPORTED_MODULE_0__);\n\nconst password = 'bunbuns2022';\nconst database = 'cvma';\nasync function connectDatabase() {\n    const client = await mongodb__WEBPACK_IMPORTED_MODULE_0__.MongoClient.connect(`mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@test.3r6zb.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority`);\n    return client;\n}\nasync function insertDocument(client, collection, document) {\n    const db = client.db();\n    const result = await db.collection(collection).insertOne(document);\n    client.close();\n    return result;\n}\nasync function findComments(client, collection, sort, filter) {\n    const db = client.db();\n    const document = await db.collection(collection).find(filter).sort(sort).toArray();\n    return document;\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9oZWxwZXJzL2RiLXV0aWwuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7QUFBcUM7QUFFckMsS0FBSyxDQUFDQyxRQUFRLEdBQUcsQ0FBYTtBQUM5QixLQUFLLENBQUNDLFFBQVEsR0FBRyxDQUFNO0FBRWhCLGVBQWVDLGVBQWUsR0FBRyxDQUFDO0lBQ3ZDLEtBQUssQ0FBQ0MsTUFBTSxHQUFHLEtBQUssQ0FBQ0osd0RBQW1CLEVBQ3JDLGNBQWMsRUFBRU0sT0FBTyxDQUFDQyxHQUFHLENBQUNDLGNBQWMsQ0FBQyxDQUFDLEVBQUVGLE9BQU8sQ0FBQ0MsR0FBRyxDQUFDRSxjQUFjLENBQUMsd0JBQXdCLEVBQUVILE9BQU8sQ0FBQ0MsR0FBRyxDQUFDRyxjQUFjLENBQUMsNEJBQTRCO0lBRTdKLE1BQU0sQ0FBQ04sTUFBTTtBQUNmLENBQUM7QUFFTSxlQUFlTyxjQUFjLENBQUNQLE1BQU0sRUFBRVEsVUFBVSxFQUFFQyxRQUFRLEVBQUUsQ0FBQztJQUNsRSxLQUFLLENBQUNDLEVBQUUsR0FBR1YsTUFBTSxDQUFDVSxFQUFFO0lBQ3BCLEtBQUssQ0FBQ0MsTUFBTSxHQUFHLEtBQUssQ0FBQ0QsRUFBRSxDQUFDRixVQUFVLENBQUNBLFVBQVUsRUFBRUksU0FBUyxDQUFDSCxRQUFRO0lBQ2pFVCxNQUFNLENBQUNhLEtBQUs7SUFDWixNQUFNLENBQUNGLE1BQU07QUFDZixDQUFDO0FBRU0sZUFBZUcsWUFBWSxDQUFDZCxNQUFNLEVBQUVRLFVBQVUsRUFBRU8sSUFBSSxFQUFFQyxNQUFNLEVBQUUsQ0FBQztJQUNwRSxLQUFLLENBQUNOLEVBQUUsR0FBR1YsTUFBTSxDQUFDVSxFQUFFO0lBQ3BCLEtBQUssQ0FBQ0QsUUFBUSxHQUFHLEtBQUssQ0FBQ0MsRUFBRSxDQUN0QkYsVUFBVSxDQUFDQSxVQUFVLEVBQ3JCUyxJQUFJLENBQUNELE1BQU0sRUFDWEQsSUFBSSxDQUFDQSxJQUFJLEVBQ1RHLE9BQU87SUFFVixNQUFNLENBQUNULFFBQVE7QUFDakIsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL25leHRqcy1yb3V0aW5nLWNvdXJzZS8uL2hlbHBlcnMvZGItdXRpbC5qcz9mNTc3Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IE1vbmdvQ2xpZW50IH0gZnJvbSBcIm1vbmdvZGJcIjtcblxuY29uc3QgcGFzc3dvcmQgPSAnYnVuYnVuczIwMjInO1xuY29uc3QgZGF0YWJhc2UgPSAnY3ZtYSdcblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGNvbm5lY3REYXRhYmFzZSgpIHtcbiAgY29uc3QgY2xpZW50ID0gYXdhaXQgTW9uZ29DbGllbnQuY29ubmVjdChcbiAgICBgbW9uZ29kYitzcnY6Ly8ke3Byb2Nlc3MuZW52Lk1PTkdPX1VTRVJOQU1FfToke3Byb2Nlc3MuZW52Lk1PTkdPX1BBU1NXT1JEfUB0ZXN0LjNyNnpiLm1vbmdvZGIubmV0LyR7cHJvY2Vzcy5lbnYuTU9OR09fREFUQUJBU0V9P3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eWBcbiAgKTtcbiAgcmV0dXJuIGNsaWVudDtcbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGluc2VydERvY3VtZW50KGNsaWVudCwgY29sbGVjdGlvbiwgZG9jdW1lbnQpIHtcbiAgY29uc3QgZGIgPSBjbGllbnQuZGIoKTtcbiAgY29uc3QgcmVzdWx0ID0gYXdhaXQgZGIuY29sbGVjdGlvbihjb2xsZWN0aW9uKS5pbnNlcnRPbmUoZG9jdW1lbnQpO1xuICBjbGllbnQuY2xvc2UoKTtcbiAgcmV0dXJuIHJlc3VsdDtcbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGZpbmRDb21tZW50cyhjbGllbnQsIGNvbGxlY3Rpb24sIHNvcnQsIGZpbHRlcikge1xuICBjb25zdCBkYiA9IGNsaWVudC5kYigpO1xuICBjb25zdCBkb2N1bWVudCA9IGF3YWl0IGRiXG4gICAgLmNvbGxlY3Rpb24oY29sbGVjdGlvbilcbiAgICAuZmluZChmaWx0ZXIpXG4gICAgLnNvcnQoc29ydClcbiAgICAudG9BcnJheSgpO1xuICBcbiAgcmV0dXJuIGRvY3VtZW50O1xufVxuIl0sIm5hbWVzIjpbIk1vbmdvQ2xpZW50IiwicGFzc3dvcmQiLCJkYXRhYmFzZSIsImNvbm5lY3REYXRhYmFzZSIsImNsaWVudCIsImNvbm5lY3QiLCJwcm9jZXNzIiwiZW52IiwiTU9OR09fVVNFUk5BTUUiLCJNT05HT19QQVNTV09SRCIsIk1PTkdPX0RBVEFCQVNFIiwiaW5zZXJ0RG9jdW1lbnQiLCJjb2xsZWN0aW9uIiwiZG9jdW1lbnQiLCJkYiIsInJlc3VsdCIsImluc2VydE9uZSIsImNsb3NlIiwiZmluZENvbW1lbnRzIiwic29ydCIsImZpbHRlciIsImZpbmQiLCJ0b0FycmF5Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./helpers/db-util.js\n");
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "TR": () => (/* binding */ connectDatabase)
+/* harmony export */ });
+/* unused harmony exports insertDocument, findComments */
+/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8013);
+/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongodb__WEBPACK_IMPORTED_MODULE_0__);
+
+const password = 'bunbuns2022';
+const database = 'cvma';
+async function connectDatabase() {
+    const client = await mongodb__WEBPACK_IMPORTED_MODULE_0__.MongoClient.connect(`mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@test.3r6zb.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority`);
+    return client;
+}
+async function insertDocument(client, collection, document) {
+    const db = client.db();
+    const result = await db.collection(collection).insertOne(document);
+    client.close();
+    return result;
+}
+async function findComments(client, collection, sort, filter) {
+    const db = client.db();
+    const document = await db.collection(collection).find(filter).sort(sort).toArray();
+    return document;
+}
+
 
 /***/ }),
 
-/***/ "(api)/./pages/api/document/index.js":
-/*!*************************************!*\
-  !*** ./pages/api/document/index.js ***!
-  \*************************************/
+/***/ 6715:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _helpers_db_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../helpers/db-util */ \"(api)/./helpers/db-util.js\");\n\nasync function handler(req, res) {\n    try {\n        const client = await (0,_helpers_db_util__WEBPACK_IMPORTED_MODULE_0__.connectDatabase)();\n        const collection = client.db().collection(\"documents\");\n        const data = await collection.find({}).toArray();\n        const docsArray = [];\n        for(let i = 0; i < data.length; i++){\n            docsArray.push([\n                data[i].category,\n                data[i].month,\n                data[i].year,\n                data[i].title,\n                data[i].location\n            ]);\n        }\n        // console.log(docsArray);\n        res.status(200).json({\n            docsArray\n        });\n    } catch (err) {\n        console.log(err);\n    }\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (handler);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wYWdlcy9hcGkvZG9jdW1lbnQvaW5kZXguanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBMEQ7ZUFFM0NDLE9BQU8sQ0FBQ0MsR0FBRyxFQUFFQyxHQUFHLEVBQUUsQ0FBQztJQUNoQyxHQUFHLENBQUMsQ0FBQztRQUNILEtBQUssQ0FBQ0MsTUFBTSxHQUFHLEtBQUssQ0FBQ0osaUVBQWU7UUFDcEMsS0FBSyxDQUFDSyxVQUFVLEdBQUdELE1BQU0sQ0FBQ0UsRUFBRSxHQUFHRCxVQUFVLENBQUMsQ0FBVztRQUNyRCxLQUFLLENBQUNFLElBQUksR0FBRyxLQUFLLENBQUNGLFVBQVUsQ0FBQ0csSUFBSSxDQUFDLENBQUMsQ0FBQyxFQUFFQyxPQUFPO1FBQzlDLEtBQUssQ0FBQ0MsU0FBUyxHQUFFLENBQUMsQ0FBQztRQUNuQixHQUFHLENBQUUsR0FBRyxDQUFDQyxDQUFDLEdBQUUsQ0FBQyxFQUFFQSxDQUFDLEdBQUdKLElBQUksQ0FBQ0ssTUFBTSxFQUFFRCxDQUFDLEdBQUcsQ0FBQztZQUNqQ0QsU0FBUyxDQUFDRyxJQUFJLENBQUMsQ0FBQ047Z0JBQUFBLElBQUksQ0FBQ0ksQ0FBQyxFQUFFRyxRQUFRO2dCQUFFUCxJQUFJLENBQUNJLENBQUMsRUFBRUksS0FBSztnQkFBRVIsSUFBSSxDQUFDSSxDQUFDLEVBQUVLLElBQUk7Z0JBQUVULElBQUksQ0FBQ0ksQ0FBQyxFQUFFTSxLQUFLO2dCQUFFVixJQUFJLENBQUNJLENBQUMsRUFBRU8sUUFBUTtZQUFBLENBQUM7UUFDbkcsQ0FBQztRQUVELEVBQTBCO1FBQzFCZixHQUFHLENBQUNnQixNQUFNLENBQUMsR0FBRyxFQUFFQyxJQUFJLENBQUMsQ0FBQztZQUFDVixTQUFTO1FBQUMsQ0FBQztJQUNwQyxDQUFDLENBQUMsS0FBSyxFQUFFVyxHQUFHLEVBQUUsQ0FBQztRQUNiQyxPQUFPLENBQUNDLEdBQUcsQ0FBQ0YsR0FBRztJQUNqQixDQUFDO0FBQ0gsQ0FBQztBQUVELGlFQUFlcEIsT0FBTyxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbmV4dGpzLXJvdXRpbmctY291cnNlLy4vcGFnZXMvYXBpL2RvY3VtZW50L2luZGV4LmpzP2NhY2QiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgY29ubmVjdERhdGFiYXNlIH0gZnJvbSBcIi4uLy4uLy4uL2hlbHBlcnMvZGItdXRpbFwiO1xuXG5hc3luYyBmdW5jdGlvbiBoYW5kbGVyKHJlcSwgcmVzKSB7XG4gIHRyeSB7XG4gICAgY29uc3QgY2xpZW50ID0gYXdhaXQgY29ubmVjdERhdGFiYXNlKCk7XG4gICAgY29uc3QgY29sbGVjdGlvbiA9IGNsaWVudC5kYigpLmNvbGxlY3Rpb24oXCJkb2N1bWVudHNcIik7XG4gICAgY29uc3QgZGF0YSA9IGF3YWl0IGNvbGxlY3Rpb24uZmluZCh7fSkudG9BcnJheSgpO1xuICAgIGNvbnN0IGRvY3NBcnJheSA9W107XG4gICAgZm9yIChsZXQgaSA9MDsgaSA8IGRhdGEubGVuZ3RoOyBpKyspe1xuICAgICAgICBkb2NzQXJyYXkucHVzaChbZGF0YVtpXS5jYXRlZ29yeSwgZGF0YVtpXS5tb250aCwgZGF0YVtpXS55ZWFyLCBkYXRhW2ldLnRpdGxlLCBkYXRhW2ldLmxvY2F0aW9uXSlcbiAgICB9XG4gICAgXG4gICAgLy8gY29uc29sZS5sb2coZG9jc0FycmF5KTtcbiAgICByZXMuc3RhdHVzKDIwMCkuanNvbih7IGRvY3NBcnJheSB9KTtcbiAgfSBjYXRjaCAoZXJyKSB7XG4gICAgY29uc29sZS5sb2coZXJyKTtcbiAgfVxufVxuXG5leHBvcnQgZGVmYXVsdCBoYW5kbGVyO1xuIl0sIm5hbWVzIjpbImNvbm5lY3REYXRhYmFzZSIsImhhbmRsZXIiLCJyZXEiLCJyZXMiLCJjbGllbnQiLCJjb2xsZWN0aW9uIiwiZGIiLCJkYXRhIiwiZmluZCIsInRvQXJyYXkiLCJkb2NzQXJyYXkiLCJpIiwibGVuZ3RoIiwicHVzaCIsImNhdGVnb3J5IiwibW9udGgiLCJ5ZWFyIiwidGl0bGUiLCJsb2NhdGlvbiIsInN0YXR1cyIsImpzb24iLCJlcnIiLCJjb25zb2xlIiwibG9nIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./pages/api/document/index.js\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _helpers_db_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1993);
+
+async function handler(req, res) {
+    try {
+        const client = await (0,_helpers_db_util__WEBPACK_IMPORTED_MODULE_0__/* .connectDatabase */ .TR)();
+        const collection = client.db().collection("documents");
+        const data = await collection.find({}).toArray();
+        const docsArray = [];
+        for(let i = 0; i < data.length; i++){
+            docsArray.push([
+                data[i].category,
+                data[i].month,
+                data[i].year,
+                data[i].title,
+                data[i].location
+            ]);
+        }
+        // console.log(docsArray);
+        res.status(200).json({
+            docsArray
+        });
+    } catch (err) {
+        console.log(err);
+    }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (handler);
+
 
 /***/ })
 
@@ -50,7 +87,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 var __webpack_require__ = require("../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("(api)/./pages/api/document/index.js"));
+var __webpack_exports__ = (__webpack_exec__(6715));
 module.exports = __webpack_exports__;
 
 })();
