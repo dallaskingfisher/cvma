@@ -6,8 +6,7 @@ function Modal(props) {
     (element) => element.memberId === props.memberId
   );
 
-  const memberRole = props.member.role;
-  console.log(memberRole);
+  const adminRole = props.adminRole;
   const [insuranceCheckbox, setInsuranceCheckbox] = useState(false);
   const [registrationCheckbox, setRegistrationCheckbox] = useState(false);
   const [driverLicenseCheckBox, setDriverLicenseCheckBox] = useState(false);
@@ -80,8 +79,8 @@ function Modal(props) {
   const memberRoll = (role) => {
     if (role === "admin") {
       return (
-        <select ref={roleRef}>
-          <option value="admin" selected>
+        <select ref={roleRef} defaultValue="admin">
+          <option value="admin">
             Administrator
           </option>
           ;<option value="member">Member</option>;
@@ -89,9 +88,9 @@ function Modal(props) {
       );
     } else {
       return (
-        <select ref={roleRef}>
+        <select ref={roleRef} defaultValue="member">
           <option value="admin">Administrator</option>;
-          <option value="member" selected>
+          <option value="member" >
             Member
           </option>
           ;
@@ -198,12 +197,12 @@ function Modal(props) {
     <div>
       {props.show ? (
         <div className={classes.modalContainer}>
-          <div className="modal">
+          <div className={classes.modal}>
             <header className={classes.modal_header}>
               <h3 className={classes.modal_title}>Member Information</h3>
             </header>
             <main className={classes.modal_content}>
-              <form onSubmit={submitHandler}>
+             {adminRole ? ( <form onSubmit={submitHandler}>
                 <div className={classes.control}>
                   <input
                     type="text"
@@ -243,47 +242,65 @@ function Modal(props) {
                   />
                   {memberOption}
                   <div className={classes.center}>
-                  <div className={classes.formatCheckbox}>
-                    <label htmlFor="insureance">Insurance</label>
-                    <input type="checkbox" onChange={insureanceHandler} />
-                    <p>{insurance}</p>
-                  </div>
-                  <div className={classes.formatCheckbox}>
-                    <label htmlFor="registration">Registration</label>
-                    <input type="checkbox" onChange={registrationHandler} />
-                    <p>{registration}</p>
-                  </div>
-                  <div className={classes.formatCheckbox}>
-                    <label htmlFor="driversLicense">Drivers License</label>
-                    <input type="checkbox" onChange={driverLicenseHandler} />
-                    <p>{driverLicence}</p>
-                  </div>
+                    <div className={classes.formatCheckbox}>
+                      <label htmlFor="insureance">Insurance</label>
+                      <input type="checkbox" onChange={insureanceHandler} />
+                      <p>{insurance}</p>
+                    </div>
+                    <div className={classes.formatCheckbox}>
+                      <label htmlFor="registration">Registration</label>
+                      <input type="checkbox" onChange={registrationHandler} />
+                      <p>{registration}</p>
+                    </div>
+                    <div className={classes.formatCheckbox}>
+                      <label htmlFor="driversLicense">Drivers License</label>
+                      <input type="checkbox" onChange={driverLicenseHandler} />
+                      <p>{driverLicence}</p>
+                    </div>
                   </div>
                 </div>
-              </form>
+              </form>):(<div>
+                        <h3>{`${firstName} ${roadName ? `"${roadName}"` : ''} ${lastName}`}</h3>
+                        <h4 className={classes.h4margin}>Address:</h4>
+                        <address>{`${address} ${city}, ${state} ${zip}`}</address>
+                        <h4 className={classes.h4margin}>Email:</h4>
+                        <email>{email}</email>
+                        {homePhone ? (<h4 className={classes.h4margin}>Home Phone:</h4>): ''}
+                        {homePhone ? (<phone>{homePhone}</phone>): ''}
+                        {cellPhone ? (<h4 className={classes.h4margin}>Cell Phone:</h4>): ''}
+                        {cellPhone ? (<phone>{cellPhone}</phone>): ''}
+                        {iceName ? (<h4 className={classes.h4margin}>Ice Name:</h4>): ''}
+                        {iceName ? iceName :''}
+                        {iceNumber ? (<h4 className={classes.h4margin}>Ice Number:</h4>): ''}
+                        {iceNumber ? iceNumber :''}
+                        </div>)}
             </main>
             <footer className={classes.modal_footer}>
               <div className={classes.center}>
-              <button className={classes.button} onClick={submitHandler}>
-                Submit
-              </button>
+                {adminRole ? (
+                  <button className={classes.button} onClick={submitHandler}>
+                    Submit
+                  </button>
+                ) : (
+                  ""
+                )}
 
-              <button
-                className={classes.button}
-                onClick={props.modalClose}
-              >
-                Cancel
-              </button>
-              <button className={classes.button}
-                onClick={() => {
-                  deleteUserHandler;
-                }}
-              >
-                DELETE USER
-              </button>
-              
+                <button className={classes.button} onClick={props.modalClose}>
+                  {adminRole ? "Cancel" : "Close"}
+                </button>
+                {adminRole ? (
+                  <button
+                    className={classes.button}
+                    onClick={() => {
+                      deleteUserHandler;
+                    }}
+                  >
+                    DELETE USER
+                  </button>
+                ) : (
+                  ""
+                )}
               </div>
-             
             </footer>
           </div>
         </div>

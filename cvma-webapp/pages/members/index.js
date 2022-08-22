@@ -14,19 +14,34 @@ function Members(props) {
   const member = membersObj.find(
     (element) => element.memberId === props.session.user.name
   );
- 
+  const roleSetting = member.role
+  const [adminRole, setAdminRole] = useState(false)
   const [memberId, setMemberId] = useState();
   const [ modal, setModal] = useState(true);
   const [ effect, setEffect ] =useState(false)
    useEffect(() => {
     setModal(!modal)
+   
    },[effect])
+  useEffect(() => {
+    if(roleSetting === 'admin'){
+      setAdminRole(!adminRole);
+     }
+  },[])
   const modalOpen = () =>{
     setEffect(!effect)
   }
   const modalClose = () =>{
     setEffect(!effect)
   }
+  console.log(adminRole)
+  const uploadFiles = (adminRole) => {
+    if(adminRole){
+      return <UploadFiles />
+    
+    }
+  }
+  const fileUpload = uploadFiles(adminRole)
   
   return (
     <section>
@@ -40,12 +55,12 @@ function Members(props) {
       </div>
 
       <div className={classes.adminouterbox}>
-        <UploadFiles />
+      {fileUpload}
         <Documents />
-        <MemberNew />
+        {adminRole ? (<MemberNew />): ''}
         <MemberRole members={props.members} setMemberId={setMemberId} modalOpen={modalOpen}/>
       </div>
-     <Modal  memberId={memberId} show={modal} setEffect={setEffect} modalClose={modalClose} members={props.members} member={member}/>
+     <Modal  memberId={memberId} show={modal} setEffect={setEffect} modalClose={modalClose} members={props.members} member={member} adminRole={adminRole}/>
     </section>
   );
 }
