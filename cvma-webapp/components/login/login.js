@@ -108,14 +108,14 @@ function LoginSignup() {
   }
   const registerEmail = (
     <div className={classes.control}>
-      <label htmlFor="email">Your Email</label>
+      <label htmlFor="email">Email</label>
       <input type="email" id="email" required ref={emailRef} />
     </div>
   );
 
   const registerVerifyPassword = (
     <div className={classes.control}>
-      <label htmlFor="passwordVerify">Your Password</label>
+      <label htmlFor="passwordVerify">Verify Password</label>
       <input
         type="password"
         id="passwordVerify"
@@ -148,7 +148,7 @@ function LoginSignup() {
         </div>
         {isLogin ? "" : registerEmail}
         <div className={classes.control}>
-          <label htmlFor="password">Your Password</label>
+          <label htmlFor="password">Password</label>
           <input type="password" id="password" required ref={passwdRef} />
         </div>
         {isLogin ? "" : registerVerifyPassword}

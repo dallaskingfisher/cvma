@@ -79,21 +79,27 @@ function Modal(props) {
   const memberRoll = (role) => {
     if (role === "admin") {
       return (
-        <select ref={roleRef} defaultValue="admin">
-          <option value="admin">
-            Administrator
-          </option>
-          ;<option value="member">Member</option>;
+        <select
+          style={{
+            
+          }}
+          ref={roleRef}
+          defaultValue="admin"
+        >
+          <option value="admin">Administrator</option>;
+          <option value="member">Member</option>;
         </select>
       );
     } else {
       return (
-        <select ref={roleRef} defaultValue="member">
+        <select
+          style={{ backgroundColor: "rgba(183, 176, 176, 0.807)" }}
+          className={classes.select}
+          ref={roleRef}
+          defaultValue="member"
+        >
           <option value="admin">Administrator</option>;
-          <option value="member" >
-            Member
-          </option>
-          ;
+          <option value="member">Member</option>;
         </select>
       );
     }
@@ -202,78 +208,109 @@ function Modal(props) {
               <h3 className={classes.modal_title}>Member Information</h3>
             </header>
             <main className={classes.modal_content}>
-             {adminRole ? ( <form onSubmit={submitHandler}>
-                <div className={classes.control}>
-                  <input
-                    type="text"
-                    placeholder={firstName}
-                    ref={firstNameRef}
-                  />
-                  <input
-                    type="text"
-                    placeholder={roadName ? roadName : "Road Name"}
-                    ref={roadNameRef}
-                  />
-                  <input type="text" placeholder={lastName} ref={lastNameRef} />
-                  <input type="email" placeholder={email} ref={emailRef} />
-                  <input
-                    type="text"
-                    placeholder={homePhone ? homePhone : "Home Phone"}
-                    ref={homePhoneRef}
-                  />
-                  <input
-                    type="text"
-                    placeholder={cellPhone ? cellPhone : "Cell Phone"}
-                    ref={cellPhoneRef}
-                  />
-                  <input type="text" placeholder={address} ref={addressRef} />
-                  <input type="text" placeholder={city} ref={cityRef} />
-                  <input type="text" placeholder={state} ref={stateRef} />
-                  <input type="text" placeholder={zip} ref={zipRef} />
-                  <input
-                    type="text"
-                    placeholder={iceName ? iceName : "Ice Contact"}
-                    ref={iceNameRef}
-                  />
-                  <input
-                    type="text"
-                    placeholder={iceNumber ? iceNumber : "Ice Contact Number "}
-                    ref={iceNumberRef}
-                  />
-                  {memberOption}
-                  <div className={classes.center}>
-                    <div className={classes.formatCheckbox}>
-                      <label htmlFor="insureance">Insurance</label>
-                      <input type="checkbox" onChange={insureanceHandler} />
-                      <p>{insurance}</p>
-                    </div>
-                    <div className={classes.formatCheckbox}>
-                      <label htmlFor="registration">Registration</label>
-                      <input type="checkbox" onChange={registrationHandler} />
-                      <p>{registration}</p>
-                    </div>
-                    <div className={classes.formatCheckbox}>
-                      <label htmlFor="driversLicense">Drivers License</label>
-                      <input type="checkbox" onChange={driverLicenseHandler} />
-                      <p>{driverLicence}</p>
+              {adminRole ? (
+                <form onSubmit={submitHandler}>
+                  <div className={classes.control}>
+                    <input
+                      type="text"
+                      placeholder={firstName}
+                      ref={firstNameRef}
+                    />
+                    <input
+                      type="text"
+                      placeholder={roadName ? roadName : "Road Name"}
+                      ref={roadNameRef}
+                    />
+                    <input
+                      type="text"
+                      placeholder={lastName}
+                      ref={lastNameRef}
+                    />
+                    <input type="email" placeholder={email} ref={emailRef} />
+                    <input
+                      type="text"
+                      placeholder={homePhone ? homePhone : "Home Phone"}
+                      ref={homePhoneRef}
+                    />
+                    <input
+                      type="text"
+                      placeholder={cellPhone ? cellPhone : "Cell Phone"}
+                      ref={cellPhoneRef}
+                    />
+                    <input type="text" placeholder={address} ref={addressRef} />
+                    <input type="text" placeholder={city} ref={cityRef} />
+                    <input type="text" placeholder={state} ref={stateRef} />
+                    <input type="text" placeholder={zip} ref={zipRef} />
+                    <input
+                      type="text"
+                      placeholder={iceName ? iceName : "Ice Contact"}
+                      ref={iceNameRef}
+                    />
+                    <input
+                      type="text"
+                      placeholder={
+                        iceNumber ? iceNumber : "Ice Contact Number "
+                      }
+                      ref={iceNumberRef}
+                    />
+                    {memberOption}
+                    <div className={classes.center}>
+                      <div className={classes.formatCheckbox}>
+                        <label htmlFor="insureance">Insurance</label>
+                        <input type="checkbox" onChange={insureanceHandler} />
+                        <p>{insurance}</p>
+                      </div>
+                      <div className={classes.formatCheckbox}>
+                        <label htmlFor="registration">Registration</label>
+                        <input type="checkbox" onChange={registrationHandler} />
+                        <p>{registration}</p>
+                      </div>
+                      <div className={classes.formatCheckbox}>
+                        <label htmlFor="driversLicense">Drivers License</label>
+                        <input
+                          type="checkbox"
+                          onChange={driverLicenseHandler}
+                        />
+                        <p>{driverLicence}</p>
+                      </div>
                     </div>
                   </div>
+                </form>
+              ) : (
+                <div>
+                  <h3>{`${firstName} ${
+                    roadName ? `"${roadName}"` : ""
+                  } ${lastName}`}</h3>
+                  <h4 className={classes.h4margin}>Address:</h4>
+                  <address>{`${address} ${city}, ${state} ${zip}`}</address>
+                  <h4 className={classes.h4margin}>Email:</h4>
+                  <email>{email}</email>
+                  {homePhone ? (
+                    <h4 className={classes.h4margin}>Home Phone:</h4>
+                  ) : (
+                    ""
+                  )}
+                  {homePhone ? <phone>{homePhone}</phone> : ""}
+                  {cellPhone ? (
+                    <h4 className={classes.h4margin}>Cell Phone:</h4>
+                  ) : (
+                    ""
+                  )}
+                  {cellPhone ? <phone>{cellPhone}</phone> : ""}
+                  {iceName ? (
+                    <h4 className={classes.h4margin}>Ice Name:</h4>
+                  ) : (
+                    ""
+                  )}
+                  {iceName ? iceName : ""}
+                  {iceNumber ? (
+                    <h4 className={classes.h4margin}>Ice Number:</h4>
+                  ) : (
+                    ""
+                  )}
+                  {iceNumber ? iceNumber : ""}
                 </div>
-              </form>):(<div>
-                        <h3>{`${firstName} ${roadName ? `"${roadName}"` : ''} ${lastName}`}</h3>
-                        <h4 className={classes.h4margin}>Address:</h4>
-                        <address>{`${address} ${city}, ${state} ${zip}`}</address>
-                        <h4 className={classes.h4margin}>Email:</h4>
-                        <email>{email}</email>
-                        {homePhone ? (<h4 className={classes.h4margin}>Home Phone:</h4>): ''}
-                        {homePhone ? (<phone>{homePhone}</phone>): ''}
-                        {cellPhone ? (<h4 className={classes.h4margin}>Cell Phone:</h4>): ''}
-                        {cellPhone ? (<phone>{cellPhone}</phone>): ''}
-                        {iceName ? (<h4 className={classes.h4margin}>Ice Name:</h4>): ''}
-                        {iceName ? iceName :''}
-                        {iceNumber ? (<h4 className={classes.h4margin}>Ice Number:</h4>): ''}
-                        {iceNumber ? iceNumber :''}
-                        </div>)}
+              )}
             </main>
             <footer className={classes.modal_footer}>
               <div className={classes.center}>

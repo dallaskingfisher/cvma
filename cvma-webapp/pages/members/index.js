@@ -70,7 +70,7 @@ export async function getServerSideProps(context) {
 
   const client = await connectDatabase();
   const collection = client.db().collection("members");
-  const data = await collection.find({}).sort({firstName: 1}).toArray();
+  const data = await collection.find({}).sort({ _id: 1}).toArray();
   const members = JSON.stringify(data);
 
   if (!session) {
