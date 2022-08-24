@@ -54,7 +54,7 @@ function Modal(props) {
     roadName = member.roadName;
     iceName = member.iceName;
     iceNumber = member.iceNumber;
-    insurance = member.insureance;
+    insurance = member.insurance;
     registration = member.registration;
     driverLicence = member.driverLicence;
     email = member.email;
@@ -188,16 +188,19 @@ function Modal(props) {
       headers: { "Content-Type": "application/json" },
     });
     console.log(response);
+    
+   
   };
   const deleteUserHandler = async (e) => {
     e.preventDefault();
+    console.log("delete" + memberId)
     const response = await fetch("/api/members/deleteUser", {
       method: "DELETE",
       body: JSON.stringify({ memberId }),
       headers: { "Content-Type": "application/json" },
     });
     console.log(response);
-    props.modalClose;
+    
   };
   return (
     <div>
@@ -315,7 +318,7 @@ function Modal(props) {
             <footer className={classes.modal_footer}>
               <div className={classes.center}>
                 {adminRole ? (
-                  <button className={classes.button} onClick={submitHandler}>
+                  <button className={classes.button}  onDoubleClick={props.modalClose} onClick={submitHandler}>
                     Submit
                   </button>
                 ) : (
@@ -328,9 +331,8 @@ function Modal(props) {
                 {adminRole ? (
                   <button
                     className={classes.button}
-                    onClick={() => {
-                      deleteUserHandler;
-                    }}
+                    onDoubleClick={props.modalClose}
+                    onClick={deleteUserHandler}
                   >
                     DELETE USER
                   </button>
