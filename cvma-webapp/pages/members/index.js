@@ -58,9 +58,10 @@ function Members(props) {
       {fileUpload}
         <Documents />
         {adminRole ? (<MemberNew />): ''}
+      
         <MemberRole members={props.members} setMemberId={setMemberId} modalOpen={modalOpen}/>
       </div>
-     <Modal  memberId={memberId} show={modal} setEffect={setEffect} modalClose={modalClose} members={props.members} member={member} adminRole={adminRole}/>
+      <Modal  memberId={memberId} show={modal} setEffect={setEffect} modalClose={modalClose} members={props.members} member={member} adminRole={adminRole}/>
     </section>
   );
 }
