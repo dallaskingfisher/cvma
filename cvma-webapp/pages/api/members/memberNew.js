@@ -19,13 +19,13 @@ async function handler(req, res) {
 
     const client = await connectDatabase();
     const collection = client.db().collection("members");
-    const data = collection.findOne({
+    const data = await collection.findOne({
       memberId: memberId,
      
     });
-    const user = data.json();
-
-    if (user.memberId === memberId) {
+  
+    console.log(data)
+    if (data !== null) {
       res.status(200).json({ message: "Member Exists!" });
     }
     collection.insertOne({ memberId: memberId,
@@ -43,7 +43,7 @@ async function handler(req, res) {
         iceNubmer: iceNumber,
         role: role, });
 
-    res.status(200).json({message: 'User Added'})
+   res.status(200).json({message: 'User Added'})
      client.close();
   }
 }

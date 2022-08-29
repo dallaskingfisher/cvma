@@ -1,6 +1,8 @@
 
 .background {
     margin-top: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     /* width: 95%; */
     max-width: 25rem;
     border-radius: 6px;

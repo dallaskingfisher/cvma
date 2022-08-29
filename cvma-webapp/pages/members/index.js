@@ -1,4 +1,5 @@
 import { getSession } from "next-auth/client";
+import CreateEvent from '../../components/events/createEvent'
 import UploadFiles from "../../components/upload/upload";
 import MemberUpdate from "../../components/members/memberUpdate";
 import MemberNew from "../../components/members/memberNew";
@@ -58,6 +59,7 @@ function Members(props) {
       {fileUpload}
         <Documents />
         {adminRole ? (<MemberNew />): ''}
+        <CreateEvent />
       
         <MemberRole members={props.members} setMemberId={setMemberId} modalOpen={modalOpen}/>
       </div>
@@ -71,7 +73,7 @@ export async function getServerSideProps(context) {
 
   const client = await connectDatabase();
   const collection = client.db().collection("members");
-  const data = await collection.find({}).sort({ _id: 1}).toArray();
+  const data = await collection.find({}).sort({ memberId: 1}).collation({locale: "en_US", numericOrdering: true}).toArray();
   const members = JSON.stringify(data);
 
   if (!session) {

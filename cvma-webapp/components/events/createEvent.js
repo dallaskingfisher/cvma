@@ -1,13 +1,23 @@
 import classes from './createEvent.module.css';
-import {useRef} from 'react';
+import {useRef, useState, useEffect} from 'react';
 
 
 function CreateEvent () {
+  const [message, setMessage] = useState();
+  const [ on , setOn] = useState(false);
+useEffect(() => { 
+   const timer = setTimeout(() => setMessage(null),7000);
+   return () => clearTimeout(timer);
+},[on])
+
+   
     const  titleRef = useRef();
     const  addressRef = useRef();
     const  cityRef = useRef();
     const stateRef = useRef();
+    const dateRef = useRef();
     const eventDesRef = useRef()
+ 
 
     const submitHandler = async (e) => {
         e.preventDefault();
@@ -15,26 +25,46 @@ function CreateEvent () {
         const address = addressRef.current.value;
         const city = cityRef.current.value;
         const state = stateRef.current.value;
-        const eventdes = eventdesRef.current.value;
+        const date = dateRef.current.value;
+        const eventdes = eventDesRef.current.value;
         const publicEvent = false;
+        e.target.reset()
      const response = await fetch('api/events/',{
         method: 'POST',
-        body: JSON.stringify()
+        body: JSON.stringify({
+            title,
+            address,
+            city,
+            state,
+            date,
+            eventdes,
+            publicEvent
+        }),
+        headers: {'Content-Type': 'application/json'}
      })
+     const message = await response.json();
+     console.log(message)
+    
+     setOn(true);
+     setMessage(message.message);
     }
+    
+   
+    
     return (
         <section className={classes.background}>
           <h1>Create Event</h1>
           <div className={classes.control}>
-            <form >
+            {message}
+            <form  onSubmit={submitHandler} id="createEvent" >
              <label htmlFor="title">Title:</label>
-             <input type="text" name="title" ref={titleRef} />
+             <input type="text" name="title" ref={titleRef}  required/>
              <label htmlFor="address">Address:</label>
-             <input type="text" name="address" ref={addressRef} />
+             <input type="text" name="address" ref={addressRef}  required/>
              <label htmlFor="city">City:</label>
-             <input type="text" name="city" ref={cityRef} />
+             <input type="text" name="city" ref={cityRef}  required/>
              <label htmlFor="state">State:</label>
-             <select defaultValue="Tennessee" name="state" ref={stateRef} >
+             <select defaultValue="Tennessee" name="state" ref={stateRef}  required>
                 <option value="Alabama">Alabama</option>
                 <option value="Alaska">Alaska</option>
                 <option value="Arizona">Arizona</option>
@@ -85,8 +115,10 @@ function CreateEvent () {
                 <option value="Wisconsin">Wisconsin</option>
                 <option value="Wyoming">Wyoming</option>
              </select>
+             <label htmlFor="date">Date:</label>
+             <input type="date" name="date" ref={dateRef} required/>
              <label htmlFor="decription">Event Description:</label>
-             <textarea name="description" rows="10" ref={eventDesRef}></textarea>
+             <textarea name="description" rows="10" ref={eventDesRef} required></textarea>
              {/* view will be handled on the event */}
              <button className={classes.button}>Submit</button>
             </form>

@@ -68,7 +68,7 @@ useEffect(() => {
     });
     const data = await response.json();
     if(data.message){
-        const responseMessage = <p className={classes.error}>Member Added</p>;
+        const responseMessage = <p className={classes.error}>{data.message}</p>;
         setOn(true);
         setMessage(responseMessage);
     }
