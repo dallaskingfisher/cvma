@@ -1,0 +1,11 @@
+.background {
+    border: 3px solid black;
+    margin: 2rem;
+}
+.control {
+    text-align: left;
+    width:40%;
+}
+.mapControl {
+   margin-left: 4rem; 
+}

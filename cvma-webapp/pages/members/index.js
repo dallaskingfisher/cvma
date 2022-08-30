@@ -6,11 +6,13 @@ import MemberNew from "../../components/members/memberNew";
 import Documents from "../../components/documents/documents";
 import MemberRole from "../../components/members/memberRolls";
 import Modal from "../../components/modal/modal";
+import EventPost from "../../components/events/eventpost";
 import classes from "../../styles/member.module.css";
 import { connectDatabase } from "../../helpers/db-util";
 import { useState, useEffect } from 'react';
 
 function Members(props) {
+ 
   const membersObj = JSON.parse(props.members);
   const member = membersObj.find(
     (element) => element.memberId === props.session.user.name
@@ -56,6 +58,7 @@ function Members(props) {
       </div>
 
       <div className={classes.adminouterbox}>
+        <EventPost events={props.events}/>
       {fileUpload}
         <Documents />
         {adminRole ? (<MemberNew />): ''}
@@ -75,7 +78,10 @@ export async function getServerSideProps(context) {
   const collection = client.db().collection("members");
   const data = await collection.find({}).sort({ memberId: 1}).collation({locale: "en_US", numericOrdering: true}).toArray();
   const members = JSON.stringify(data);
-
+  const collection1 = client.db().collection("events");
+  const data1 = await collection1.find({}).sort({ memberId: 1}).collation({locale: "en_US", numericOrdering: true}).toArray();
+  const events = JSON.stringify(data1);
+  client.close();
   if (!session) {
     return {
       redirect: {
@@ -85,7 +91,7 @@ export async function getServerSideProps(context) {
     };
   }
 
-  return { props: { session, members: members } };
+  return { props: { session, members: members, events: events } };
 }
 
 export default Members;

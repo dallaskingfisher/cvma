@@ -2,5 +2,3 @@ node_modules/
 .next
 .env.local
 dummy-data.js
-test.js
-[id].js
