@@ -10,7 +10,7 @@ function Modal(props) {
   const [insuranceCheckbox, setInsuranceCheckbox] = useState(false);
   const [registrationCheckbox, setRegistrationCheckbox] = useState(false);
   const [driverLicenseCheckBox, setDriverLicenseCheckBox] = useState(false);
-
+  const [duesCheckbox, setDuesCheckbox] = useState(false);
   const insureanceHandler = () => {
     setInsuranceCheckbox(!insuranceCheckbox);
   };
@@ -19,6 +19,9 @@ function Modal(props) {
   };
   const driverLicenseHandler = () => {
     setDriverLicenseCheckBox(!driverLicenseCheckBox);
+  };
+  const duesHandler = () => {
+    setDuesCheckbox(!duesCheckbox);
   };
   const date = new Date();
   const currentDate = `${date.getDate()}/${
@@ -39,6 +42,8 @@ function Modal(props) {
   let insurance = "";
   let registration = "";
   let driverLicence = "";
+  let dues = "";
+  let duesPayment;
   let email = "";
   let role = "";
 
@@ -59,6 +64,7 @@ function Modal(props) {
     driverLicence = member.driverLicence;
     email = member.email;
     role = member.role;
+    dues = member.dues;
   }
 
   // ref variables for form
@@ -79,13 +85,7 @@ function Modal(props) {
   const memberRoll = (role) => {
     if (role === "admin") {
       return (
-        <select
-          style={{
-            
-          }}
-          ref={roleRef}
-          defaultValue="admin"
-        >
+        <select style={{}} ref={roleRef} defaultValue="admin">
           <option value="admin">Administrator</option>;
           <option value="member">Member</option>;
         </select>
@@ -120,6 +120,7 @@ function Modal(props) {
     let iceNumberUpdate = iceNumberRef.current.value;
     let homePhoneUpdate = homePhoneRef.current.value;
     let cellPhoneUpdate = cellPhoneRef.current.value;
+
     let roleUpdate = roleRef.current.value;
     if (!roadNameUpdate) {
       roadNameUpdate = roadName;
@@ -164,6 +165,10 @@ function Modal(props) {
     if (driverLicenseCheckBox) {
       driverLicence = currentDate;
     }
+    if (duesCheckbox) {
+      dues = currentDate;
+      duesPayment = true;
+    }
     const response = await fetch("/api/members/adminUpdate", {
       method: "POST",
       body: JSON.stringify({
@@ -184,23 +189,20 @@ function Modal(props) {
         registration,
         driverLicence,
         roleUpdate,
+        dues,
+        duesPayment,
       }),
       headers: { "Content-Type": "application/json" },
     });
-    console.log(response);
-    
-   
   };
   const deleteUserHandler = async (e) => {
     e.preventDefault();
-    console.log("delete" + memberId)
+    console.log("delete" + memberId);
     const response = await fetch("/api/members/deleteUser", {
       method: "DELETE",
       body: JSON.stringify({ memberId }),
       headers: { "Content-Type": "application/json" },
     });
-    console.log(response);
-    
   };
   return (
     <div>
@@ -276,6 +278,11 @@ function Modal(props) {
                         />
                         <p>{driverLicence}</p>
                       </div>
+                      <div className={classes.formatCheckbox}>
+                        <lable htmlFor="dues">Dues</lable>
+                        <input type="checkbox" onChange={duesHandler} />
+                        <p>{dues}</p>
+                      </div>
                     </div>
                   </div>
                 </form>
@@ -318,7 +325,11 @@ function Modal(props) {
             <footer className={classes.modal_footer}>
               <div className={classes.center}>
                 {adminRole ? (
-                  <button className={classes.button}  onDoubleClick={props.modalClose} onClick={submitHandler}>
+                  <button
+                    className={classes.button}
+                    onDoubleClick={props.modalClose}
+                    onClick={submitHandler}
+                  >
                     Submit
                   </button>
                 ) : (

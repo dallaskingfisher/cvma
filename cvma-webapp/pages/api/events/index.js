@@ -9,7 +9,7 @@ async function handler(req, res) {
     const state = req.body.state;
     const eventdes = req.body.eventdes;
     const publicEvent = req.body.publicEvent;
-   
+    const checkedEvent = req.body.checkedEvent;
 
      const addresses = address.split(' ');
 
@@ -21,15 +21,18 @@ async function handler(req, res) {
       city: city,
       state: state,
       eventdes: eventdes,
-      publicEvent: publicEvent
+      publicEvent: publicEvent,
+      checkedEvent: checkedEvent
     };
     console.log(eventObject);
     const client = await connectDatabase();
     const collection = client.db().collection("events");
-    const event = await collection.insertOne(eventObject);
+    await collection.insertOne(eventObject);
     res.status(201).json({message: "Event Added"})
     client.close();
   }
+
+
 }
 
 export default handler;

@@ -2,6 +2,8 @@ import classes from './eventDetails.module.css';
 
 function EventDetials (props) {
 
+    
+
     return(
         <div className={classes.background} style={{border: "2px solid black",display:"flex"}}>
             <div className={classes.control}>
@@ -14,14 +16,14 @@ function EventDetials (props) {
                 <p>{props.eventdes}</p>
             </div>
             <div className={classes.mapControl}>
-            <iframe
+            {/* <iframe
   width="400"
   height="250"
   frameborder="0" style={{boarder:"1"}}
   referrerpolicy="no-referrer-when-downgrade"
   src={`https://www.google.com/maps/embed/v1/place?key=${process.env.GOOGLE_KEY}&q=${props.streetNumber}+${props.street},${props.city}+${props.state}`}
   allowfullscreen>
-</iframe>
+</iframe> */}
             </div>
         </div>    
     )

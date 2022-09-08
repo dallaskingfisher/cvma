@@ -38,6 +38,7 @@ async function handler(req, res) {
       }
     );
     res.status(200).json({message: "Info Updated"});
+    client.close()
   }
   if(req.method === "GET"){
     const client = await connectDatabase();
@@ -45,6 +46,7 @@ async function handler(req, res) {
     const data = await collection.find({}).toArray();
     
     res.status(200).json({ data})
+    client.close();
   }
   
 }

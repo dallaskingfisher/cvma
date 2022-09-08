@@ -28,6 +28,7 @@ useEffect(() => {
         const date = dateRef.current.value;
         const eventdes = eventDesRef.current.value;
         const publicEvent = false;
+        const checkedEvent = false;
         e.target.reset()
      const response = await fetch('api/events/',{
         method: 'POST',
@@ -38,7 +39,8 @@ useEffect(() => {
             state,
             date,
             eventdes,
-            publicEvent
+            publicEvent,
+            checkedEvent
         }),
         headers: {'Content-Type': 'application/json'}
      })

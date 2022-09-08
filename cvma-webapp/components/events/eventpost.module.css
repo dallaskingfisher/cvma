@@ -2,12 +2,15 @@
 .background {
     margin: 3rem auto;
     width: 95%;
-    max-width: 25rem;
+    /* max-width: 25rem; */
     border-radius: 6px;
     background-color: rgba(139, 136, 136, 0.738);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     padding: 1rem;
     text-align: center;
+    height: 650px;
+    overflow: scroll;
+    
   }
   
   .background h1 {

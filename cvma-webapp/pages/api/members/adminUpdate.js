@@ -19,6 +19,8 @@ async function handler(req, res) {
     const registration = req.body.registration;
     const driverLicence = req.body.driverLicence;
     const role = req.body.roleUpdate;
+    const dues = req.body.dues;
+    const duesPayment = req.body.duesPayment;
 
     const client = await connectDatabase();
     const collection = client.db().collection("members");
@@ -39,7 +41,9 @@ async function handler(req, res) {
         insurance: insurance,
         registration: registration,
         driverLicence: driverLicence,
-        role: role
+        role: role,
+        dues: dues,
+        duesPayment: duesPayment
     } }
     );
     res.status(201).json({update})
