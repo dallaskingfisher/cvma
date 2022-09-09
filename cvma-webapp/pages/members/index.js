@@ -186,12 +186,12 @@ function Members(props) {
         type={Type.Link} // or type={'link'}
         style={buttonStyle}
       >Admin Sheet</ExcelDownloder> : null}
-      <ExcelDownloder
+     { adminRole ? null :<ExcelDownloder
         data={contactRoster}
         filename={'Contact_Roster'}
         type={Type.Link} // or type={'link'}
         style={buttonStyle}
-      >Contact Roster</ExcelDownloder> 
+      >Contact Roster</ExcelDownloder> }
       </div>
       <div className={classes.adminouterbox}>
       
