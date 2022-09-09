@@ -143,7 +143,7 @@ function HomePage() {
                         </div>
             </article>
           </section>
-          <footer><p>developed by fishworks copyright 2022</p></footer>
+          <footer><p style={{textAlign: 'center'}}>developed by fishworks copyright 2022</p></footer>
           <div>
            
           </div>
