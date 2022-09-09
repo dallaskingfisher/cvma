@@ -188,7 +188,7 @@ function Members(props) {
       >Admin Sheet</ExcelDownloder> : null}
       <ExcelDownloder
         data={contactRoster}
-        filename={'Contact Roster'}
+        filename={'Contact_Roster'}
         type={Type.Link} // or type={'link'}
         style={buttonStyle}
       >Contact Roster</ExcelDownloder> 
