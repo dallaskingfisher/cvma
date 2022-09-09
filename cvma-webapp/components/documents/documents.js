@@ -147,6 +147,12 @@ function Documents() {
             <option value="meetingMinutes">Meeting Minutes</option>
             <option value="cebMinutes">CEB Minutes</option>
             <option value="roadCaptain">Road Captain</option>
+            <option value="bylaws">Bylaws</option>
+            <option value="application">applications</option>
+            <option value="aux">Auxiliary</option>
+            <option value="committees">Committees</option>
+            <option vlaue="501c">501c3</option>
+            <option value="treasures">Treasures Report</option>
           </select>
         </div>
         <div className={classes.control}>
