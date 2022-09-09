@@ -9,7 +9,7 @@ import Modal from "../../components/modal/modal";
 import classes from "../../styles/member.module.css";
 import { connectDatabase } from "../../helpers/db-util";
 import { useState, useEffect } from 'react';
-
+import { useExcelDownloder } from 'react-xls';
 function Members(props) {
   // ----------------------------------------------------------------
   // Paypal States
@@ -36,7 +36,7 @@ function Members(props) {
       
     },[])
   
-    console.log(show)
+    
     let payment
     let memberName
     let fullMember
@@ -63,13 +63,10 @@ function Members(props) {
           memberId: member.memberId,
           dues: currentDate,
           duesPayment: true
-         
         }),
         headers: { "Content-Type": "application/json" },
       });
-      const update = await response.json();
-      console.log(update)
-  
+      const update = await response.json(); 
     }
   //----------------------------------------------------------------
   // Admin role and modal settings
@@ -95,18 +92,6 @@ function Members(props) {
   const modalClose = () =>{
     setEffect(!effect)
   }
-
-  const uploadFiles = (adminRole) => {
-    if(adminRole){
-      return <span>
-    
-     
-     </span>
-    
-    }
-  }
-  const fileUpload = uploadFiles(adminRole)
-
   const buttonStyle = {
     margin: "2rem",
     cursor: "pointer",
@@ -156,6 +141,21 @@ function Members(props) {
  }
 
   //----------------------------------------------------------------
+  // xls download for admin and membership
+  const { ExcelDownloder, Type } = useExcelDownloder();
+
+  const adminData = membersObj.map(({_id,password, ...rest}) => {return rest})
+  
+  const contactData = membersObj.map(({_id, role, password, driverLicence, insurance, registration, dues, duesPayment, ...rest}) => { return rest})
+      
+  const data = { 
+    Members: adminData
+  }
+  const contactRoster = {
+    Members: contactData
+  }
+
+  //------------------------------------------------------------------------------------------------
   return (
     <section>
       <div>
@@ -180,6 +180,18 @@ function Members(props) {
       <div className={classes.adminouterbox}>
       {adminRole ? (  <button style={buttonStyle} onDoubleClick={() => setShowAdmin(!showAdmin)}>Admin Feautures</button>  ): null}
         <button style={buttonStyle} onClick={() => setShowUpdate(!showUpdate)}>Update Information</button>
+       {adminRole ? <ExcelDownloder
+        data={data}
+        filename={'members_admin_sheet'}
+        type={Type.Link} // or type={'link'}
+        style={buttonStyle}
+      >Admin Sheet</ExcelDownloder> : null}
+      <ExcelDownloder
+        data={data}
+        filename={'members_admin_sheet'}
+        type={Type.Link} // or type={'link'}
+        style={buttonStyle}
+      >Contact Roster</ExcelDownloder> 
       </div>
       <div className={classes.adminouterbox}>
       
