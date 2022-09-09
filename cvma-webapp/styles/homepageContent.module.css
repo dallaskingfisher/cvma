@@ -1,0 +1,72 @@
+
+.article p {
+    font-size: 1.5rem;
+}
+.article h1 {
+    font-size: 3rem;
+}
+.article h3 {
+    font-size: 2rem;
+}
+
+.article ol li {
+    font-size: 1.5rem;
+}
+
+.section {
+    width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.membership{
+    cursor: pointer;
+    text-decoration: underline;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.charities{
+    font-size: 3rem;
+    text-align: center;
+}
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width:600px){
+    .article p {
+        font-size: 1rem;
+    }
+    .article h1 {
+        font-size: 2rem;
+    }
+    .article h3 {
+        font-size: 1.5rem;
+    }
+    
+    .article ol li {
+        font-size: 1rem;
+    }
+    
+    .section {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .membership{
+        cursor: pointer;
+        text-decoration: underline;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+    }
+    .charities{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .images {
+        display: flex;
+        justify-content: center;
+    }
+}
