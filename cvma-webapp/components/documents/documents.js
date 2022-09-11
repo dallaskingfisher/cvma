@@ -1,7 +1,7 @@
 import classes from "./documents.module.css";
 import { useState, useEffect, useRef } from "react";
 
-function Documents() {
+function Documents(props) {
   const [years, setYears] = useState([]);
   const [docs, setDocs] = useState([]);
   const [results, setResults] = useState([]);
@@ -192,12 +192,12 @@ function Documents() {
                 <a href={value[4]} className={classes.link}>
                   {value[3]}
                 </a>
-                <button
+                {props.adminRole ?<button
                   className={classes.delete}
                   onClick={() =>deleteHanlder(value[4])}
                 >
                   Delete
-                </button>
+                </button> : null}
                 <br></br>
               </span>
             ))}

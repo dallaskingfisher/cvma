@@ -196,7 +196,7 @@ function Members(props) {
       <div className={classes.adminouterbox}>
       
       {adminRole ? (showAdmin ? <UploadFiles />: null): null}
-      <Documents />
+      <Documents adminRole={adminRole}/>
       {adminRole ?  (showAdmin ? <MemberNew /> : null ): null}
       { showUpdate ?  <MemberUpdate user={member} />: null}
       
