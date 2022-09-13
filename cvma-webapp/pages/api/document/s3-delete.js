@@ -11,8 +11,12 @@ async function handler(req, res) {
     const key = location.slice(49);
 
     const bucketParams = { Bucket: bucket, Key: key };
-
-    await s3Client.send(new DeleteObjectCommand(bucketParams));
+    try{
+   const response = await s3Client.send(new DeleteObjectCommand(bucketParams));
+    console.log(response)
+    } catch(err) {
+      console.log("Error", err)
+    }
 
     const client = await connectDatabase();
     const collection = client.db().collection("documents");
