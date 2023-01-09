@@ -135,7 +135,7 @@ function HomePage() {
                             <IMAGE src="/images/jrotc.png" width="100px" height="150px" alt="West Creek JROTC" />
                           </div>
                           <div>
-                            <IMAGE src="/images/purplehearts.png" width="200px" height="100px" alt="Purple Hearts Reunited" />
+                            <IMAGE src="/images/purpleHearts.png" width="200px" height="100px" alt="Purple Hearts Reunited" />
                           </div>
                           <div>
                             <IMAGE src="/images/WAA-MasterLogo.png" width="100px" height="100px" alt="Wreaths Accross America"/>
