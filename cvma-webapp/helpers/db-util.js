@@ -24,12 +24,6 @@ export async function findComments(client, collection, sort, filter) {
     .find(filter)
     .sort(sort)
     .toArray();
-  client.close()
+  
   return document;
-}
-export const documentInsertOne = async (client, document) => {
-  await client.db().collection('documents').insertOne(document);
-  result = console.log("record added")
-  client.close();
-  return result;
 }
