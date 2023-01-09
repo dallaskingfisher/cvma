@@ -13,6 +13,7 @@ function UploadFiles() {
   const uploadFileHandler = (event) => {
     event.preventDefault();
     setFile(event.target.files[0]);
+    console.log(file)
     setLoaded(true);
   };
   const clearFields = () => {
