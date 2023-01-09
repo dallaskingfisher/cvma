@@ -32,17 +32,15 @@ handler.post(async (req, res) => {
      
     //________________________________________________________________
     const bucket = "cvmadocuments";
-    const key = `${category}/${req.body.year}/${req.body.month}/${req.body.name}`;
+    const key = `${category}/${req.body.year}/${req.body.month}/${req.body.fileName}`;
     const body = req.files.buffer;
- 
     const bucketParams = { Bucket: bucket, Key: key, Body: body };
-    console.log(body)
-   // const results = await s3Upload(bucketParams);
-    console.log(results)
+
+    await s3Upload(bucketParams);
+    
     let Document = {
       category: category,
       month: req.body.month,
-      fileName: req.body.fileName,
       year: req.body.year,
       location: `https://${process.env.AWS_BUCKET}.s3.amazonaws.com/${key}`,
     };
@@ -72,7 +70,6 @@ handler.post(async (req, res) => {
     category: category,
     month: req.body.month,
     year: req.body.year,
-    fileName: req.body.fileName,
     location: `https://${process.env.AWS_BUCKET}.s3.amazonaws.com/${key}`,
   };
   try {

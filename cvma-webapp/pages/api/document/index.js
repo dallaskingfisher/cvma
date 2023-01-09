@@ -7,7 +7,7 @@ async function handler(req, res) {
     const data = await collection.find({}).toArray();
     const docsArray =[];
     for (let i =0; i < data.length; i++){
-        docsArray.push([data[i].category, data[i].month, data[i].year, data[i].fileName, data[i].location])
+        docsArray.push([data[i].category, data[i].month, data[i].year, data[i].title, data[i].location])
     }
     
     // console.log(docsArray);
