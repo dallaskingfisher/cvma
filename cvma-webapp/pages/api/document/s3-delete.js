@@ -2,13 +2,13 @@ import { DeleteObjectCommand } from "@aws-sdk/client-s3";
 import { s3Client } from "../../../helpers/api-util";
 import { connectDatabase } from "../../../helpers/db-util";
 
-//https://cvmadocuments.s3.us-east-1.amazonaws.com/next-s3-uploads/b13571b2-f373-4cad-b09a-d2881e4d2b76/ChapterMembers.xlsx
+//https://cvmadocs.s3.us-east-1.amazonaws.com/next-s3-uploads/b13571b2-f373-4cad-b09a-d2881e4d2b76/ChapterMembers.xlsx
 
 async function handler(req, res) {
   if (req.method == "DELETE") {
     const location = req.body.location;
-    const bucket = "cvmadocuments";
-    const key = location.slice(49);
+    const bucket = "cvmadocs";
+    const key = location.slice(44);
 
     const bucketParams = { Bucket: bucket, Key: key };
     try{

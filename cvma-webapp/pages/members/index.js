@@ -29,7 +29,7 @@ function Members(props) {
   // Paypal Payment codec
   // This is where we will idenfiy the member type FM AUX S SAUX
     useEffect(() => {
-      if(member.duesPayment === false){
+      if(member.duesPayments === false){
         console.log("set show to true")
         setShow(true)
       }
