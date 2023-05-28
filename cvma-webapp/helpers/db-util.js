@@ -1,11 +1,10 @@
 import { MongoClient } from "mongodb";
 
-const password = 'bunbuns2022';
-const database = 'cvma'
+
 
 export async function connectDatabase() {
   const client = await MongoClient.connect(
-    `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@test.3r6zb.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority`
+    `${process.env.MONGO_CONNECT}`
   );
   return client;
 }
