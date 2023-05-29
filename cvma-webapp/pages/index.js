@@ -4,13 +4,13 @@ import { useState } from 'react';
 import IMAGE from 'next/image';
 function HomePage() {
     const [ membership, setMembership ] = useState(false);
-
+  const styles = {textAlign: "center"}
   return (
     <div>
       <main>
         <div>
-          <h1> CVMA 18 -2 </h1>
-          <h3>Clarksville, Tennessee</h3>
+          <h1 style={{textAlign: 'center'}}> CVMA 18 -2 </h1>
+          <h3 style={{textAlign: 'center'}}>Clarksville, Tennessee</h3>
         </div>
         <hr/>
         <div>
