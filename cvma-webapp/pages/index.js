@@ -4,7 +4,7 @@ import { useState } from 'react';
 import IMAGE from 'next/image';
 function HomePage() {
     const [ membership, setMembership ] = useState(false);
-  const styles = {textAlign: "center"}
+  
   return (
     <div>
       <main>
@@ -55,15 +55,15 @@ function HomePage() {
                   {membership ? (<div><h1>Membership</h1>
                   <h3>Definitions:</h3>
                   <p> The Term "good standing" shall be  defined as any person who has 
-                    fulfilled the requirements for membership in the Combat Veterans Motorcycle Assocaiton,
+                    fulfilled the requirements for membership in the Combat Veterans Motorcycle Association,
                     who is not currently under disciplinary review or probationary status for disciplinary reasons,
                     who has paid the necessary dues and conformed to the requirements as set forth in these bylaws </p>
                     <h3>Full Members</h3>
                      <ol>
                       <li>Of good character</li>
                       <li>Who is a veteran of a Foreign War,<bold>"Combat"</bold></li>
-                      <li>The <bold>ONlY</bold> Acceptable proof for membershiip to the Combat Veterans Motorcycle
-                      Motorcycle Assocaiton is a copy of one's DD214 or Official Military Personnel File or Officer/Enlisted record brief
+                      <li>The <bold>ONlY</bold> Acceptable proof for membership to the Combat Veterans Motorcycle
+                      Motorcycle Association is a copy of one's DD214 or Official Military Personnel File or Officer/Enlisted record brief
                       which must be surrender to the NBOD for verification.</li>
                       <li>Must own and operate a motorcycle of 500cc or above</li>
                       <li>Should  a Full Member resign they will be given a 5 day grace period  to rescind their  resignation with no repercussions.
@@ -117,9 +117,9 @@ function HomePage() {
                           <li>Will have no vote in National CVMA business but my vote in Chapter CVMA business if it is addressed 
                             in the Chapter Bylaws.</li>
                           <li>Cannot hold a position on the NBOD</li>
-                          <li>Support members in good standing can wear a small CVMA Support Patch on the front of thier vest or jacket
-                             which will be supplied by thier sponsor. Support members can also wear the 10 inch support back patch which will be supplied
-                             by thier sponsor.
+                          <li>Support members in good standing can wear a small CVMA Support Patch on the front of their vest or jacket
+                             which will be supplied by their sponsor. Support members can also wear the 10 inch support back patch which will be supplied
+                             by their sponsor.
                           </li>
                         </ol></div>) : null}
                         <hr/>
@@ -138,7 +138,7 @@ function HomePage() {
                             <IMAGE src="/images/purpleHearts.png" width="200px" height="100px" alt="Purple Hearts Reunited" />
                           </div>
                           <div>
-                            <IMAGE src="/images/WAA-MasterLogo.png" width="100px" height="100px" alt="Wreaths Accross America"/>
+                            <IMAGE src="/images/WAA-MasterLogo.png" width="100px" height="100px" alt="Wreaths Across America"/>
                           </div>
                         </div>
             </article>
