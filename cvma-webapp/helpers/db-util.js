@@ -10,14 +10,14 @@ export async function connectDatabase() {
 }
 
 export async function insertDocument(client, collection, document) {
-  const db = client.db();
+  const db = client.db(process.env.DATABASE);
   const result = await db.collection(collection).insertOne(document);
   client.close();
   return result;
 }
 
 export async function findComments(client, collection, sort, filter) {
-  const db = client.db();
+  const db = client.db(process.env.DATABASE);
   const document = await db
     .collection(collection)
     .find(filter)

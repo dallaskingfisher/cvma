@@ -3,7 +3,7 @@ import { connectDatabase } from "../../../helpers/db-util";
 async function handler(req, res) {
   try {
     const client = await connectDatabase();
-    const collection = client.db().collection("documents");
+    const collection = client.db(process.env.DATABASE).collection("documents");
     const data = await collection.find({}).toArray();
     const docsArray =[];
     for (let i =0; i < data.length; i++){

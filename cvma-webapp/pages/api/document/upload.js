@@ -18,14 +18,14 @@ async function handler(req, res ) {
             res.status(406).json({message:"File Required"});
         } else {
             const client = await connectDatabase();
-            const yearCollection = client.db().collection('years');
+            const yearCollection = client.db(process.env.DATABASE).collection('years');
             const dataYear = await yearCollection.findOne({year: year})
             if(dataYear === null ){
                await yearCollection.insertOne({year: year});
             }
             
 
-            const collection = client.db().collection('documents');
+            const collection = client.db(process.env.DATABASE).collection('documents');
              await collection.insertOne({
                 category: category,
                 month: month,

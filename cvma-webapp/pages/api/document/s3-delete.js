@@ -19,7 +19,7 @@ async function handler(req, res) {
     }
 
     const client = await connectDatabase();
-    const collection = client.db().collection("documents");
+    const collection = client.db(process.env.DATABASE).collection("documents");
     await collection.deleteOne({ location: location });
     res.status(200).json({ message: "DELETED, Please Refresh" });
   }

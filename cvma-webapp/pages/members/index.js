@@ -211,10 +211,10 @@ export async function getServerSideProps(context) {
   const session = await getSession({ req: context.req });
 
   const client = await connectDatabase();
-  const collection = client.db().collection("members");
+  const collection = client.db(process.env.DATABASE).collection("members");
   const data = await collection.find({}).sort({ memberId: 1}).collation({locale: "en_US", numericOrdering: true}).toArray();
   const members = JSON.stringify(data);
-  const collection1 = client.db().collection("events");
+  const collection1 = client.db(process.env.DATABASE).collection("events");
   const data1 = await collection1.find({}).sort({ memberId: 1}).collation({locale: "en_US", numericOrdering: true}).toArray();
   const events = JSON.stringify(data1);
   client.close();

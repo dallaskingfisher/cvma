@@ -4,7 +4,7 @@ async function handler(req, res) {
     
         try{
         const client = await connectDatabase();
-        const collection = client.db().collection('years');
+        const collection = client.db(process.env.DATABASE).collection('years');
         const data = await collection.find({}).toArray();
        
         const yearsArray = []
